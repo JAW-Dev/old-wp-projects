@@ -31,8 +31,8 @@ if ( ! defined( 'WPINC' ) ) {
  */
 class ConversionAPI {
 
-	private $access_token = 'EAADa2Ade8xkBABRa5WcxVncvrqJj49N6BE89AkUHTNTfQGKX3tuuW5kp5FQlo2NFvsNgJtJmQFMjF3x51RoM9n1cBoii5JgIGZBulq7WSg5shsYZBnb3v4G7i6u9WQKRfjbV3njCvwECkNJZBml2jAu2dsSJvFn4yX2Gtm9fR4xZCzpCqPsP';
-	private $pixel_id     = '1758157654416704';
+	private $access_token = '';
+	private $pixel_id     = '';
 	private $api;
 
 	/**
