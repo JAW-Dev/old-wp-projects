@@ -1,0 +1,53 @@
+.courses-filter-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: $base-spacing;
+	justify-content: center;
+	margin-bottom: $base-spacing;
+
+	@media ($large-screen-up) {
+		justify-content: flex-end;
+	}
+
+	select {
+		background: $light-blue;
+		border-color: $light-blue;
+		color: white;
+		max-width: rem(250);
+	}
+}
+
+.courses-filter-outer-wrap {
+	.ss-main {
+		max-width: rem(250);
+	}
+
+	.ss-main .ss-multi-selected {
+		background-color: $light-blue;
+		border-color: $light-blue;
+	}
+
+	.ss-main .ss-multi-selected .ss-values .ss-disabled {
+		color: white;
+	}
+
+	.ss-main .ss-multi-selected .ss-add {
+		margin: 10px 12px 0 5px;
+	}
+
+	.ss-main .ss-multi-selected .ss-add .ss-plus {
+		background: white;
+
+		&:after {
+			background: white;
+		}
+	}
+
+	.ss-main .ss-multi-selected .ss-values .ss-value {
+		background-color: $dark-blue;
+	}
+
+	.ss-content .ss-list .ss-option {
+		line-height: 110%;
+	}
+}

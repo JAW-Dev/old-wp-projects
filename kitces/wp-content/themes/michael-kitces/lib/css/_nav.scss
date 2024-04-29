@@ -1,0 +1,316 @@
+$sub-menu-width: 200px;
+$link-color: white;
+$link-color-hover: white;
+
+$sub-menu-width: 225px;
+$sub-menu-font-size: rem(14);
+$sub-menu-top-padding: 0px;
+$sub-nav-bg-color: $off-white;
+$sub-sub-menu-top-offset: 32px;
+
+.header-widget-area nav {
+    .wrap {
+      width: 100%;
+    }
+
+    ul.menu {
+      display: flex;
+    }
+
+    ul,
+    li {
+      margin: 0;
+    }
+
+    // Top Menu Item
+    .menu-item {
+      display: flex;
+      position: relative;
+
+      a {
+        line-height: 1;
+        font-weight: bold;
+      }
+
+      > a {
+        color: $link-color;
+        display: inline-block;
+        font-family: $base-ff;
+        padding: 26px 4px;
+        text-transform: uppercase;
+        font-size: rem(14);
+        letter-spacing: 1px;
+        transition: background $base-duration $base-timing;
+
+        @media( min-width: 1201px ) {
+          padding: 26px rem(15);
+        }
+      }
+
+      &:hover > a,
+      &:focus > a,
+      &.current_page_item > a,
+      &.current-menu-parent > a {
+        text-decoration: none;
+        background: $light-blue;
+
+        &[href="#"]{
+          cursor: default;
+        }
+      }
+
+      &:hover {
+        > .sub-menu {
+          pointer-events: all;
+          left: 0px;
+          right: auto;
+          visibility: visible;
+          display: block;
+
+          &.edge {
+            left: auto;
+            right: 0px;
+          }
+
+          @media( min-width: 1201px ) {
+            left: 0px;
+
+            &.edge {
+              right: 0px;
+            }
+          }
+        }
+
+      }
+    }
+
+    // Sub Menu Styling
+    .menu-item > .sub-menu {
+      display: flex;
+      flex-direction: column;
+      visibility: hidden;
+      position: absolute;
+      transition: visibility $base-duration $base-timing !important;
+      z-index: 100;
+      pointer-events: none;
+      background: $sub-nav-bg-color;
+      left: 0;
+      right: 0;
+      display: none;
+      top: 100%;
+
+      a {
+        background: $sub-nav-bg-color;
+        color: $medium-blue;
+        display: block;
+        font-size: $sub-menu-font-size;
+        font-size: rem(16);
+        padding: rem(8) rem(24);
+        text-transform: none;
+        transition: background $base-duration $base-timing;
+        width: $sub-menu-width;
+
+        span {
+          &::before,
+          &::after {
+            display: none;
+          }
+        }
+
+        &:hover {
+          background: $gray-300;
+        }
+      }
+
+      .menu-item {
+
+        &:first-of-type {
+          a {
+            margin-top: rem(12);
+          }
+        }
+
+        &:last-of-type {
+          a {
+            margin-bottom: rem(12);
+          }
+        }
+      }
+    }
+  }
+
+  // NEV Menu
+  .nev-menu-wrap {
+    ul.menu {
+      display: flex;
+    }
+
+    .menu-item {
+      margin-right: rem(12);
+
+
+      a {
+        font-size: rem(14);
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: rem(8) rem(15);
+        display: block;
+        line-height: 1;
+        letter-spacing: 1px;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &.menu-item-has-children {
+        position: relative;
+
+        .sub-menu {
+          opacity: 0;
+          pointer-events: none;
+          transition: opacity $base-duration $base-timing;
+          left: 0;
+          position: absolute;
+          width: 100%;
+          background-color: white;
+          z-index: 10;
+
+          .menu-item {
+            margin-right: 0;
+          }
+
+          a {
+            color: $text-gray;
+            padding: rem(8) rem(15);
+            transition: background-color $base-duration $base-timing;
+
+            &:hover {
+              background-color: $light-gray;
+            }
+          }
+        }
+
+        &:hover {
+          .sub-menu {
+            opacity: 1;
+            pointer-events: all;
+          }
+        }
+      }
+
+      &.white-select .sub-menu .menu-item a {
+        background: $off-white;
+        padding: rem(8);
+      }
+
+      &.white-select.menu-item-has-children {
+
+        &:hover {
+          .sub-menu {
+            pointer-events: none;
+            opacity: 0;
+          }
+        }
+
+        &.active {
+
+          .sub-menu {
+            opacity: 1;
+            pointer-events: all;
+            max-height: 450px;
+            overflow-y: auto;
+          }
+
+          > a,
+          .menu-item a {
+            background: $off-white;
+
+            &:hover {
+              background-color: $gray-300;
+            }
+          }
+
+          > a:after {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      &.white-select > a {
+        background-color: white;
+        color: $text-gray;
+        min-width: rem(200);
+        padding: rem(8) rem(28) rem(8) rem(8);
+        position: relative;
+
+        @media( min-width:1201px ) {
+          min-width: rem(250);
+        }
+
+        &:after {
+          background-image: url('./../images/nev-drop-down.svg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          content: "";
+          display: block;
+          height: 8px;
+          position: absolute;
+          right: rem(8);
+          top: 50%;
+          transform: translateY(-50%);
+          width: 12px;
+          transform-origin: 50% 25%;
+        }
+      }
+    }
+
+    .menu-item > a {
+      color: white;
+    }
+  }
+
+// Specific Menu Button Types
+.menu-item.blue-button a {
+  background: $light-blue;
+}
+
+.menu-item.search a {
+  padding-right: rem(32);
+  position: relative;
+
+  &:after {
+    content: "";
+    background-image: url('./../images/nev-search-icon.svg');
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    right: rem(8);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.menu-item.green-button a {
+  background: $green;
+}
+
+// Social Icons
+.cgd_social_header li.cgd-social-link,
+.cgd_social_footer li.cgd-social-link {
+	display: inline-block;
+	margin-right: 3px;
+
+	&:last-child {
+		margin-right: 0;
+  }
+  img {
+    height: 32px;
+    width: 32px;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "objectivco/mk-link-builder",
+  "type": "wordpress-plugin",
+  "config": {
+    "optimize-autoloader": true,
+    "classmap-authoritative": true
+  },
+  "authors": [
+    {
+      "name": "Eldon Yoder",
+      "email": "eldon@objectiv.co"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MK_Link_Builder\\": "includes/"
+    }
+  }
+}

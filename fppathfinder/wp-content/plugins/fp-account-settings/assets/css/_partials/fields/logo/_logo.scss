@@ -1,0 +1,23 @@
+.file-upload-wrap {
+	display: none;
+}
+
+.pdf-generator-logo-preview-image-wrap,
+.group-settings-pdf-logo-preview-image-wrap {
+	max-height: rem(280);
+}
+
+.logo-upload__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.pdf-generator-logo-preview-image,
+.group-settings-pdf-logo-preview-image {
+	position: relative;
+	display: block;
+	width: auto;
+	height: auto;
+	max-height: rem(200);
+}

@@ -1,0 +1,23 @@
+#printfriendly .smart-podcast-player,
+#printfriendly .author-block,
+#printfriendly .oim-inline-sub-pod-link-wrap,
+#printfriendly .pf-primary-img,
+#printfriendly .star-ratings__wrapper,
+#printfriendly .author-block {
+	display: none !important;
+}
+
+#printfriendly .nerd-note-header img {
+	width: 36px;
+	float: left;
+}
+
+#printfriendly .nerd-note-header h4 {
+	float: left;
+	clear: none;
+	padding-bottom: 0;
+}
+
+#printfriendly .nerd-note-content {
+	clear: both;
+}

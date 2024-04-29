@@ -1,0 +1,35 @@
+.entry-content .nerd-note {
+	background-color: $blue-300;
+	border-radius: $large-border-radius;
+	display: flex;
+	flex-direction: column;
+	margin: rem(28) 0 rem(28) rem(10);
+	padding: rem(20);
+
+	.nerd-note-header {
+		align-items: center;
+		display: flex;
+
+		img {
+			border: 2px solid $medium-blue;
+			border-radius: 100px;
+			max-height: rem(36);
+			max-width: rem(36);
+		}
+
+		h4 {
+			color: $heading-blue;
+			font-size: rem(20);
+			margin: 0 0 0 rem(12);
+		}
+	}
+
+	p {
+		font-size: rem(16);
+		margin: rem(18) 0;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}

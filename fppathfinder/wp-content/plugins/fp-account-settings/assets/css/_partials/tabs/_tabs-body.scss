@@ -1,0 +1,31 @@
+.tabs__body {
+	&-content {
+		display: none;
+
+		&.selected {
+			display: block;
+		}
+	}
+
+	&-blurb,
+	&-section {
+		@extend .section-style;
+	}
+
+	&-section-heading {
+		@extend .section-style-heading;
+	}
+
+	&-section {
+		h3 {
+			margin-bottom: rem(12);
+			font-size: rem(25);
+			font-weight: 600;
+			line-height: 34px;
+		}
+	}
+}
+
+.account-settings__body .body-section .tabs__body-blurb {
+	padding: 0 0 rem(48);
+}

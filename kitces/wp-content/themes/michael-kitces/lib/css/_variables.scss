@@ -1,0 +1,61 @@
+$text-gray: #333;
+$medium-gray: #666d70;
+$light-gray: #eee;
+$border-gray: #ddd;
+$gray-300: #e2e2e2;
+$green: #82a502;
+$red: #ff6261;
+$gold: #d4af37;
+$purple: #833ea8;
+$orange: #ec7757;
+$orange-bright: #f59421;
+$orange-200: #fbdbb3;
+$orange-100: #fcf8e3;
+$off-white: #f3f3f3;
+$gray-100: $off-white;
+$deep-purple: #660066;
+$link-blue: #00c;
+$blue: #017cca;
+$blue-600: #00548f;
+$blue-300: #d9e5ee;
+$dark-blue: #002a4a;
+$shirt-blue: #253fae;
+$medium-blue: #00467b;
+$heading-blue: #005392;
+$light-blue: #56a3d9;
+
+// Speaker Colors
+$speak-mk-blue: $shirt-blue;
+$speak-jeff-orange: $orange;
+$speak-derek-purple: $purple;
+$cons-craig-purple: $deep-purple;
+$speak-meghan-l: #ffa800;
+
+$base-border: 1px solid $dark-blue;
+$base-spacing: 1em;
+$base-spacing-r: 1rem;
+$base-duration: 150ms;
+$base-timing: ease;
+
+$action-color: $light-blue;
+
+$base-border-color: $text-gray;
+
+// Section Spacings
+$mobile-section-space: 3rem;
+$desk-section-space: 4rem;
+$large-section-space: 6rem;
+$xl-section-space: 8rem;
+
+$base-border-radius: 3px;
+$large-border-radius: 8px;
+
+// Screen Breaks
+$medium-screen-up: 'min-width: 600px';
+$large-screen-up: 'min-width: 800px';
+$grande-screen-up: 'min-width: 1040px';
+$muy-grande-screen-up: 'min-width: 1201px';
+
+// Font Families
+$base-ff: 'Lato', 'sans-serif';
+$head-ff: 'Montserrat', 'sans-serif';

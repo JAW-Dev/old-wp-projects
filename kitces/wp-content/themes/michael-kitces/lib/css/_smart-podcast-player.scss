@@ -1,0 +1,71 @@
+
+/* ## Podcast Entries
+--------------------------------------------- */
+/* smart-track-player */
+html body.spp .spp-player-container .spp-track .spp-track-title,
+html body.spp .smart-track-player .spp-track .spp-track-title,
+html body.spp .smart-track-player .spp-track .spp-artist {
+	font-family: "proxima-nova", sans-serif;
+	font-weight: normal;
+}
+html body.spp .smart-track-player .spp-track,
+html body.spp .smart-track-player .spp-track .spp-loaded-container {
+	background-color: #41ada6 !important;
+}
+
+.spp .post.entry {
+	position: relative;
+}
+.top-player-bar {
+	height:79px;
+	//margin-top:30px;
+	position:relative;
+	margin: -40px -40px 0 -40px;
+}
+.has-post-thumbnail .top-player-bar {
+	//margin: 0 -40px 0 -40px;
+}
+
+.top-player-bar + .entry {
+	margin-top:0;
+}
+
+.top-player-bar .guest-image {
+	position: absolute;
+	top: 0;
+	z-index: 9;
+	left: 0;
+	width: 80px;
+	height: 80px;
+}
+@media only all and (max-width: 480px) {
+	.top-player-bar .guest-image {
+		display: none;
+	}
+}
+
+.guest-image {
+	display: none;
+}
+
+body.spp .top-player-bar .smart-track-player {
+	//padding-left:80px;
+	margin:0;
+	height:80px;
+	display:block;
+}
+@media only all and (max-width: 480px) {
+	body.spp .top-player-bar .smart-track-player {
+	  padding-left: 0;
+	}
+}
+
+body.spp .top-player-bar .smart-track-player .spp-track {
+	height:80px;
+}
+@media only all and (max-width: 768px) {
+	body.spp .top-player-bar .smart-track-player,
+	body.spp .top-player-bar .smart-track-player .spp-track, .top-player-bar {
+	  height: auto;
+	}
+}

@@ -1,0 +1,49 @@
+{
+    "key": "group_609e7e6db10e7",
+    "title": "Widget - Announcement Ajax",
+    "fields": [
+        {
+            "key": "field_609e7e907af50",
+            "label": "Announcement Location",
+            "name": "announcement_location",
+            "type": "select",
+            "instructions": "This is so that we know which announcements to show here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "member-banner": "Member Page Banner",
+                "before-posts": "Before Posts"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "announcement_widget_ajax"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1621000873
+}

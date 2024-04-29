@@ -1,0 +1,162 @@
+.kitces-events-hero {
+	.kitces-events-hero-inner {
+		display: flex;
+		flex-direction: column;
+
+		@media ($muy-grande-screen-up) {
+			align-items: center;
+			flex-direction: row;
+		}
+	}
+
+	.left-content {
+		margin-top: $base-spacing-r;
+		max-width: rem(650);
+		order: 2;
+
+		@media ($muy-grande-screen-up) {
+			margin-top: 0;
+			order: 1;
+			padding-right: $base-spacing-r * 3;
+		}
+	}
+
+	.right-content {
+		max-width: rem(450);
+		order: 1;
+
+		@media ($muy-grande-screen-up) {
+			max-width: unset;
+			order: 2;
+		}
+	}
+
+	.sub-title {
+		font-size: rem(20);
+		line-height: 120%;
+
+		@media ($large-screen-up) {
+			font-size: rem(24);
+		}
+	}
+}
+
+.kitces-event-block {
+	background-color: $gray-100;
+
+	.kitces-events-general-updates &,
+	.kitces-events-cat-sec.bg-gray-100 & {
+		background-color: white;
+	}
+
+	.image-wrap {
+		min-height: rem(250);
+		width: 100%;
+	}
+
+	.content {
+		padding: rem(32);
+
+		.content-wrapper.too-tall {
+			max-height: rem(150);
+			overflow: hidden;
+			position: relative;
+
+			.content-wrapper-open {
+				opacity: 1;
+				pointer-events: all;
+			}
+
+			&.is-open {
+				max-height: 1000px;
+
+				.content-wrapper-open {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.content-wrapper {
+		position: relative;
+		transition: max-height $base-duration $base-timing;
+	}
+
+	.content-wrapper-open {
+		align-items: flex-end;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 70%);
+		bottom: 0;
+		cursor: pointer;
+		display: flex;
+		font-size: rem(16);
+		justify-content: center;
+		left: 0;
+		min-height: 44px;
+		opacity: 0;
+		padding-bottom: rem(4);
+		pointer-events: none;
+		position: absolute;
+		right: 0;
+	}
+
+	.speaker-wrap {
+		display: flex;
+		flex-direction: row;
+
+		.headshot-wrap {
+			max-width: 80px;
+			min-width: 80px;
+			height: auto;
+
+			img {
+				border-radius: 100%;
+			}
+		}
+
+		.right-speaker-details {
+			padding-left: rem(16);
+
+			p {
+				font-size: rem(14);
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.buttons-wrap {
+		display: grid;
+		gap: rem(12);
+		margin-top: rem(24);
+	}
+
+	&.is-wide {
+		.image-wrap {
+			min-height: rem(350);
+		}
+
+		@media ($large-screen-up) {
+			display: flex;
+
+			.image-wrap,
+			.content {
+				width: 50%;
+			}
+
+			.image-wrap {
+				order: 2;
+			}
+
+			.content {
+				order: 1;
+			}
+
+			&.has-register-form .image-wrap {
+				padding: rem(32);
+
+				#bigmarker-conference-widget-container iframe {
+					height: 800px !important;
+				}
+			}
+		}
+	}
+}

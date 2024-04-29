@@ -1,0 +1,139 @@
+// Speakign Availability
+.speaker-availability-table {
+	margin: rem(32) 0;
+	display: none;
+
+	@media ($large-screen-up) {
+		margin: rem(48) 0;
+	}
+
+	@media ($grande-screen-up) {
+		display: block;
+	}
+}
+
+.speaker-availability-table-row {
+	display: flex;
+
+	.speaker-availability-title-block {
+		min-width: rem(200);
+		max-width: rem(200);
+		padding: rem(20) rem(32) rem(20) rem(9);
+		background: white;
+
+		&.top-row {
+			background: transparent !important;
+		}
+	}
+
+	.speaker-availability-inner-block {
+		width: calc((100% - 200px) / 4);
+		padding: rem(20) rem(32);
+		text-align: center;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		.speaker-person-name {
+			font-weight: bold;
+			font-family: $head-ff;
+			margin-top: rem(8);
+			font-size: rem(18);
+			display: block;
+		}
+	}
+
+	&:nth-child(odd) {
+		.speaker-availability-inner-block {
+			&.michael_kitces {
+				background: $speak-mk-blue;
+			}
+			&.jeffrey_levine {
+				background: $speak-jeff-orange;
+			}
+			&.dr_derek_tharp {
+				background: $speak-derek-purple;
+			}
+			&.meghaan_lurtz {
+				background: $speak-meghan-l;
+			}
+		}
+	}
+
+	&:nth-child(even) {
+		.speaker-availability-title-block {
+			background: rgba(white, 0.75);
+		}
+
+		.speaker-availability-inner-block {
+			&.michael_kitces {
+				background: rgba($speak-mk-blue, 0.75);
+			}
+			&.jeffrey_levine {
+				background: rgba($speak-jeff-orange, 0.75);
+			}
+			&.dr_derek_tharp {
+				background: rgba($speak-derek-purple, 0.75);
+			}
+			&.meghaan_lurtz {
+				background: rgba($speak-meghan-l, 0.75);
+			}
+		}
+	}
+}
+
+.availability-footer {
+	margin-top: rem(32);
+
+	@media ($large-screen-up) {
+		margin-top: rem(48);
+	}
+}
+
+// Mobile
+.mobile-speaker-availability-table {
+	margin: rem(32) 0;
+	justify-content: center;
+
+	@media ($large-screen-up) {
+		margin: rem(48) 0;
+	}
+
+	@media ($grande-screen-up) {
+		display: none !important;
+	}
+}
+
+.mobile-speaker-availability-block {
+	background: $speak-mk-blue;
+	color: white;
+	padding: rem(32);
+	text-align: center;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	&.jeffrey_levine {
+		background: $speak-jeff-orange;
+	}
+
+	&.dr_derek_tharp {
+		background: $speak-derek-purple;
+	}
+
+	&.meghaan_lurtz {
+		background: $speak-meghan-l;
+	}
+
+	.mobile-speaker-availability-block__title {
+		color: white;
+	}
+
+	.mobile-speaker-availability-block__total-available,
+	.mobile-speaker-availability-block__remaining {
+		font-size: rem(16);
+	}
+}

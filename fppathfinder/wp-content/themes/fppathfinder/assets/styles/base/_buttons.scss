@@ -1,0 +1,95 @@
+#{$all-buttons},
+.button a,
+.red-button a,
+.transparent-button a,
+.tml-submit-wrap input,
+.email-cta__form input[type="submit"],
+.footer-cta__mc-wrap input[type="submit"],
+input[type="image"].red-button,
+.file-container .button-text,
+#rcp_login_submit {
+  -webkit-font-smoothing: antialiased;
+  appearance: none;
+  background-color: $action-color;
+  border-radius: $base-border-radius;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: rem(18);
+  font-weight: 300;
+  line-height: rem(22);
+  padding: rem(13px) rem(36px);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  background: $blue-grad;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.red-button a,
+button.red-button,
+input[type="submit"].red-button,
+input[data-is-active="1"],
+input[type="image"].red-button,
+.tml-submit-wrap input,
+.email-cta__form input[type="submit"],
+.footer-cta__mc-wrap input[type="submit"],
+#rcp_login_submit {
+  background: linear-gradient(135deg, #e55748 0%, #b2382b 100%);
+}
+
+.green-button a,
+button.green-button,
+input[type="submit"].green-button,
+input[data-is-active="0"],
+input[type="image"].green-button {
+  background: linear-gradient(135deg, #a1b762, #687934);
+}
+
+.transparent-button a {
+  background: transparent;
+  background-color: transparent;
+  border: 2px solid white;
+
+  &:hover {
+    background: white;
+    color: $blue;
+    border-color: $blue;
+  }
+}
+
+.small-button a {
+  font-size: em(14px);
+}
+
+.small-pad a {
+  padding: rem(13px) rem(16px);
+}
+
+.large-button a {
+  font-size: em(22px);
+  padding: rem(17) rem(42);
+}
+
+.button,
+.red-button {
+  display: inline-block;
+}

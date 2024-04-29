@@ -1,0 +1,221 @@
+.kitces-sharing.is-inline {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	margin-top: rem(-12);
+	overflow: auto;
+	padding-top: rem(12);
+	align-items: center;
+	gap: rem(12);
+	flex-wrap: wrap;
+
+	@media ($medium-screen-up) {
+		gap: rem(8);
+		justify-content: space-between;
+	}
+
+	.social-links-wrapper {
+		display: none;
+
+		@media ($medium-screen-up) {
+			display: unset;
+		}
+	}
+
+	@media (min-width: 1400px) {
+		.star-ratings__wrapper-header {
+			display: none;
+		}
+	}
+}
+
+.kitces-sharing.is-floating {
+	background: white;
+	bottom: 0;
+	left: 0;
+	opacity: 1;
+	padding: 10px;
+	position: fixed;
+	transition: all 0.2s ease-in-out;
+	z-index: 12;
+
+	.kitces-sharing-count {
+		float: none;
+		margin-left: 0;
+	}
+
+	ul li {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#kitces-sharing-close {
+		background-color: white;
+		border-radius: 100%;
+		cursor: pointer;
+		display: flex;
+		float: right;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: translate(50%, -50%);
+	}
+
+	#kitces-sharing-close svg {
+		height: rem(20);
+		width: rem(20);
+	}
+
+	@media ($medium-screen-up) {
+		display: none;
+	}
+}
+
+.kitces-sharing .kitces-sharing-count {
+	display: block;
+	float: left;
+}
+
+.share-customize-link {
+	display: none;
+}
+
+#sharing_email .sharing_send,
+.shared-counts-button {
+	border: none !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	margin: 0 !important;
+	padding: 14px 20px !important;
+	transition: all 0.1s ease-in-out;
+}
+
+.shared-counts-button {
+	height: auto !important;
+	width: auto !important;
+}
+
+.shared-counts-button.twitter {
+	background: #008000 !important;
+}
+
+.shared-counts-button.facebook {
+	background: #198c19 !important;
+}
+
+.shared-counts-button.linkedin {
+	background: #329932 !important;
+}
+
+.shared-counts-button.email {
+	background: #f8f8f8 !important;
+}
+
+.shared-counts-button.print {
+	background: #eeeeee !important;
+}
+
+.shared-counts-wrap {
+	margin: 0 !important;
+	width: auto !important;
+}
+
+.shared-counts-button.twitter,
+.shared-counts-button.facebook,
+.shared-counts-button.linkedin,
+.shared-counts-button.email,
+.shared-counts-button.print {
+	display: flex !important;
+	height: 48px !important;
+	padding: 4px 7px !important;
+	width: 48px !important;
+	justify-content: center;
+	align-items: center;
+
+	@media ($large-screen-up) {
+		height: 56px !important;
+		margin: 0 5px 5px 0 !important;
+		width: 56px !important;
+	}
+
+	svg {
+		fill: #fff !important;
+		height: 18px !important;
+		margin: 0 !important;
+		position: relative;
+		width: 18px !important;
+	}
+}
+
+.shared-counts-modal-header {
+	background: #0b5586 !important;
+	font-size: 1.125rem !important;
+	font-weight: 700 !important;
+	letter-spacing: 0.5px !important;
+	padding-left: 1.5rem !important;
+
+	.shared-counts-modal-icon {
+		display: none;
+	}
+}
+
+.shared-counts-modal-content .shared-counts-modal-submit button {
+	background: #0b5586 !important;
+	border-radius: 15px !important;
+	color: #fff !important;
+	font-family: Montserrat, sans-serif;
+	font-size: 10px !important;
+	font-weight: 700 !important;
+	letter-spacing: 2px;
+	padding: 8px 20px !important;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.shared-counts-button.email,
+.shared-counts-button.print {
+	svg {
+		fill: #656565 !important;
+	}
+}
+
+.kitces-sharing-count {
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.kitces-sharing-count-number,
+.kitces-sharing-count-label {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.kitces-sharing-count-number {
+	font-size: 1.5em;
+	line-height: 1;
+}
+
+.kitces-sharing-count-label {
+	font-size: 10px;
+}
+
+// Resizer CSS
+.ct-font-resizer {
+	display: inline-block;
+	list-style: none;
+	margin-bottom: 0px !important;
+	margin-left: 4px !important;
+	margin-right: 12px !important;
+	margin-top: 8px;
+
+	li {
+		list-style-type: none !important;
+	}
+
+	@media (max-width: 650px) {
+		margin-top: 0px;
+	}
+}

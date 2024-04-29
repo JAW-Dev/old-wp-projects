@@ -1,0 +1,49 @@
+.post-star-ratings {
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__link {
+		font-size: rem(18);
+	}
+
+	&__card {
+		margin: rem(10);
+		border: 1px solid;
+		border-radius: rem(5);
+	}
+
+	&__heading {
+		padding: 10px 5px;
+		font-size: rem(18);
+		color: white;
+		background: #00467b;
+	}
+
+	&__total {
+		padding: rem(10) rem(5) rem(5);
+	}
+
+	&__average {
+		padding: rem(5) rem(5) rem(10);
+	}
+}
+
+.toplevel_page_star-ratings-test {
+	.column-title {
+		width: rem(450);
+	}
+
+	.column-date {
+		width: rem(140);
+	}
+
+	.column-total {
+		width: rem(120);
+	}
+
+	.column-averages {
+		width: rem(130);
+	}
+}

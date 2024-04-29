@@ -1,0 +1,154 @@
+{
+    "key": "group_5cbf1ef15708d",
+    "title": "Widget - Announcement",
+    "fields": [
+        {
+            "key": "field_5cbf1ef15de1e",
+            "label": "Announcement Blurb",
+            "name": "announcement_blurb",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_5eff9ccaeb4e1",
+            "label": "Style",
+            "name": "style",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "custom": "Custom",
+                "bg-light-orange": "Light Orange BG",
+                "bg-dark-orange": "Dark Orange Bg"
+            },
+            "allow_null": 0,
+            "default_value": "custom",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5cbf20b33a4b4",
+            "label": "Background Color",
+            "name": "background_color",
+            "type": "color_picker",
+            "instructions": "Note... if nothing is set here, or text color isn't set we'll use a default of #fcf8e3",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eff9ccaeb4e1",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5cbf20c03a4b5",
+            "label": "Text Color",
+            "name": "text_color",
+            "type": "color_picker",
+            "instructions": "Note... if nothing is set here, or background isn't set we'll use a default of #c09853",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eff9ccaeb4e1",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5cbf24a486f39",
+            "label": "Link Color",
+            "name": "link_color",
+            "type": "color_picker",
+            "instructions": "Note... if nothing is set here we'll use a default of #00c",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eff9ccaeb4e1",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5eff9d7fd9f87",
+            "label": "Include Exclamation Mark",
+            "name": "include_exclamation_mark",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "announcement_widget"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1593810324
+}

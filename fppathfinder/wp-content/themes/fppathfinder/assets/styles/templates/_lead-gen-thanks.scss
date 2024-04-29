@@ -1,0 +1,23 @@
+.lead-gen-thanks-top__inner {
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.lead-gen-thanks__title {
+    color: $blue;
+    font-size: rem(40);
+    margin-bottom: $base-spacing*2;
+    text-align: center;
+}
+
+.lead-gen-thanks__sub-title {
+    color: $blue;
+    font-size: rem(32);
+    margin-bottom: $base-spacing*1.25;
+    text-align: center;
+}
+
+.lead-gen-thanks__message {
+    font-size: rem(22);
+    text-align: center;
+}

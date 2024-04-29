@@ -1,0 +1,40 @@
+.working-spinner {
+	position: relative;
+	display: inline-block;
+	width: rem(100);
+	height: rem(100);
+}
+
+.working-spinner div {
+	position: absolute;
+	box-sizing: border-box;
+	display: block;
+	width: rem(100);
+	height: rem(100);
+	margin: rem(8);
+	border: 8px solid #ffffff;
+	border-color: #ffffff transparent transparent transparent;
+	border-radius: 50%;
+	animation: working-spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.working-spinner div:nth-child(1) {
+	animation-delay: -0.45s;
+}
+
+.working-spinner div:nth-child(2) {
+	animation-delay: -0.3s;
+}
+
+.working-spinner div:nth-child(3) {
+	animation-delay: -0.15s;
+}
+
+@keyframes working-spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,37 @@
+.toggle-chevron {
+	position: relative;
+	width: rem(14);
+	height: rem(4);
+	margin-left: 1rem;
+
+	&::before,
+	&::after {
+		position: absolute;
+		display: block;
+		width: rem(14);
+		height: rem(4);
+		content: '';
+		background: #3f3f3f;
+		transition: all 300ms ease;
+	}
+
+	&::before {
+		right: 15px;
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		right: 7px;
+		transform: rotate(-45deg);
+	}
+
+	.opened & {
+		&::before {
+			transform: rotate(-45deg);
+		}
+
+		&::after {
+			transform: rotate(45deg);
+		}
+	}
+}

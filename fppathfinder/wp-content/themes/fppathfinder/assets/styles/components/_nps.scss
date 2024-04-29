@@ -1,0 +1,171 @@
+section.nps-outer {
+  animation: fadein 500ms;
+  background-color: white;
+  border-top: 2px solid $light-border-color;
+  bottom: 0;
+  left: 0;
+  padding-bottom: rem(64);
+  padding-top: rem(64);
+  position: fixed;
+  right: 0;
+  text-align: center;
+  z-index: 1050;
+
+  @include media($medium-screen-up) {
+    padding-bottom: rem(96);
+    padding-top: rem(80);
+  }
+
+  .close-nps {
+    cursor: pointer;
+    display: block;
+    height: rem(14);
+    position: absolute;
+    right: rem(10);
+    top: rem(12);
+    width: rem(14);
+  }
+
+  h2 {
+    font-size: rem(32);
+
+    @include media($medium-screen-up) {
+      font-size: rem(40);
+    }
+  }
+
+  .survey-links-explainer {
+    margin-top: rem(16);
+    @include media($medium-screen-up) {
+      display: none;
+    }
+  }
+
+  .survey-links {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: rem(32);
+
+    @include media($medium-screen-up) {
+      flex-wrap: nowrap;
+    }
+
+    a {
+      align-items: center;
+      background: $blue-grad;
+      border-radius: $base-border-radius;
+      color: white;
+      display: flex;
+      justify-content: center;
+      margin: rem(3);
+      min-height: rem(32);
+      min-width: rem(32);
+      transition: all $base-duration $base-timing;
+
+      @include media($large-screen-up) {
+        margin: 0 rem(6);
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .not-likely {
+      display: none;
+      font-size: rem(16);
+      margin-right: rem(16);
+
+      @include media($medium-screen-up) {
+        display: block;
+      }
+
+      @include media($large-screen-up) {
+        margin-right: rem(40);
+      }
+    }
+
+    .very-likely {
+      display: none;
+      font-size: rem(16);
+      margin-left: rem(16);
+
+      @include media($medium-screen-up) {
+        display: block;
+      }
+
+      @include media($large-screen-up) {
+        margin-left: rem(40);
+      }
+    }
+  }
+}
+
+.gfield.nps-score {
+  .gfield_label {
+    text-align: center;
+    width: 100%;
+  }
+
+  .ginput_container.ginput_container_radio {
+    margin-top: 0;
+  }
+
+  ul.gfield_radio {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+
+    @include media($medium-screen-up) {
+      flex-wrap: nowrap;
+    }
+
+    li {
+      margin-bottom: 0;
+    }
+
+    li input {
+      display: none;
+    }
+
+    li label {
+      align-items: center;
+      background: $blue-grad;
+      border-radius: $base-border-radius;
+      color: white;
+      display: flex;
+      justify-content: center;
+      margin: rem(3);
+      min-height: rem(32);
+      min-width: rem(32);
+      transition: all $base-duration $base-timing;
+
+      @include media($large-screen-up) {
+        margin: 0 rem(6);
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    li.selected-radio {
+      label {
+        background: $green;
+      }
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

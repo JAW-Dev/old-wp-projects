@@ -1,0 +1,19 @@
+{
+  "name": "objectivco/mk-list-builder",
+  "type": "wordpress-plugin",
+  "config": {
+    "optimize-autoloader": true,
+    "classmap-authoritative": true
+  },
+  "authors": [
+    {
+      "name": "Eldon Yoder",
+      "email": "eldon@objectiv.co"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MKLB\\": "includes/"
+    }
+  }
+}

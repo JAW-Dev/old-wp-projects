@@ -1,0 +1,135 @@
+{
+    "key": "group_5b02c6985dcb1",
+    "title": "Template - Lead Gen Thanks",
+    "fields": [
+        {
+            "key": "field_5b02c767c68f6",
+            "label": "Default Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b02c912cd57c",
+            "label": "Defaults",
+            "name": "defaults",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5b02c8de4d1c8"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_5b02c78dc68f7",
+            "label": "Form Override Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b02cacb93a1e",
+            "label": "Overrides",
+            "name": "overrides",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Override",
+            "sub_fields": [
+                {
+                    "key": "field_5b02cadf93a1f",
+                    "label": "Referring Form",
+                    "name": "referring_form",
+                    "type": "gravity_forms_field",
+                    "instructions": "Note: the form needs a couple of things set.\r\n<br>\r\n1. Confirmation type of \"Page\" set to this page.\r\n<br>\r\n2. \"Pass Field Data Via Query String\" should be checked.\r\n<br>\r\n3. In the Field Data field you'll need to pass the id like this -> \"form_id={form_id}\"",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "allow_null": 1,
+                    "allow_multiple": 0
+                },
+                {
+                    "key": "field_5b02cbb893a20",
+                    "label": "Override Details",
+                    "name": "override_details",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_5b02c8de4d1c8"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-lead-thanks.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1526910067
+}

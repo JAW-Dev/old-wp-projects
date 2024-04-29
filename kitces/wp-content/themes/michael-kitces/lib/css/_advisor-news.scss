@@ -1,0 +1,70 @@
+.advisor-news-date {
+    // font-size: rem(18);
+    text-transform: uppercase;
+    color: #3b3d40;
+}
+
+.post-type-archive-advisor-news {
+
+    .entry {
+        margin-bottom: rem(16);
+        padding-left: rem(24);
+    }
+
+    .entry-title {
+        font-size: rem(22);
+        border-bottom: none 0;
+        margin-bottom: rem(4);
+    }
+
+    .favicon {
+        margin-left: rem(-24);
+        width: rem(16);
+    }
+
+    .commentary--hidden {
+        display: none;
+    }
+}
+
+.advisor-news-social {
+    font-size: rem(14);
+    text-transform: uppercase;
+
+    a {
+        margin-right: rem(4);
+        color: $medium-gray;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: $text-gray;
+        }
+    }
+
+    .icon {
+        font-size: rem(18);
+    }
+
+    .icon-email {
+        font-size: rem(19);
+        position: relative;
+        top: rem(-1);
+    }
+
+    .commentary-trigger {
+        background-color: #fff;
+        box-shadow: none;
+        color: $medium-gray;
+        padding: 0 rem(8);
+
+        position: relative;
+        top: rem(-2);
+
+        display: none;
+
+        .js & {
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "objectivco/fp-core",
+  "type": "wordpress-plugin",
+  "config": {
+    "optimize-autoloader": true,
+    "classmap-authoritative": true
+  },
+  "authors": [
+    {
+      "name": "John Geesey",
+      "email": "john@objectiv.co"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "FP_Core\\": "includes/"
+    },
+    "files": [
+      "includes/Functions/Utilities/Checklist/fp_get_crm_client_name.php",
+      "includes/Functions/Utilities/Checklist/fp_get_share_link_db_entry.php",
+      "includes/Functions/Utilities/Features/fp_is_feature_active.php",
+      "includes/Functions/Utilities/Formatting/fp_custom_text_tags.php",
+      "includes/Functions/main.php",
+      "includes/Functions/Utilities/membership.php",
+      "includes/Functions/Utilities/page.php",
+      "includes/Functions/Utilities/register.php"
+    ]
+  },
+  "require": {
+    "objectivco/wordpress-simple-settings": "^0.7.3",
+    "vlucas/phpdotenv": "^5.3"
+  }
+}

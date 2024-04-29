@@ -1,0 +1,24 @@
+.team-member-block-grid {
+	.team-member-block {
+		> img {
+			display: block;
+			width: 100%;
+		}
+
+		&.member {
+			a {
+				color: $text-gray;
+				text-decoration: none;
+			}
+		}
+
+		.team-member-block-bio-fake-link {
+			color: $link-blue;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

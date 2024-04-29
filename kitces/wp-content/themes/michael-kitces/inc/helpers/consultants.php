@@ -1,0 +1,134 @@
+<?php
+
+function objectiv_do_new_consultants_table( $speakers = null ) {
+	if ( is_array( $speakers ) && ! empty( $speakers ) ) {
+		objectiv_do_new_consultants_table_mobile( $speakers );
+		objectiv_do_new_consultants_table_desk( $speakers );
+	}
+}
+
+
+function objectiv_do_new_consultants_table_mobile( $speakers = null ) {
+	?>
+	<div class="mobile-speakers-table-outer-wrap">
+		<?php foreach ( $speakers as $speaker ) : ?>
+			<?php
+				$img          = $speaker['headshot']['sizes']['large-square'];
+				$name         = $speaker['name'];
+				$title        = $speaker['title'];
+				$travels_from = $speaker['travels_from'];
+				$specializes  = $speaker['specializes_in'];
+				$bio          = $speaker['bio'];
+				$name_class   = obj_id_from_string( $name, false );
+
+			?>
+			<div class="mobile-speakers-table__speaker <?php echo $name_class; ?>">
+				<div class="mobile-speakers-table__image-wrap">
+					<img src="<?php echo $img; ?>" alt="<?php echo $name; ?>" class="speaker-person-headshot">
+				</div>
+				<div class="mobile-speakers-table__details">
+					<?php if ( ! empty( $name ) ) : ?>
+						<div class="mobile-speakers-table__name"><?php echo $name; ?></div>
+					<?php endif; ?>
+					<?php if ( ! empty( $title ) ) : ?>
+						<div class="mobile-speakers-table__title">Title: <?php echo $title; ?></div>
+					<?php endif; ?>
+					<?php if ( ! empty( $travels_from ) ) : ?>
+						<div class="mobile-speakers-travels">Travels From: <?php echo $travels_from; ?></div>
+					<?php endif; ?>
+					<?php if ( ! empty( $specializes ) ) : ?>
+						<div class="mobile-speakers-table__specializes">Specializes In: <?php echo $specializes; ?></div>
+					<?php endif; ?>
+					<?php if ( ! empty( $bio ) ) : ?>
+						<div class="mobile-speakers-table__bio lmb0">Bio: <?php echo $bio; ?></div>
+					<?php endif; ?>
+				</div>
+			</div>
+		<?php endforeach; ?>
+	</div>
+	<?php
+}
+
+function objectiv_do_new_consultants_table_desk( $speakers = null ) {
+	?>
+		<div class="speakers-table-outer-wrap">
+			<div class="mlra">
+			<!-- Top Row -->
+			<div class="speakers-table-row speakers-table-top-row">
+				<div class="speakers-table-title-block top-row"></div>
+				<?php foreach ( $speakers as $speaker ) : ?>
+					<?php
+					$img        = $speaker['headshot']['sizes']['large-square'];
+					$name       = $speaker['name'];
+					$name_class = obj_id_from_string( $name, false );
+					?>
+					<div class="speaker-person-block speaker-top <?php echo $name_class; ?>">
+						<img src="<?php echo $img; ?>" alt="<?php echo $name; ?>" class="speaker-person-headshot">
+						<span class="speaker-person-name"><?php echo $name; ?></span>
+					</div>
+				<?php endforeach; ?>
+			</div>
+
+			<!-- Title Row -->
+			<div class="speakers-table-row">
+				<div class="speakers-table-title-block">Title</div>
+				<?php foreach ( $speakers as $speaker ) : ?>
+					<?php
+					$title      = $speaker['title'];
+					$name       = $speaker['name'];
+					$name_class = obj_id_from_string( $name, false );
+					?>
+					<div class="speaker-person-block speaker-title <?php echo $name_class; ?>">
+						<span class="speaker-person-title"><?php echo $title; ?></span>
+					</div>
+				<?php endforeach; ?>
+			</div>
+
+			<!-- Travels From Row -->
+			<div class="speakers-table-row">
+				<div class="speakers-table-title-block">Travels From</div>
+				<?php foreach ( $speakers as $speaker ) : ?>
+					<?php
+					$travels    = $speaker['travels_from'];
+					$name       = $speaker['name'];
+					$name_class = obj_id_from_string( $name, false );
+					?>
+					<div class="speaker-person-block speaker-travels <?php echo $name_class; ?>">
+						<span class="speaker-person-travels"><?php echo $travels; ?></span>
+					</div>
+				<?php endforeach; ?>
+			</div>
+
+			<!-- Specializes In Row -->
+			<div class="speakers-table-row">
+				<div class="speakers-table-title-block">Specializes In</div>
+				<?php foreach ( $speakers as $speaker ) : ?>
+					<?php
+					$specializes = $speaker['specializes_in'];
+					$name        = $speaker['name'];
+					$name_class  = obj_id_from_string( $name, false );
+					?>
+					<div class="speaker-person-block speaker-specializes <?php echo $name_class; ?>">
+						<span class="speaker-person-specializes"><?php echo $specializes; ?></span>
+					</div>
+				<?php endforeach; ?>
+			</div>
+
+			<!-- Bio Row -->
+			<div class="speakers-table-row">
+				<div class="speakers-table-title-block">Bio</div>
+				<?php foreach ( $speakers as $speaker ) : ?>
+					<?php
+					$bio        = $speaker['bio'];
+					$name       = $speaker['name'];
+					$name_class = obj_id_from_string( $name, false );
+					?>
+					<div class="speaker-person-block speaker-bio <?php echo $name_class; ?>">
+						<span class="speaker-person-bio lmb0"><?php echo $bio; ?></span>
+					</div>
+				<?php endforeach; ?>
+			</div>
+			</div>
+		</div>
+		<?php
+}

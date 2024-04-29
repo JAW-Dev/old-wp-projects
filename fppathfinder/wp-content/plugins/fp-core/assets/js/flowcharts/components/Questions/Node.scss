@@ -1,0 +1,25 @@
+.node {
+	position: relative;
+	box-sizing: content-box;
+	display: flex;
+	justify-content: center;
+	width: 300px;
+	min-height: 59px;
+	padding: 2rem 0;
+
+	@media (max-width: 1246px) {
+		padding: 0.5rem 0;
+	}
+
+	&__body {
+		width: 300px;
+		padding: 1rem;
+		color: white;
+		text-align: center;
+		box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+		p {
+			margin: 0;
+		}
+	}
+}

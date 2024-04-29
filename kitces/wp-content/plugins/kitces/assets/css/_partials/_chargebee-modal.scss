@@ -1,0 +1,25 @@
+.kitces-cc-alert,
+.kitces-password-reset-modal {
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__dismiss {
+		margin-top: 1rem;
+		font-size: rem(12);
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.kitces-password-reset-modal {
+	.modaal-container {
+		display: flex;
+	}
+}

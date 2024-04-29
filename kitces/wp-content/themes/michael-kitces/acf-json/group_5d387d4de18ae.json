@@ -1,0 +1,68 @@
+{
+    "key": "group_5d387d4de18ae",
+    "title": "Quiz Feedback Survey",
+    "fields": [
+        {
+            "key": "field_5d387d676df71",
+            "label": "Feedback Survey",
+            "name": "quiz_feedback_survey",
+            "type": "button_group",
+            "instructions": "Which feedback survey would you like to display? (Particular survey forms are set here <a target=\"_blank\" href=\"\/wp\/wp-admin\/admin.php?page=quiz-feedback-surveys\">here<\/a>.)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "live": "Live",
+                "ethics": "Ethics"
+            },
+            "allow_null": 0,
+            "default_value": "default",
+            "layout": "horizontal",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_parent",
+                "operator": "==",
+                "value": "761"
+            }
+        ],
+        [
+            {
+                "param": "page_parent",
+                "operator": "==",
+                "value": "6719"
+            }
+        ],
+        [
+            {
+                "param": "page_parent",
+                "operator": "==",
+                "value": "2735"
+            }
+        ],
+        [
+            {
+                "param": "page_parent",
+                "operator": "==",
+                "value": "37014"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1592949037
+}

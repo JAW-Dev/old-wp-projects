@@ -1,0 +1,18 @@
+{
+    "name": "objectiv/kitces-star-rating",
+    "description": "A/B Test Star Ratings on posts.",
+    "version": "1.0.0",
+    "license": "GPL-2.0",
+    "authors": [{ "name": "objectiv" }],
+    "config": {
+        "optimize-autoloader": true,
+        "classmap-authoritative": true
+    },
+    "autoload": {
+        "psr-4": {"KitcesStarRating\\": "includes/classes"},
+        "classmap": [
+            "includes/classes"
+        ],
+        "files": []
+    }
+}

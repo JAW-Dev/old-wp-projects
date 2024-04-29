@@ -1,0 +1,273 @@
+{
+    "key": "group_609e8a4280bce",
+    "title": "Settings - Announcements",
+    "fields": [
+        {
+            "key": "field_609e8a5f60cc8",
+            "label": "Announcements to Display",
+            "name": "announcements_to_display",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Announcement",
+            "sub_fields": [
+                {
+                    "key": "field_609eb2295536b",
+                    "label": "Display Options",
+                    "name": "display_options",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "off": "Off",
+                        "on": "On",
+                        "schedule": "Schedule"
+                    },
+                    "allow_null": 0,
+                    "default_value": "off",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_609eb28c3690d",
+                    "label": "Start Display",
+                    "name": "start_display",
+                    "type": "date_time_picker",
+                    "instructions": "Time to start displaying this announcement in EST. This is required if \"Schedule\" is your display setting.",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_609eb2295536b",
+                                "operator": "==",
+                                "value": "schedule"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "d\/m\/Y g:i a",
+                    "return_format": "Y-m-d H:i:s",
+                    "first_day": 1
+                },
+                {
+                    "key": "field_609eb2d63690e",
+                    "label": "Stop Display",
+                    "name": "stop_display",
+                    "type": "date_time_picker",
+                    "instructions": "Time to stop displaying this announcement in EST. If no end date\/time is selected as long as we're past the Start Display setting we'll display this announcement.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_609eb2295536b",
+                                "operator": "==",
+                                "value": "schedule"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "d\/m\/Y g:i a",
+                    "return_format": "Y-m-d H:i:s",
+                    "first_day": 1
+                },
+                {
+                    "key": "field_609e8b9881d89",
+                    "label": "Notification Location",
+                    "name": "notification_location",
+                    "type": "select",
+                    "instructions": "If no location selected this notification will not be displayed.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "member-banner": "Member Page Banner",
+                        "before-posts": "Before Posts"
+                    },
+                    "default_value": false,
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_609ea6cc02f73",
+                    "label": "Announcement Blurb",
+                    "name": "announcement_blurb",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_609ea6e902f74",
+                    "label": "Style",
+                    "name": "style",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "bg-light-orange": "Light Orange BG",
+                        "bg-dark-orange": "Dark Orange Bg",
+                        "custom": "Custom"
+                    },
+                    "allow_null": 0,
+                    "default_value": "bg-light-orange",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_609ea71002f75",
+                    "label": "Background Color",
+                    "name": "background_color",
+                    "type": "color_picker",
+                    "instructions": "Note... if nothing is set here, or text color isn't set we'll use a default of #fcf8e3",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_609ea6e902f74",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": ""
+                },
+                {
+                    "key": "field_609ea73102f76",
+                    "label": "Text Color",
+                    "name": "text_color",
+                    "type": "color_picker",
+                    "instructions": "Note... if nothing is set here, or background isn't set we'll use a default of #c09853",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_609ea6e902f74",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": ""
+                },
+                {
+                    "key": "field_609ea76802f77",
+                    "label": "Link Color",
+                    "name": "link_color",
+                    "type": "color_picker",
+                    "instructions": "Note... if nothing is set here we'll use a default of #00c",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_609ea6e902f74",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": ""
+                },
+                {
+                    "key": "field_609ea7ae02f78",
+                    "label": "Include Exclamation Mark",
+                    "name": "include_exclamation_mark",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "announcements-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1621023351
+}

@@ -1,0 +1,30 @@
+{
+	"name": "objectiv/kitces",
+	"description": "Custom features for kitces.com",
+	"version": "1.0.0",
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "objectiv"
+		}
+	],
+	"config": {
+		"optimize-autoloader": true,
+		"classmap-authoritative": true
+	},
+	"autoload": {
+		"psr-4": {
+			"Kitces\\": "includes/classes"
+		},
+		"classmap": [
+			"includes/classes"
+		],
+		"files": [
+			"includes/functions/favorite-posts.php",
+			"includes/functions/svg.php"
+		]
+	},
+	"require": {
+		"facebook/php-business-sdk": "^12.0"
+	}
+}

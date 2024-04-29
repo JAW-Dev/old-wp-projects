@@ -1,0 +1,21 @@
+.account-settings__body {
+	.body-section__integrations {
+		.white-content-box__left {
+			padding-right: 1.5rem;
+		}
+
+		.white-content-box__right {
+			display: flex;
+			align-items: center;
+		}
+
+		.integration-settings {
+			display: inline-block;
+			width: rem(24);
+			min-width: rem(24);
+			height: rem(24);
+			min-height: rem(24);
+			margin-left: rem(33);
+		}
+	}
+}

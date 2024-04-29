@@ -1,0 +1,65 @@
+// Background Color
+.bg-action {
+    background-color: $action-color;
+}
+
+.bg-dark-gray {
+    background-color: $dark-gray;
+}
+
+.bg-light-gray {
+    background-color: $light-gray;
+}
+
+.bg-medium-gray {
+    background-color: $medium-gray;
+}
+
+.bg-primary {
+    background-color: $primary-color;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-blocks {
+    position: relative;
+
+    &:before {
+        background-image: url("assets/images/angle-block.png");
+        background-repeat: repeat;
+        background-size: 250px;
+        bottom: 0;
+        content: "";
+        left: 0;
+        opacity: 0.05;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.bg-exes {
+    position: relative;
+    background-color: #a7d0cd;
+
+    &:before {
+        background-image: url("assets/images/exes.png");
+        background-repeat: repeat;
+        background-size: 32px;
+        bottom: 0;
+        content: "";
+        left: 0;
+        opacity: 0.1;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

@@ -1,0 +1,129 @@
+.fifty-image-content__inner {
+  position: relative;
+}
+
+.fifty-image-content__row {
+  margin-bottom: $section-margin;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .fifty-image-content__first {
+    margin-bottom: $base-spacing * 2;
+  }
+
+  @include media($large-screen-up) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &.reversed {
+      flex-direction: row-reverse;
+    }
+
+    .fifty-image-content__first,
+    .fifty-image-content__second {
+      width: 47%;
+    }
+
+    &:nth-child(even) {
+      .fifty-image-content__first {
+        order: 2;
+        padding-left: $base-spacing * 4;
+        padding-right: 0;
+      }
+
+      .fifty-image-content__second {
+        order: 1;
+      }
+
+      .magnify-wrap {
+        right: auto;
+        left: $base-spacing;
+      }
+    }
+  }
+}
+
+.fifty-image-content-image__pop-link {
+  &:hover {
+    .fifty-image-content__image {
+      transform: scale(1.025);
+    }
+
+    .magnify-wrap {
+      opacity: 1;
+    }
+  }
+}
+
+.fifty-image-content__image-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  position: relative;
+
+  .fifty-image-content__become-member {
+    font-size: rem(24);
+    margin: 0;
+    padding: $base-spacing;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+
+    .already-member {
+      font-size: rem(16);
+    }
+  }
+}
+
+.fifty-image-content__image {
+  border-radius: $base-border-radius;
+  border: $base-border;
+  box-shadow: $base-box-shadow;
+  display: block;
+  transition: transform $base-duration $base-timing;
+  width: 100%;
+}
+
+.fifty-image-content__title-wrap {
+  @extend .has-border-notch-b;
+  background: white;
+  margin-bottom: $base-spacing;
+  padding: $base-spacing * 1.5;
+  text-align: center;
+}
+
+.fifty-image-content__title {
+  color: $blue;
+  font-size: rem(40);
+  margin-bottom: 0;
+}
+
+.fifty-image-content__blurb-wrap {
+  @extend .has-border-notch-b;
+  @extend .has-border-notch-t;
+  background: white;
+  margin-bottom: $base-spacing * 2;
+  padding: $base-spacing * 1.5;
+  text-align: center;
+}
+
+.fifty-image-content__button-wrap {
+  text-align: center;
+}
+
+.magnify-wrap {
+  background: $dark-gray;
+  border-radius: $base-border-radius;
+  bottom: $base-spacing;
+  display: flex;
+  opacity: 0.7;
+  padding: rem(12);
+  position: absolute;
+  right: $base-spacing;
+  transition: opacity $base-duration $base-timing;
+}

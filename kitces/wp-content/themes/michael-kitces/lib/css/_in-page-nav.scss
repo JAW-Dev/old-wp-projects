@@ -1,0 +1,29 @@
+.in-page-nav-section {
+	background-color: $medium-blue;
+
+	.in-page-nav-inner {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: rem(28) 0;
+
+		@media ($large-screen-up) {
+			margin: rem(16) 0;
+		}
+	}
+
+	a {
+		color: white;
+		padding: rem(12);
+		text-decoration: none;
+
+		@media ($large-screen-up) {
+			padding: rem(16) rem(32);
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

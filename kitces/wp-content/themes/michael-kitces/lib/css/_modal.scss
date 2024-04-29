@@ -1,0 +1,93 @@
+body .modaal-overlay {
+	z-index: 999998;
+}
+
+body .modaal-wrapper {
+	z-index: 999999;
+
+	.modaal-close {
+		position: absolute;
+		background: transparent;
+		box-shadow: none;
+		width: 22px;
+		height: 22px;
+
+		&:before,
+		&:after {
+			background-color: #b93d0c;
+			top: 0px;
+			left: 9px;
+
+			&:hover {
+				background-color: lighten(#b93d0c, 25%);
+			}
+		}
+
+		&:hover {
+			&:before,
+			&:after {
+				background-color: lighten(#b93d0c, 25%);
+			}
+		}
+	}
+}
+
+body .inline-modaal {
+	.modaal-container {
+		padding: rem(15);
+		color: #444444;
+		text-shadow: none;
+		background: #f9f9f9;
+		border-radius: 4px;
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	}
+	.modaal-content-container {
+		padding: 0;
+	}
+	.modaal-close {
+		top: rem(5);
+		right: rem(5);
+	}
+
+	.modaal-gallery-control {
+		width: 30px;
+		height: 30px;
+		padding: 0;
+		background: #000;
+
+		&:before,
+		&:after {
+			top: 6px;
+			left: 14px;
+			width: 4px;
+			height: 18px;
+			background: #fff;
+		}
+	}
+
+	.modaal-gallery-next {
+		left: 98.5% !important;
+		margin-left: 0;
+
+		&:before,
+		&:after {
+			left: 14px;
+		}
+	}
+
+	.modaal-gallery-prev {
+		right: 98% !important;
+		margin-right: 0;
+
+		&:before,
+		&:after {
+			left: 12px;
+		}
+	}
+}
+
+.ie-modal-outer-wrap {
+	.modaal-confirm-btn.modaal-cancel {
+		display: none;
+	}
+}

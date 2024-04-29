@@ -1,0 +1,31 @@
+.file-container {
+	margin-top: rem(18);
+
+	.logo-upload-field {
+		display: none;
+	}
+
+	.logo-btn {
+		padding: 0 rem(8);
+		font-size: rem(16);
+		font-weight: 600;
+		line-height: 19px;
+		color: #293d52;
+		letter-spacing: 0.5px;
+		background: none;
+		background-color: transparent;
+		border-right: 2px solid #293d52;
+		border-radius: 0;
+		transition: color 0.3s ease;
+
+		&:hover {
+			color: #3b82f6;
+			background: none;
+			background-color: transparent;
+		}
+	}
+
+	.file-upload-mock-btn {
+		border-right: none;
+	}
+}

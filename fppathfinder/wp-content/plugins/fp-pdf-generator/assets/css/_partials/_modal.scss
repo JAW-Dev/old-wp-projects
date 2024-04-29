@@ -1,0 +1,46 @@
+.modal-dialog{
+	outline: none;
+
+	.modal-body {
+		margin: 2rem 0 0;
+	}
+
+	.modal-header {
+		text-align: center;
+	}
+
+	.modal-controls {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+
+		button {
+			padding: .8125rem 0.05rem;
+			margin: 0.25rem;
+			background: transparent;
+			.svg {
+				position: relative;
+				top: 3px;
+			}
+			.vert {
+				transform: rotate( 90deg );
+			}
+
+		}
+		.form-button {
+			color: #3f3f3f;
+			&:hover,
+			&:active {
+				font-weight: 500;
+				text-decoration: underline;
+				transition: none;
+			}
+		}
+		.crop-button {
+			margin-left: auto;
+		}
+		.cancel-button {
+			margin-right: auto;
+		}
+	}
+}

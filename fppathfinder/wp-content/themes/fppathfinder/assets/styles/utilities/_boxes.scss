@@ -1,0 +1,13 @@
+.call-out-block {
+  border-radius: $base-border-radius;
+  border: $base-border;
+  box-shadow: $base-box-shadow;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 860px;
+  padding: $base-spacing * 1.5;
+
+  @include media($medium-screen-up) {
+    padding: $base-spacing * 4;
+  }
+}

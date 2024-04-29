@@ -1,0 +1,93 @@
+{
+    "key": "group_58d42e8be9de5",
+    "title": "Quiz Articles",
+    "fields": [
+        {
+            "key": "field_58d42ea048f45",
+            "label": "Article",
+            "name": "article",
+            "type": "repeater",
+            "instructions": "Use this shortcode to display these links in the content area on this page. [quiz-articles]",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Article Link",
+            "sub_fields": [
+                {
+                    "key": "field_5a4ba7fa10294",
+                    "label": "Article Link",
+                    "name": "article_link",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "post"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
+                },
+                {
+                    "key": "field_5a4baa45a8555",
+                    "label": "Article Title Override",
+                    "name": "article_title_override",
+                    "type": "text",
+                    "instructions": "Note: Default is the actual post title, use this to override the title if you want it to be different than the post title.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_parent",
+                "operator": "==",
+                "value": "761"
+            }
+        ],
+        [
+            {
+                "param": "page_parent",
+                "operator": "==",
+                "value": "6719"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1515166109
+}

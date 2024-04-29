@@ -1,0 +1,155 @@
+.mem-head {
+  background-color: $light-blue;
+}
+
+.mem-head-img {
+  margin-bottom: $base-spacing * 2;
+
+  img {
+    display: block;
+  }
+}
+
+.mem-head-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  .smaller-button {
+    margin-top: $base-spacing/2;
+  }
+}
+
+@media (min-width: 800px) {
+  .mem-head > .wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .mem-head-img {
+    width: 40%;
+    margin-bottom: 0;
+  }
+
+  .mem-head-content {
+    width: 60%;
+    padding-left: $base-spacing * 2;
+  }
+
+  .mem-head-footer {
+    flex-direction: row;
+
+    .smaller-button {
+      margin-left: $base-spacing;
+      margin-top: 0;
+    }
+  }
+}
+
+// First Content Section
+.members2 .nerds-eye-view-testimonials .slick-list {
+  border: 1px solid $blue;
+}
+
+.mem-first-content p {
+  font-size: 24px;
+}
+
+// Second Content Section
+.mem-second-content {
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    border-bottom: none;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    color: $blue-600;
+    font-family: 'Lato';
+    font-size: 26px;
+    font-weight: normal;
+    text-transform: none;
+  }
+
+  .call-out-text {
+    color: $dark-blue;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+
+  .wrap > *:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.second-content-img-box {
+  border: 1px solid $blue;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $base-spacing;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 160px;
+  padding: $base-spacing;
+
+  @media (min-width: 450px) {
+    float: right;
+    margin-left: $base-spacing;
+  }
+
+  > div {
+    margin-bottom: $base-spacing;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.mem-second-images-wrap {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: $base-spacing * 2;
+  margin-bottom: $base-spacing * 2;
+
+  img {
+    display: block;
+    margin-right: $base-spacing;
+    max-height: 200px;
+    max-width: 250px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+
+    img {
+      margin-right: 0;
+    }
+  }
+}
+
+// pricing Table Section
+.pricing-table-footer {
+  h3 {
+    color: $text-gray;
+    text-transform: none;
+    margin-bottom: 10px;
+  }
+}
+
+.pricing-pre-content p {
+  font-size: 20px;
+}

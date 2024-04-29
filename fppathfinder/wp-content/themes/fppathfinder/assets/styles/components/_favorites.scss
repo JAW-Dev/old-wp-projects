@@ -1,0 +1,32 @@
+.favorite-wrap {
+  margin-bottom: $base-spacing;
+
+  &.is-favorited svg {
+    color: $gold;
+  }
+}
+
+button.favorite-toggle-trigger {
+  align-items: center;
+  background: none !important;
+  color: $blue;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  outline: none !important;
+  padding: 0;
+  text-decoration: underline;
+  text-transform: capitalize;
+
+  svg {
+    color: transparent;
+    margin-right: rem(12);
+    max-width: rem(28);
+    min-width: rem(28);
+  }
+
+  &:active,
+  &:focus {
+    opacity: 1 !important;
+  }
+}

@@ -1,0 +1,12 @@
+.mk-modal-inner-inner {
+	.button-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		gap: rem(24);
+		justify-content: center;
+		align-items: flex-end;
+
+		> div {
+		}
+	}
+}

@@ -1,0 +1,77 @@
+.share-link-page {
+	.site-header,
+	.footer-cta {
+		display: none;
+	}
+
+	.page-banner {
+		background-color: transparent;
+
+		.wrap {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		&__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 0;
+
+			@include media($medium-screen-up) {
+				flex-direction: row;
+				align-items: initial;
+			}
+		}
+
+		&__title-wrap {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-grow: 1;
+			background-color: #382f40;
+			margin-right: 0;
+			padding: 3rem 0;
+
+			@include media($medium-screen-up) {
+				padding: 3rem 5%;
+				margin-right: 1rem;
+			}
+		}
+
+		&__title {
+			font-size: 2rem;
+			padding: 0 1rem;
+		}
+
+		&__logo {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 300px;
+			margin: 0;
+			padding: 2rem 0 0;
+			box-sizing: content-box;
+			text-align: center;
+			color: #3f3f3f;
+			font-size: 0.9rem;
+
+			@include media($medium-screen-up) {
+				padding: 0.5rem 1rem 0.5rem 0;
+			}
+
+			img {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+
+	.disclaimer {
+		font-size: 0.9rem;
+		margin-top: 2rem;
+	}
+
+	.single-checklist-content-outer {
+		padding: 6rem 0;
+	}
+}

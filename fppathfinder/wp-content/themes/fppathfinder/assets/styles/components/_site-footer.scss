@@ -1,0 +1,29 @@
+.site-footer {
+  background-color: $footer-bg-gray;
+  font-size: rem(16);
+  line-height: $base-line-height;
+  padding: $base-spacing 0;
+  text-align: center;
+
+  .post-type-archive-resource & {
+    background-color: $light-gray;
+  }
+
+  a {
+    color: $blue;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+@include media($large-screen-up) {
+  .footer-left {
+    float: left;
+  }
+
+  .footer-right {
+    float: right;
+  }
+}

@@ -1,0 +1,167 @@
+.course-catalog-section {
+	margin-bottom: $base-spacing * 2;
+}
+
+.course-catalog-section-wrap {
+	margin-bottom: $base-spacing * 2;
+}
+
+.cont-type-title {
+	margin-bottom: $base-spacing/2;
+	padding-bottom: $base-spacing/4;
+	border-color: $medium-blue;
+}
+
+$accordion-template-close-color: $text-gray;
+$accordion-template-info-color: #686868;
+
+.accordion-block {
+	.accordion-icon-wrapper,
+	.accordion-icon-wrapper svg {
+		position: relative;
+		right: auto;
+		top: auto;
+		transform: none;
+		width: 40px;
+		height: auto;
+		display: flex;
+		align-items: center;
+	}
+
+	.accordion-icon-wrapper {
+		margin-right: 28px;
+
+		svg {
+			path,
+			polygon {
+				fill: $action-color !important;
+			}
+		}
+	}
+
+	box-sizing: border-box;
+
+	.title-wrap {
+		.title {
+			width: 100%;
+			color: $text-gray;
+		}
+	}
+
+	.title {
+		font-weight: bold;
+		text-transform: uppercase;
+		width: 90%;
+
+		display: flex;
+		align-items: center;
+	}
+
+	.accordion-row {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.accordion-title {
+			background: transparent;
+			border: $base-border;
+			color: $text-gray;
+			cursor: pointer;
+			font-weight: bold;
+			padding: 10px 20px;
+			position: relative;
+			text-transform: uppercase;
+			transition: $base-duration $base-timing;
+
+			.svg-wrap svg {
+				transform: translateY(-50%);
+				transition: $base-duration $base-timing;
+				cursor: pointer;
+				height: 30px;
+				position: absolute;
+				right: 15px;
+				top: 50%;
+				width: 30px;
+
+				path,
+				polygon {
+					fill: $accordion-template-close-color;
+				}
+			}
+
+			&:hover {
+				color: $action-color;
+
+				.svg-wrap svg {
+					path,
+					polygon {
+						fill: $action-color;
+					}
+				}
+			}
+
+			&.active {
+				color: $action-color;
+				border-bottom: 0px;
+
+				&:before {
+					background-color: $base-border-color;
+					bottom: 0;
+					content: '';
+					height: 1px;
+					left: 20px;
+					position: absolute;
+					width: 52%;
+				}
+
+				&:after {
+					background-color: $base-border-color;
+					bottom: 0;
+					content: '';
+					height: 1px;
+					position: absolute;
+					right: 20px;
+					width: 52%;
+				}
+
+				.svg-wrap svg {
+					transform: translateY(-50%);
+					background-color: $action-color;
+
+					path,
+					polygon {
+						transform: translate(53%, -25%) rotate(45deg);
+						fill: white;
+					}
+				}
+			}
+		}
+
+		.accordion-info {
+			border: $base-border;
+			border-top: 0px;
+			box-sizing: border-box;
+			color: $accordion-template-info-color;
+			display: none;
+			padding: 20px 20px 5px 20px;
+		}
+
+		&:first-child {
+			padding-top: 0;
+		}
+		&:last-child {
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+	}
+
+	&.quiz-cci {
+		margin-bottom: $base-spacing;
+	}
+
+	.no-results {
+		display: none;
+	}
+}

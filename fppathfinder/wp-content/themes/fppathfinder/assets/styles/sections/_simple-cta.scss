@@ -1,0 +1,35 @@
+.simple-cta-section {
+	&.light-on-dark {
+		background-color: $blue;
+		padding: 4rem 0;
+
+		.section-title {
+			color: white;
+		}
+	}
+
+	&.remove-margin {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+	&.remove-top-margin {
+		margin-top: 0 !important;
+	}
+
+	&.remove-bottom-margin {
+		margin-bottom: 0 !important;
+	}
+
+	.simple-cta-section-inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.section-title {
+			font-size: 3rem;
+			margin-bottom: 3rem;
+			text-align: center;
+		}
+	}
+}

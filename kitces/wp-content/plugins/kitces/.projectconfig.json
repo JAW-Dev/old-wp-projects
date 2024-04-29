@@ -1,0 +1,14 @@
+{
+	"names": { "capitalized": "Kitces", "capitalizedNoSpace": "Kitces", "underscoreUpper": "Kitces", "underscoreLower": "kitces", "dashLower": "kitces" },
+	"authors": { "capitalized": "Objectiv", "dashLower": "objectiv" },
+	"description": "Custom features for kitces.com",
+	"prefix": "KITCES",
+	"version": "1.0.0",
+	"uri": "https://objectiv.co/",
+	"date": "2020",
+	"source": "template",
+	"install": false,
+	"prefixLower": "kitces",
+	"underscoreLower": "kitces",
+	"rootDir": "/Volumes/WebDev/sites/Objectiv/kitces/site/wp-content/plugins/kitces"
+}

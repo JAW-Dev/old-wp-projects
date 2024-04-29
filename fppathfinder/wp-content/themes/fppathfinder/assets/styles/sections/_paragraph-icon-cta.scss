@@ -1,0 +1,44 @@
+.paragraph-icon-cta-section {
+	background-color: $light-gray;
+	padding: 6rem 0;
+
+	.section-header  {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+}
+
+.paragraph-icon-cta {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: rem(-65);
+
+	&__item {
+		max-width: 100%;
+		padding: 0 1rem;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: rem(65);
+
+		@include media($medium-screen-up) {
+			max-width: 50%;
+		}
+
+		@include media($large-screen-up) {
+			max-width: 25%;
+		}
+	}
+
+	&__image {
+		max-height: 6.5rem;
+		width: auto;
+		margin-bottom: rem(24);
+	}
+
+	&__body {
+		text-align: center;
+	}
+}

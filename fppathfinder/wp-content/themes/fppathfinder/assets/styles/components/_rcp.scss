@@ -1,0 +1,113 @@
+.rcp_discount_code_field_wrap {
+
+    @media (max-width:449px) {
+        .rcp_button {
+            margin-top: $base-spacing;
+            display: block;
+            width: 100%;
+        }
+    }
+
+
+    @media (min-width:450px) {
+        display: flex;
+
+        .rcp_button {
+            height: 37px;
+            margin-left: $base-spacing;
+            margin-top: 0;
+            max-width: 250px;
+            padding: 0 $base-spacing;
+        }
+    }
+
+}
+
+.entry-content .rcp_subscription_fieldset ul > li {
+    list-style-type: none;
+}
+
+.rcp_header {
+    text-align: center;
+}
+
+.rcp_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+
+    fieldset {
+        margin: $base-spacing*1.5 0 !important;
+
+        &:first-of-type {
+            margin-top: 0 !important;
+        }     
+
+        &:last-of-type {
+            margin-bottom: 0 !important;
+        }   
+    }
+}
+
+@include media( $medium-screen-up ) {
+    .rcp_user_fieldset,
+    .rcp_discounts_fieldset,
+    .rcp_gateway_stripe_fields,
+    .rcp_card_fieldset,
+    #rcp_profile_editor_form fieldset {
+        p {
+            display: flex;
+            align-items: center
+        }
+
+        label {
+            min-width: 190px;
+        }
+    }
+}
+
+.rcp_gateway_stripe_fields {
+    margin: $base-spacing*1.5 0;
+}
+
+.rcp_expiry_separator {
+    display: none;
+
+    @include media( $medium-screen-up ) {
+        display: block;
+    }
+}
+
+.rcp_card_exp_month,
+.rcp_card_exp_year {
+    margin: 0 0 $small-spacing;
+    min-width: 100%;
+
+    @media (min-width:340px) {
+        min-width: 49%;        
+    }
+
+    @include media( $medium-screen-up ) {
+        margin: 0;
+        min-width: auto;
+    }
+}
+
+p#rcp_card_exp_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    label {
+        min-width: 100%;
+    }
+
+    @include media( $medium-screen-up ) {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        label {
+            min-width: 190px;
+        }
+    }
+}

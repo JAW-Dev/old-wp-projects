@@ -1,0 +1,134 @@
+$unscrolled-link-color: $blue;
+$unscrolled-link-color-hover: rgba($blue, 0.8);
+$scrolled-link-color: $blue;
+$scrolled-link-color-hover: rgba($blue, 0.8);
+$sub-nav-bg-color: white;
+$sub-nav-link-color: $base-font-color;
+$sub-nav-link-color-hover: rgba($base-font-color, 0.8);
+
+.genesis-nav-menu {
+  clear: both;
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  line-height: 1;
+  margin: 0;
+  width: 100%;
+
+  ul {
+    margin: 0 !important;
+  }
+}
+
+.genesis-nav-menu .menu-item {
+  display: inline-block;
+  font-size: $base-font-size;
+  margin-bottom: 0;
+  text-align: left;
+
+  > a {
+    color: $unscrolled-link-color;
+    display: block;
+    padding-left: $small-spacing * 0.9;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color $base-duration $base-timing;
+
+    @media (min-width: 900px) {
+      padding: $small-spacing;
+    }
+
+    .scrolled & {
+      color: $scrolled-link-color;
+    }
+  }
+
+  a:hover,
+  a:focus,
+  &.current-menu-item > a,
+  &.current-menu-ancestor > a,
+  &.current-menu-parent > a {
+    color: $unscrolled-link-color-hover;
+
+    .scrolled & {
+      color: $scrolled-link-color-hover;
+    }
+  }
+
+  .sub-menu {
+    left: -9999px;
+    opacity: 0;
+    position: absolute;
+    width: 200px;
+    z-index: 100;
+    padding-top: rem(24);
+
+    a {
+      background-color: $sub-nav-bg-color;
+      color: $sub-nav-link-color;
+      font-size: $base-font-size;
+      padding: $small-spacing;
+      position: reative;
+      transition: all $base-duration $base-timing;
+      width: 200px;
+    }
+
+    a:hover,
+    .current-menu-item > a:hover,
+    .current-menu-item > a:focus {
+      color: $sub-nav-link-color-hover;
+    }
+
+    .sub-menu {
+      margin: -41px 0 0 199px;
+    }
+
+    &.edge {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    position: static;
+
+    > .sub-menu {
+      left: auto;
+      opacity: 1;
+    }
+  }
+
+  &:first-child > a {
+    padding-left: 0;
+  }
+
+  .sub-menu .menu-item:first-child > a {
+    padding-left: $small-spacing;
+  }
+
+  &:last-child > a,
+  &.last > a {
+    padding-right: 0;
+  }
+
+  .sub-menu .menu-item:last-child > a,
+  .sub-menu .menu-item.last > a {
+    padding-right: $small-spacing;
+  }
+}
+
+.nav-primary {
+  display: none;
+
+  .wrap {
+    width: 100%;
+  }
+
+  .sub-menu .menu-item a {
+    background: $sub-nav-bg-color;
+  }
+
+  @include media($grande-screen-up) {
+    display: block;
+  }
+}

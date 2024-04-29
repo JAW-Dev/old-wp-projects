@@ -1,0 +1,150 @@
+.account-block.one-half.first.password-change,
+.account-block.one-half.password-change.centered {
+	position: relative;
+	overflow: hidden;
+
+	.password-reset-form {
+		@import '../notification';
+
+		&__form-controll {
+			margin-bottom: rem(15);
+		}
+
+		&__label {
+			display: block;
+			font-size: rem(16);
+		}
+
+		&__text-input-wrap {
+			position: relative;
+		}
+
+		&__text-input {
+			width: 100%;
+			padding: rem(8) rem(10);
+			font-size: rem(16);
+			border-style: solid;
+			border-width: rem(1);
+			border-radius: rem(5);
+		}
+
+		&__submit {
+			display: block;
+			width: 100%;
+			max-width: rem(350);
+			padding-top: rem(20);
+			padding-bottom: rem(20);
+			margin: rem(15) auto;
+			font-size: rem(15);
+			font-weight: bold;
+			text-transform: uppercase;
+			border-style: solid;
+			border-width: rem(1);
+			border-radius: rem(50);
+		}
+
+		&__meter {
+			display: flex;
+			gap: rem(16);
+			min-height: rem(31);
+
+			> div {
+				display: none;
+				width: 20%;
+				padding: rem(5);
+				font-size: rem(12);
+				color: white;
+				text-align: center;
+				border: 1px solid #cccccc;
+				border-radius: rem(5);
+			}
+		}
+
+		&__meter-very-weak {
+			background-color: #ff0000;
+		}
+
+		&__meter-weak {
+			background-color: #d96800;
+		}
+
+		&__meter-medium {
+			background-color: #ad8d00;
+		}
+
+		&__meter-strong {
+			background-color: #82a502;
+		}
+
+		&__meter-very-weak,
+		&__meter-weak,
+		&__meter-medium,
+		&__meter-strong {
+			&.show {
+				display: block;
+			}
+		}
+
+		&__tooltip {
+			max-width: rem(280);
+		}
+
+		&__content {
+			&-label {
+				display: flex;
+				justify-content: space-between;
+				align-self: center;
+				font-size: rem(13);
+				padding-bottom: rem(4);
+
+				&:last-child {
+					padding-bottom: 0;
+				}
+			}
+
+			&-text {
+				max-width: rem(200);
+
+				&.red {
+					color: red;
+				}
+			}
+		}
+
+		&__icons {
+			position: relative;
+		}
+
+		&__icon {
+			width: rem(20);
+			height: rem(20);
+
+			&.times {
+				display: block;
+
+				svg {
+					fill: #ff0000;
+				}
+			}
+
+			&.check {
+				display: none;
+
+				svg {
+					fill: #82a502;
+				}
+			}
+		}
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		opacity: 0.2;
+	}
+}

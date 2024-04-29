@@ -1,0 +1,58 @@
+// Dependencies
+@import 'dependencies';
+
+.group-price-quote-table {
+	max-width: 650px;
+	margin: 0 auto 40px;
+}
+
+.group-price-quote {
+	max-width: 650px;
+	padding: 1rem;
+	margin: 0 auto;
+	color: white;
+	background-color: #56a3d9;
+	border-radius: rem(10);
+
+	&__heading {
+		width: 100%;
+		margin-bottom: rem(5);
+		font-family: Montserrat, sans-serif;
+		color: #005392;
+		text-transform: unset;
+		border-bottom: rem(1) solid #005392;
+	}
+
+	h4 {
+		margin-bottom: rem(5);
+		color: white;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: row;
+		padding: 1.5rem 2rem 2rem;
+
+		> div {
+			width: 50%;
+		}
+	}
+
+	&__select {
+		width: rem(80);
+		font-size: 1rem;
+
+		&:focus,
+		&:active {
+			outline: none;
+		}
+	}
+
+	&__disclaimer {
+		font-size: 0.85rem;
+	}
+
+	&__limit {
+		display: none;
+	}
+}

@@ -1,0 +1,37 @@
+.items-grid-wrap {
+    display: grid;
+    grid-gap: $base-spacing*1.5;
+    grid-template-columns: 1fr;
+    margin-top: $base-spacing*2;
+    
+
+    @include media( $large-screen-up ) {
+        grid-gap: $base-spacing*4;
+        grid-template-columns: 1fr 1fr;
+        margin-top: $base-spacing*3;
+    }
+
+}
+
+.items-grid__item {
+    display: flex;
+    margin-bottom: $base-spacing*1.5;
+}
+
+.items-grid__item-number {
+    align-items: center;
+    background-color: $blue;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    font-size: rem(20);
+    height: 32px;
+    justify-content: center;
+    margin-right: $base-spacing;
+    min-width: 32px;
+
+    @include media( $medium-screen-up ) {
+        font-size: rem(22);
+        margin-right: $base-spacing*2;
+    }
+}

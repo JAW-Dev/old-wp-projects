@@ -1,0 +1,44 @@
+body:not(.post-type-archive-resource) {
+  .widget_objectiv_member_welcome_widget {
+    a {
+      text-decoration: underline;
+      margin-bottom: rem(10);
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .white-label-links-list__wrap {
+      a {
+        display: block;
+      }
+    }
+
+    .button {
+      display: block;
+    }
+
+    .button a {
+      text-decoration: none;
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    .logged-out-blurb {
+      margin: rem(16) 0;
+      font-size: rem(18);
+    }
+  }
+}
+
+.white-label-link__wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(10);
+
+  a {
+    margin-right: rem(6);
+    margin-bottom: 0;
+  }
+}

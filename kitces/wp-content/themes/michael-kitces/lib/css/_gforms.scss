@@ -1,0 +1,108 @@
+.gform_wrapper.blue-bg-form_wrapper,
+.gform_confirmation_wrapper.blue-bg-form {
+  background: $light-blue;
+  padding: $base-spacing;
+  border-radius: $base-border-radius;
+  margin: 0;
+
+  .top_label input.medium,
+  .top_label select.medium {
+    width: 100% !important;
+  }
+
+  ul.gform_fields li.gfield {
+    padding-right: 0;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  .gform_footer {
+    padding: 0;
+  }
+
+  .top_label .gfield_label,
+  .gfield_description,
+  .gfield_html,
+  .gfield_checkbox li label,
+  .gfield_radio li label,
+  .gform_confirmation_message {
+    color: white;
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  .gfield_required {
+    color: black;
+  }
+}
+
+// Consulting form height tweaks
+textarea#input_87_9 {
+  height: 230px;
+}
+
+textarea#input_87_11 {
+  height: 120px;
+}
+
+textarea#input_87_12 {
+  height: 95px;
+}
+
+.three-lines textarea {
+  height: 100px !important;
+}
+
+.two-lines textarea {
+  height: 70px !important;
+}
+
+.poll-form-block_wrapper,
+.gform_confirmation_wrapper.poll-form-block {
+  background-color: $light-blue;
+  border-radius: $base-border-radius;
+  margin: rem(28) auto !important;
+  padding: rem(24);
+  color: white;
+
+  @media (min-width: 650px) {
+    float: right;
+    margin: 0 0 rem(28) rem(28) !important;
+    max-width: 300px !important;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  .gform_footer {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .gpoll_ratio_box {
+    background-color: white !important;
+    color: $blue;
+  }
+
+  .gpoll_bar_juice {
+    background-image: -webkit-linear-gradient(
+      top,
+      $text-gray,
+      $text-gray
+    ) !important;
+  }
+
+  .gpoll_field {
+    margin-bottom: 0 !important;
+  }
+}
+
+.gform_wrapper label.gfield_label {
+  white-space: pre-wrap;
+}

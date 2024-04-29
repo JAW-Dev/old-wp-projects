@@ -1,0 +1,77 @@
+.video-content-flex-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(64);
+  max-width: rem(600);
+  text-align: center;
+
+  @include media($large-screen-up) {
+    flex-direction: row;
+    max-width: 100%;
+    text-align: left;
+
+    &.content-left {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &.light-text {
+    color: white;
+  }
+
+  > div {
+    &:last-of-type {
+      margin-top: rem(24);
+
+      @include media($large-screen-up) {
+        margin-top: 0;
+      }
+    }
+
+    @include media($large-screen-up) {
+      width: calc(50% - 32px);
+    }
+  }
+
+  .image-side a {
+    &:hover {
+      img {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .image-wrap {
+    color: white;
+    position: relative;
+
+    .play-wrap {
+      bottom: rem(24);
+      display: flex;
+      max-width: rem(48);
+      position: absolute;
+      right: rem(24);
+
+      svg {
+        width: 100%;
+      }
+    }
+
+    &.dark-play {
+      color: $blue;
+    }
+  }
+
+  img {
+    display: block;
+    transition: opacity $base-timing $base-duration;
+  }
+}

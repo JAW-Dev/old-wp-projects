@@ -1,0 +1,70 @@
+.searchwp-related {
+    background-color: #eee;
+    margin-bottom: $base-spacing;
+    padding: $base-spacing*2;
+
+    .search-wp-related-posts {
+        align-items: stretch;
+        display: flex;
+
+        @media( max-width: 800px ) {
+            flex-direction: column;
+        }
+    }
+
+    h3 {
+        margin-bottom: $base-spacing;
+    }
+
+    .search-wp-related-post {
+        transition: $base-duration $base-timing;
+        align-items: stretch;
+        background-color: white;
+        flex: 1;
+        padding: $base-spacing;
+        text-decoration: none;
+        margin-bottom: $base-spacing;
+
+        &:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        @media( min-width: 801px ) {
+            margin-right: $base-spacing;
+            margin-bottom: 0px;
+
+            &:last-of-type {
+                margin-right: 0px;
+            }
+        }
+
+        &:hover {
+            background-color: $dark-blue;
+
+            .search-wp-related-post-title,
+            .search-wp-related-post-categories {
+                color: white;
+            }
+
+        }
+
+    }
+
+    .search-wp-related-post-title {
+        transition: $base-duration $base-timing;
+        color: $dark-blue;
+        line-height: 1;
+        width: 100%;
+    }
+
+    .search-wp-related-post-categories {
+        transition: $base-duration $base-timing;
+        color: $text-gray;
+        font-size: rem(14px);
+        font-weight: normal;
+        line-height: 1;
+        padding-top: $base-spacing/2;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,11 @@
+// So far everything is happenign in utilities.scss
+.block-footer-buttons-wrap {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: rem(12);
+
+	&.centered {
+		justify-content: center;
+	}
+}

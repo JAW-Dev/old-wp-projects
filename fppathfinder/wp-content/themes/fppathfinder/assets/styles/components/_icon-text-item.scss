@@ -1,0 +1,19 @@
+.icon-text-item {
+    align-items: center;
+    display: flex;
+}
+
+.icon-text-item__icon {
+    min-width: $base-spacing*3.5;
+
+    svg {
+        display: flex;
+        max-height: $base-spacing*2.5;
+        max-width: $base-spacing*2.5;
+    }
+}
+
+.icon-text-item__text {
+    font-size: rem(22);
+    letter-spacing: 1px;
+}

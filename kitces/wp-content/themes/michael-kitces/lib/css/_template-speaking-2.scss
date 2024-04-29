@@ -1,0 +1,475 @@
+.page-section__content,
+.speaker-pricing-bottom-content {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 970px;
+}
+
+.two-column-content {
+	&__content {
+		display: flex;
+		flex-direction: column;
+
+		@media ($large-screen-up) {
+			flex-direction: row;
+		}
+	}
+
+	&__content-left {
+		padding-right: 0;
+
+		@media ($large-screen-up) {
+			min-width: calc(50%);
+			padding-right: 2rem;
+		}
+	}
+
+	&__content-right {
+		padding-left: 0;
+
+		@media ($large-screen-up) {
+			min-width: calc(50%);
+			padding-left: 2rem;
+		}
+	}
+
+	&__wrap h3 {
+		text-align: center;
+		width: 100%;
+	}
+}
+
+.speaking-2 {
+	.section-title {
+		border-bottom: none;
+		font-size: rem(28);
+		font-weight: bold;
+		margin-bottom: rem(24);
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 970px;
+		text-align: center;
+
+		@media ($large-screen-up) {
+			font-size: rem(36);
+			margin-bottom: rem(32);
+		}
+	}
+}
+
+.speaking-banner-outer {
+	@media ($large-screen-up) {
+		align-items: center;
+		display: flex;
+	}
+}
+
+.speaking-banner__content {
+	padding-left: rem(32);
+	padding-right: rem(32);
+	text-align: center;
+
+	@media ($large-screen-up) {
+		padding-left: rem(48);
+		padding-right: rem(48);
+		width: 50%;
+	}
+
+	@media ($grande-screen-up) {
+		padding-left: rem(64);
+		padding-right: rem(64);
+	}
+}
+
+.speaking-banner__image {
+	background-position: 25%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	min-height: 250px;
+	width: 100%;
+
+	@media ($medium-screen-up) {
+		min-height: 325px;
+	}
+
+	@media ($large-screen-up) {
+		background-position: center;
+		min-height: 400px;
+		width: 50%;
+	}
+}
+
+.speaking-banner_page-title {
+	font-size: rem(36);
+
+	@media ($large-screen-up) {
+		font-size: rem(52);
+	}
+}
+
+.speaking-banner__page-sub-title {
+	font-family: $base-ff;
+	font-size: rem(24);
+	font-weight: normal;
+
+	@media ($large-screen-up) {
+		font-size: rem(32);
+		line-height: rem(36);
+	}
+}
+
+.as-seen-logos {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	h2 {
+		border-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	.as-seen-logo img {
+		margin: rem(12) rem(14);
+		max-height: rem(36);
+
+		@media ($medium-screen-up) {
+			margin: rem(16) rem(18);
+		}
+	}
+
+	.as-seen-logo img.emoney {
+		margin-bottom: -5px;
+
+		@media ($medium-screen-up) {
+			margin-bottom: -3px;
+		}
+	}
+
+	a.as-seen-logo {
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+// Speaker Table
+
+.speakers-table-outer-wrap {
+	display: none;
+	margin-top: rem(48);
+
+	@media ($grande-screen-up) {
+		display: block;
+	}
+}
+
+.speakers-table-row {
+	display: flex;
+
+	.speakers-table-title-block {
+		background: white;
+		min-width: 170px;
+		padding: rem(20);
+
+		&.top-row {
+			background: transparent !important;
+		}
+	}
+
+	.speaker-person-block {
+		align-items: center;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: rem(20);
+		text-align: center;
+		width: calc((100% - 170px) / 4);
+
+		.consulting-consultants & {
+			width: calc((100% - 200px) / 2);
+		}
+
+		&.speaker-bio {
+			justify-content: flex-start;
+		}
+
+		&.speaker-top {
+			padding: rem(20) rem(20) rem(14);
+
+			.speaker-person-name {
+				display: block;
+				font-family: $head-ff;
+				font-size: rem(18);
+				font-weight: bold;
+				margin-top: rem(8);
+			}
+		}
+	}
+
+	&:nth-child(even) {
+		.speaker-person-block {
+			background: $speak-mk-blue;
+
+			&.jeffrey_levine {
+				background: $speak-jeff-orange;
+			}
+
+			&.dr_derek_tharp {
+				background: $speak-derek-purple;
+			}
+
+			&.craig_iskowitz {
+				background: $cons-craig-purple;
+			}
+
+			&.meghaan_lurtz {
+				background: $speak-meghan-l;
+			}
+		}
+	}
+
+	&:nth-child(odd) {
+		.speakers-table-title-block {
+			background: rgba(white, 0.75);
+		}
+
+		.speaker-person-block {
+			background: rgba($speak-mk-blue, 0.75);
+
+			&.jeffrey_levine {
+				background: rgba($speak-jeff-orange, 0.75);
+			}
+
+			&.dr_derek_tharp {
+				background: rgba($speak-derek-purple, 0.75);
+			}
+
+			&.craig_iskowitz {
+				background: rgba($cons-craig-purple, 0.75);
+			}
+
+			&.meghaan_lurtz {
+				background: rgba($speak-meghan-l, 0.75);
+			}
+		}
+	}
+}
+
+// Speaker Mobile table
+.mobile-speakers-table-outer-wrap {
+	margin-top: rem(48);
+
+	@media ($grande-screen-up) {
+		display: none;
+	}
+
+	.mobile-speakers-table__speaker {
+		background: $speak-mk-blue;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: rem(32);
+		padding: rem(32);
+		text-align: center;
+
+		@media ($large-screen-up) {
+			flex-direction: row;
+			text-align: left;
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		&.jeffrey_levine {
+			background: $speak-jeff-orange;
+		}
+
+		&.dr_derek_tharp {
+			background: $speak-derek-purple;
+		}
+
+		&.meghaan_lurtz {
+			background: $speak-meghan-l;
+		}
+	}
+
+	.mobile-speakers-table__image-wrap {
+		margin: 0 auto rem(12);
+		max-width: 150px;
+		min-width: 150px;
+
+		@media ($large-screen-up) {
+			margin-right: rem(32);
+		}
+	}
+
+	.mobile-speakers-table__name {
+		font-family: $head-ff;
+		font-size: rem(32);
+		line-height: 1;
+	}
+
+	.mobile-speakers-table__title,
+	.mobile-speakers-table__fee,
+	.mobile-speakers-travels,
+	.mobile-speakers-table__specializes,
+	.mobile-speakers-table__name {
+		margin-bottom: rem(16);
+	}
+}
+
+// Topics Section
+.speaking-topics-filter-wrap {
+	margin: rem(32) 0;
+}
+
+.speaking-topics-tabs {
+	margin-top: rem(32);
+}
+
+// Mobile Speaking Pricing Table
+.mobile-speaking-pricing-table-outer {
+	justify-content: center;
+
+	@media ($grande-screen-up) {
+		display: none !important;
+	}
+}
+
+.mobile-speaking-pricing-table__block {
+	background: $speak-mk-blue;
+	color: white;
+	padding: rem(32);
+	text-align: center;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	&.jeffrey_levine {
+		background: $speak-jeff-orange;
+	}
+
+	&.dr_derek_tharp {
+		background: $speak-derek-purple;
+	}
+
+	&.meghaan_lurtz {
+		background: $speak-meghan-l;
+	}
+
+	.mobile-speaking-pricing-table__title {
+		color: white;
+	}
+
+	.mobile-speaking-pricing-table__fee-range,
+	.mobile-speaking-pricing-table__travels-from,
+	.mobile-speaking-pricing-table__webinar-pricing {
+		font-size: rem(16);
+	}
+}
+
+.speaking-pricing-table-outer {
+	display: none;
+
+	@media ($grande-screen-up) {
+		display: block;
+	}
+}
+
+// Pricing Section
+.speaking-pricing-table-row {
+	display: flex;
+
+	.speaking-pricing-title-block {
+		background: white;
+		min-width: 200px;
+		padding: rem(20) rem(32);
+
+		&.top-row {
+			background: transparent !important;
+		}
+	}
+
+	.speaking-pricing-table-inner-block {
+		align-items: center;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: rem(20) rem(32);
+		text-align: center;
+		width: calc((100% - 200px) / 3);
+
+		.speaker-person-name {
+			display: block;
+			font-family: $head-ff;
+			font-size: rem(18);
+			font-weight: bold;
+			margin-top: rem(8);
+		}
+	}
+
+	&:nth-child(odd) {
+		.speaking-pricing-table-inner-block {
+			&.michael_kitces {
+				background: $speak-mk-blue;
+			}
+			&.jeffrey_levine {
+				background: $speak-jeff-orange;
+			}
+			&.dr_derek_tharp {
+				background: $speak-derek-purple;
+			}
+			&.meghaan_lurtz {
+				background: $speak-meghan-l;
+			}
+		}
+	}
+
+	&:nth-child(even) {
+		.speaking-pricing-title-block {
+			background: rgba(white, 0.75);
+		}
+
+		.speaking-pricing-table-inner-block {
+			&.michael_kitces {
+				background: rgba($speak-mk-blue, 0.75);
+			}
+			&.jeffrey_levine {
+				background: rgba($speak-jeff-orange, 0.75);
+			}
+			&.dr_derek_tharp {
+				background: rgba($speak-derek-purple, 0.75);
+			}
+			&.meghaan_lurtz {
+				background: rgba($speak-meghan-l, 0.75);
+			}
+		}
+	}
+}
+
+.speaking-pricing-table-outer,
+.speaker-pricing-bottom-content,
+.speaker-pricing-bottom_button-wrap,
+.mobile-speaking-pricing-table-outer,
+.speaking-gravity-form-wrap {
+	margin-top: rem(32);
+
+	@media ($large-screen-up) {
+		margin-top: rem(48);
+	}
+}
+
+.speaking-gravity-form__title {
+	background: $light-blue;
+	color: white;
+	font-size: rem(24);
+	font-weight: bold;
+	margin-bottom: 0;
+	padding-top: rem(32);
+}

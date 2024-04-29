@@ -1,0 +1,45 @@
+
+/* # Powerpress styles
+---------------------------------------------------------------------------------------------------- */
+
+.powerpress-mejs-audio {
+	width:100%!important;
+}
+
+.powerpress-container {
+	padding: 15px 24px;
+	background: url('./../images/header_bg.jpg') top left no-repeat #04759f;
+	box-shadow: inset 0 5px 0px 0px rgba(0, 0, 0, 0.34);
+	-moz-box-shadow: inset 0 5px 0px 0px rgba(0, 0, 0, 0.34);
+	-webkit-box-shadow: inset 0 5px 0px 0px rgba(0, 0, 0, 0.34);
+	-o-box-shadow: inset 0 5px 0px 0px rgba(0, 0, 0, 0.34);
+}
+
+.mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
+	background:transparent;
+}
+
+.mejs-time-current {
+	background:#fff!important;
+}
+
+.mejs-time-loaded {
+	background:#BDCDD7!important;
+}
+
+.powerpress_links {
+	margin: 0;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: right;
+	font-weight: normal;
+}
+
+.powerpress_links a {
+	color:#E5D24E;
+}
+
+.powerpress_links a:hover {
+	color:#D2A927;
+}

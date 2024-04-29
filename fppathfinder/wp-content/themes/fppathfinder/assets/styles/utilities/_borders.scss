@@ -1,0 +1,90 @@
+// Border Radius
+.bbr {
+    border-radius: $base-border-radius;
+}
+
+.bbrtl {
+    border-top-left-radius: $base-border-radius;
+}
+
+.bbrtr {
+    border-top-right-radius: $base-border-radius;
+}
+
+.bbrbr {
+    border-bottom-right-radius: $base-border-radius;
+}
+
+.bbrbl {
+    border-bottom-right-radius: $base-border-radius;
+}
+
+.br50 {
+    border-radius: 50%;
+}
+
+// Border
+.base-border {
+    border: $base-border;
+}
+
+.base-border-top {
+    border-top: $base-border;
+}
+
+.base-border-bottom {
+    border-bottom: $base-border;
+}
+
+.base-border-left {
+    border-left: $base-border;
+}
+
+.base-border-right {
+    border-right: $base-border;
+}
+
+.has-border-notch-b {
+    border-radius: $base-border-radius;
+    border: $base-border;
+    position: relative;
+
+    &:after {
+        background-image: url('assets/images/border-arrow.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: -16px;
+        content: "";
+        height: 17px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 31px;
+    }
+}
+
+.has-border-notch-t {
+    border-radius: $base-border-radius;
+    border: $base-border;
+    position: relative;
+
+    &:before {
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: -1px;
+        content: "";
+        height: 17px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 31px;
+  
+        .bg-exes & {
+            background-image: url('assets/images/border-arrow-a7d0cd.svg')
+        }
+        
+        .bg-blocks & {
+            background-image: url('assets/images/border-arrow.svg');
+        }
+    }  
+}

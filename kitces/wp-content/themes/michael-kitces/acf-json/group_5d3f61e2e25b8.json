@@ -1,0 +1,130 @@
+{
+    "key": "group_5d3f61e2e25b8",
+    "title": "Settings - Mobile Menu",
+    "fields": [
+        {
+            "key": "field_5d3f61f3105a2",
+            "label": "Members Login",
+            "name": "members_login_link",
+            "type": "link",
+            "instructions": "This is the link that is used if someone isn't logged in.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5d555ad7df7c7",
+            "label": "Members Home",
+            "name": "members_home_link",
+            "type": "link",
+            "instructions": "This is the link that is used if someone is logged in.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_61ef10929ce8a",
+            "label": "Members Home (Readers)",
+            "name": "members_home_readers",
+            "type": "link",
+            "instructions": "This is the link that is used if someone is logged in and is a reader user.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5d3f62205bcc4",
+            "label": "Mobile Social Facebook",
+            "name": "mobile_social_facebook",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5d3f62465bcc5",
+            "label": "Mobile Social Twitter",
+            "name": "mobile_social_twitter",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5d3f62525bcc6",
+            "label": "Mobile Social LinkedIn",
+            "name": "mobile_social_linkedin",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5d3f62595bcc7",
+            "label": "Mobile Social YouTube",
+            "name": "mobile_social_youtube",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "mobile-menu-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643057322
+}

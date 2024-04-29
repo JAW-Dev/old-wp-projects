@@ -1,0 +1,106 @@
+// First Section
+.lead-gen-top__inner {
+    .lead-gen-top__first {
+        margin-bottom: $base-spacing*2;
+
+        @include media( $large-screen-up ) {
+            margin-bottom: 0;
+        }
+    }
+
+    @include media( $large-screen-up ) {
+        display: flex;
+
+        .lead-gen-top__first,
+        .lead-gen-top__second {
+            width: 50%;
+        }
+
+        .lead-gen-top__first {
+            padding-right: $base-spacing*4;
+        }
+    }
+}
+
+.lead-gen-top__blurb {
+    font-size: rem(22);
+    margin-bottom: $base-spacing*2;
+}
+
+.lead-gen-top__form-title {
+    font-size: rem(32);
+    margin-bottom: rem(28);
+    text-align: center;
+}
+
+.lead-gen-top__second .gform_wrapper {
+    margin: 0 !important;
+
+    label {
+        display: none !important;
+    }
+
+    .gform_footer,
+    ul,
+    li,
+    .ginput_container {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    input {
+        margin: 0 !important;
+        min-height: 62px !important;
+        text-align: center;
+        width: 100% !important;
+    }
+
+    form {
+        display: grid;
+        grid-gap: $base-spacing;
+        grid-template-columns: 1fr;
+
+        @include media( $medium-screen-up ) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include media( $large-screen-up ) {
+            grid-template-columns: 1fr;
+        }
+
+        @media ( min-width: 1100px ) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &.gform_validation_error {
+        form {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.lead-gen-top .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) {
+    max-width: 100% !important;
+}
+
+// Second Section
+.lead-gen-items {
+    background: $light-gray;
+
+    .section-header {
+        color: $blue;
+        text-align: center;
+
+        .section-title {
+            margin-bottom: $base-spacing;
+        }
+    }
+
+    .lead-gen-items__blurb {
+        font-size: rem(22);
+        margin-bottom: $base-spacing*3;
+        text-align: center;
+    }
+}

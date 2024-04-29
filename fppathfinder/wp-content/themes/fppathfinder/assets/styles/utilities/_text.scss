@@ -1,0 +1,58 @@
+// Line Heights
+.lh1 {
+  line-height: 1;
+}
+
+// Text Align
+.tac {
+  text-align: center;
+}
+
+.tal {
+  text-align: left;
+}
+
+.tar {
+  text-align: right;
+}
+
+// Text Color
+.text-action {
+  color: $action-color;
+}
+
+.text-dark-gray {
+  color: $dark-gray;
+}
+
+.text-light-gray {
+  color: $light-gray;
+}
+
+.text-medium-gray {
+  color: $medium-gray;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-white {
+  color: white;
+}
+
+.price-text {
+  color: $blue;
+  font-size: rem(24);
+  font-weight: 300;
+  margin: 1.5rem 0;
+  text-align: center;
+
+  @include media($large-screen-up) {
+    font-size: rem(36);
+  }
+}
+
+.italics {
+  font-style: italic;
+}

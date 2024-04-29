@@ -1,0 +1,158 @@
+.icon-content-row {
+	align-items: center;
+	border-top: 2px solid $text-gray;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 4em;
+	padding-top: 4em;
+
+	&:first-of-type {
+		border-top: 0px;
+		padding-top: 0;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	@media (min-width: 800px) {
+		align-items: flex-start;
+		flex-direction: row;
+		justify-content: space-between;
+
+		&:nth-child(even) {
+			.icon-content-content-wrap {
+				order: 1;
+				padding-right: 3em;
+			}
+
+			.icon-content-icon-wrap {
+				order: 2;
+			}
+		}
+
+		&:nth-child(odd) {
+			.icon-content-content-wrap {
+				padding-left: 3em;
+			}
+		}
+	}
+
+	@media (min-width: 1200px) {
+		&:nth-child(even) {
+			.icon-content-content-wrap {
+				padding-right: 5em;
+			}
+		}
+
+		&:nth-child(odd) {
+			.icon-content-content-wrap {
+				padding-left: 5em;
+			}
+		}
+	}
+
+	ul,
+	ol {
+		margin-bottom: 28px;
+
+		li {
+			list-style-type: none;
+			display: flex;
+			align-items: center;
+			margin-bottom: 4px;
+
+			&:before {
+				background-image: url('./../images/check-circle.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+				content: '';
+				display: inline-block;
+				height: 24px;
+				margin-right: 15px;
+				min-width: 24px;
+				position: relative;
+				width: 24px;
+			}
+
+			@media (min-width: 800px) {
+				margin-left: 30px;
+			}
+		}
+	}
+
+	h3 {
+		color: $text-gray;
+		font-size: em(36px);
+		font-weight: bold;
+	}
+
+	.button a {
+		font-size: 18px;
+		padding: 26px 60px;
+	}
+}
+
+.icon-content-icon-wrap {
+	align-items: center;
+	background-color: $light-blue;
+	border-radius: 50%;
+	display: flex;
+	height: 125px;
+	justify-content: center;
+	margin-bottom: 2rem;
+	width: 125px;
+
+	svg {
+		fill: white;
+		height: 70px;
+		width: 70px;
+	}
+
+	img {
+		&.style-svg {
+			filter: invert(100%);
+		}
+	}
+
+	.style-svg {
+		height: 100%;
+		max-height: 70px;
+	}
+
+	@media (min-width: 800px) {
+		height: 250px;
+		margin-bottom: 0;
+		width: 250px;
+
+		svg {
+			height: 140px;
+			width: 140px;
+		}
+
+		img {
+			&.style-svg {
+				filter: invert(100%);
+			}
+		}
+
+		.style-svg {
+			height: 100%;
+			max-height: 140px;
+		}
+	}
+}
+
+.icon-content-content-wrap {
+	h3 {
+		text-transform: none;
+	}
+
+	> :last-child {
+		margin-bottom: 0;
+	}
+
+	@media (min-width: 800px) {
+		width: calc(100% - 260px);
+	}
+}

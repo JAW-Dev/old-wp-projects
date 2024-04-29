@@ -1,0 +1,14 @@
+.account-settings__body {
+	.body-section__other-settings {
+		.rcp_form {
+			@extend .custom_rcp_form;
+		}
+
+		.styled-switches {
+			.tabs__body-section {
+				margin-bottom: 0;
+				border-bottom: none;
+			}
+		}
+	}
+}

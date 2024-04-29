@@ -1,0 +1,25 @@
+.header-image .title-area {
+
+	.site-title,
+	.site-description {
+		display: block;
+		text-indent: -9999px;
+		margin: 0;
+	}
+
+	.site-description {
+		display: none;
+	}
+
+	.site-title > a {
+		background-color: transparent;
+		background-image: url('./../images/kitces-new-logo.png');
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		display: block;
+		max-width: 170px;
+		min-width: 170px;
+		min-height: 67px;
+	}
+}

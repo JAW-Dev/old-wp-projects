@@ -1,0 +1,253 @@
+.consulting2 {
+	.hero-head.has-image {
+		padding-bottom: $mobile-section-space * 2;
+		padding-top: $mobile-section-space * 2;
+
+		@media (min-width: 768px) {
+			padding-bottom: $desk-section-space * 2;
+			padding-top: $desk-section-space * 2;
+		}
+	}
+}
+
+.lc-rt-content {
+	@media (min-width: 800px) {
+		align-items: center;
+		display: flex;
+
+		.left-content,
+		.right-content {
+			width: 50%;
+		}
+
+		.left-content {
+			padding-right: $base-spacing * 2;
+		}
+	}
+}
+
+.how-mk-content {
+	li,
+	ul {
+		list-style-type: disc;
+		margin-left: 1rem;
+	}
+}
+
+.how-mk-table {
+	.how-mk-table-row {
+		display: flex;
+		flex-direction: column;
+		vertical-align: top;
+
+		@media ($medium-screen-up) {
+			display: table-row;
+			border-right: 1px solid $border-gray;
+			border-left: 1px solid $border-gray;
+		}
+
+		&.title-row {
+			display: none;
+
+			@media ($medium-screen-up) {
+				display: table-row;
+			}
+		}
+	}
+}
+
+.consulting-packages-blocks-wrap .consulting-block {
+	display: flex;
+	flex-direction: column;
+	padding: $base-spacing;
+
+	.consulting-block-footer {
+		margin-bottom: 0;
+		margin-top: auto;
+	}
+
+	.button {
+		font-size: 18px;
+		width: 100%;
+	}
+}
+
+.kind-words-slider,
+.kind-words-slider-last,
+.podcast-reviews-slider-inner {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 950px;
+	padding: 0 $base-spacing * 3;
+
+	@media (min-width: 961px) {
+		padding: 0 $base-spacing;
+	}
+}
+
+.kind-words-slider-wrap,
+.kind-words-slider-wrap-last,
+.podcast-reviews-slider-outer {
+	position: relative;
+
+	.slick-slider {
+		margin-bottom: 0 !important;
+	}
+
+	.left-arrow,
+	.right-arrow {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.right-arrow {
+		right: 0;
+	}
+
+	.right-arrow svg {
+		transform: rotate(180deg);
+	}
+
+	.kind-words-slide-footer-wrap {
+		display: inline-block;
+	}
+
+	.slick-dots {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+
+		li {
+			height: auto;
+			width: auto;
+		}
+
+		li button {
+			display: none;
+		}
+
+		li:before {
+			border: 3px solid $blue-600;
+			border-radius: 50%;
+			content: '';
+			display: inline-block;
+			height: 6px;
+			width: 6px;
+		}
+
+		li.slick-active:before {
+			background-color: $blue-600;
+		}
+	}
+}
+
+.companies-consulted-with-section-title {
+	margin-bottom: calc(32px - 15px);
+}
+
+.page-section.companies-consulted-with {
+	padding-bottom: calc(#{$mobile-section-space} - 15px);
+
+	@media (min-width: 800px) {
+		padding-bottom: calc(#{$desk-section-space} - 15px);
+	}
+}
+
+.companies-consulted-logos-wrap {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	.logo-wrap {
+		display: block;
+		margin: 15px;
+	}
+
+	img {
+		display: block;
+		max-height: 50px;
+	}
+}
+
+.advisor-companies-block {
+	background-color: white;
+	border-radius: $base-border-radius * 3;
+	padding: 36px;
+
+	.logo {
+		display: block;
+		margin: 15px 0;
+
+		&:first-of-type {
+			margin-top: 0;
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+		max-height: 70px;
+	}
+
+	.logos-wrap {
+		display: flex;
+		flex-direction: column;
+		height: calc(100% - 36px);
+		justify-content: center;
+	}
+}
+
+.icon-outer-wrap {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: rem(-16);
+	margin-top: rem(-16);
+	text-align: center;
+
+	> div {
+		margin: rem(16);
+	}
+
+	.icon-wrapper {
+		align-items: center;
+		background: $light-blue;
+		border-radius: 100%;
+		display: flex;
+		height: rem(150);
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+		width: rem(150);
+
+		img {
+			max-height: 80px;
+			max-width: 80px;
+		}
+	}
+}
+
+body .modaal-wrapper .modal-footer .modaal-close {
+	position: relative;
+	width: auto;
+	height: auto;
+
+	&:before,
+	&:after {
+		display: none !important;
+	}
+}

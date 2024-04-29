@@ -1,0 +1,117 @@
+.pod-head {
+	background-position: 10% 10%;
+
+	.pod-head-footer a {
+		@media ($large-screen-up) {
+			margin-left: 6px;
+			margin-right: 6px;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		background-position: 10% 25%;
+	}
+}
+
+.iceberg-section-inner {
+	.iceberg-image-wrap {
+		color: $link-blue;
+		cursor: pointer;
+		font-style: italic;
+		margin-bottom: $base-spacing-r;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+
+		@media ($large-screen-up) {
+			float: right;
+			margin-bottom: $base-spacing-r * 2;
+			margin-left: $base-spacing-r * 2;
+		}
+	}
+}
+
+.listen-learn-section {
+	position: relative;
+	&:before {
+		background: $blue-600;
+		bottom: 0;
+		content: '';
+		left: 0;
+		opacity: 0.4;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+.subscribe-section-inner {
+	// This is for the podcast CTA in single posts
+	&.podcast-post-email-cta {
+		margin: $base-spacing-r 0;
+		padding: $base-spacing-r;
+
+		@media ($large-screen-up) {
+			flex-direction: column;
+		}
+
+		.subscribe-blurb {
+			font-size: rem(24);
+			line-height: rem(32);
+
+			@media ($large-screen-up) {
+				margin-bottom: $base-spacing-r;
+			}
+		}
+
+		.subscribe-email-form-wrap {
+			display: inline-block;
+			width: 100%;
+		}
+	}
+
+	@media ($large-screen-up) {
+		align-items: center;
+		display: flex;
+	}
+
+	.left-image-wrap {
+		margin-bottom: $base-spacing-r;
+		margin-left: auto;
+		margin-right: auto;
+
+		@media ($large-screen-up) {
+			margin-bottom: 0;
+		}
+	}
+
+	.subscribe-blurb {
+		color: $blue-600;
+		font-size: rem(32);
+		font-style: italic;
+		line-height: rem(40);
+		margin-bottom: $base-spacing-r;
+		text-align: center;
+
+		@media ($large-screen-up) {
+			margin-bottom: $base-spacing-r * 2;
+		}
+	}
+
+	.right-subscribe-details {
+		max-width: 800px;
+
+		@media ($large-screen-up) {
+			margin-left: $base-spacing-r * 3;
+		}
+	}
+
+	.subscribe-or {
+		margin-bottom: $base-spacing-r;
+		text-align: center;
+	}
+
+	.subscribe-email-form-wrap {
+		text-align: center;
+	}
+}

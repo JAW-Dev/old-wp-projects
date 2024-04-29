@@ -1,0 +1,493 @@
+.oim-kitces-inline {
+    background: #eee;
+    display: inline-block;
+    padding: $base-spacing;
+    width: 100%;
+}
+
+.oim-inline-input {
+    height: 36px !important;
+    line-height: 34px !important;
+    margin-bottom: $base-spacing/2 !important;
+    padding: 0 10px !important;
+
+    @media( min-width: 600px ) {
+        float: left !important;
+        width: 49% !important;
+    }
+}
+
+.oim-inline-input[type=submit] {
+    font-family: Montserrat,sans-serif !important;
+    padding: 6px;
+    font-size: 14px !important;
+    line-height: 24px;
+    border-width: 0 !important;
+    moz-box-shadow: 0 -3px 0 0 rgba(0,0,0,.15) inset;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold !important;
+    background-color: #56a3d9 !important;
+    -webkit-box-shadow: 0 -3px 0 0 rgba(0,0,0,.15) inset;
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,.15) inset;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 5px;
+    transition: all .5s ease;
+    margin-left: 2% !important;
+
+    @media( max-width: 400px ) {
+        height: auto !important;
+        line-height: 1 !important;
+        padding: 10px 5px !important;
+    }
+
+    @media( max-width: 600px ) {
+        margin-left: 0 !important;
+    }
+}
+
+.oim-inline-sub-pod-link-wrap {
+    align-items: center;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: $base-spacing/2;
+    width: 100%;
+
+    a {
+        display: block;
+        margin: rem(4);
+    }
+}
+
+.oim-inline-top-form {
+    overflow: auto;
+}
+
+.oim-kitces-inline-or-subscribe {
+    clear: both;
+    margin: 15px 0 10px;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+// OIM After Post Styles
+
+.oim-kitces-inline-after-post {
+    .oim-kitces-inline-after-top {
+        background-color: #505aeb;
+        padding: 20px;
+        border-top: 1px dashed rgba(255,255,255,.34);
+        border-bottom: 1px dashed rgba(255,255,255,.34);
+        -webkit-box-shadow: 0 0 0 4px #505aeb, 2px 2px 2px 2px rgba(10,10,0,.5);
+        box-shadow: 0 0 0 4px #505aeb, 2px 2px 2px 2px rgba(10,10,0,.5);
+        position: relative;
+
+        p {
+            color: white;
+            font-size: 22px;
+            margin-bottom: 0;
+            text-align: center;
+            font-weight: normal;
+            font-family: Lato,sans-serif;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            border-style: solid;
+            border-color: #505aeb transparent transparent transparent !important;
+            border-top-color: inherit;
+            bottom: -27px;
+            visibility: visible;
+            left: -3px;
+            border-width: 22px 0 0 22px;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            border-style: solid;
+            border-color: #505aeb transparent transparent transparent !important;
+            border-top-color: inherit;
+            bottom: -27px;
+            visibility: visible;
+            right: -3px;
+            border-width: 22px 22px 0 0;
+        }
+    }
+
+    .oim-kitces-inline-after-bottom {
+        margin: 0 18px;
+        border: 2px solid #505aeb;
+        border-top: 0;
+        -webkit-box-shadow: 0 6px 11px -7px #000;
+        -moz-box-shadow: 0 6px 11px -7px #000;
+        box-shadow: 0 6px 11px -7px #000;
+        padding: 35px 20px;
+
+        @media ( min-width:801px ) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left-side {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 28px;
+
+            @media ( min-width:801px ) {
+                margin-bottom: 0;
+                padding-right: 20px;
+                width: 55%;
+            }
+
+            @media ( min-width:450px ) {
+                flex-direction: row;
+            }
+
+        }
+
+        .right-side {
+            @media ( min-width:801px ) {
+                width: 45%;
+            }
+        }
+
+        .oim-kiab-image {
+            min-width: 90px;
+            margin-bottom: 10px;
+            @media ( min-width:450px ) {
+                margin-bottom: 0;
+            }
+        }
+
+        .oim-kiab-bot-text {
+            margin-bottom: 0;
+            padding-left: 20px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.3;
+        }
+    }
+
+    .oim-kiab-form form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            width: 100% !important;
+            border-radius: 3px !important;
+        }
+    }
+
+}
+
+.nashville-background {
+    &:before {
+        background-image: url('./../images/book.png');
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 60vh;
+        bottom: 100px;
+        content: "";
+        left: 100px;
+        opacity: 0.4;
+        position: absolute;
+        right: 100px;
+        top: 100px;
+        z-index: 888888887;
+
+        @media( max-width: 600px ) {
+            display: none;
+        }
+    }
+}
+
+.nashville-form-wrap {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.oim-kitces-pop-over {
+    max-width: 550px;
+
+    .oim-lb-top-info,
+    h3,
+    .om-trigger-close {
+        color: white;
+        text-align: center;
+        text-decoration-color: white;
+    }
+
+    h3 {
+        font-size: em(36);
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    form {
+        margin: 30px 0;
+    }
+
+    .om-trigger-close {
+        width: 100%;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+
+    input[type=text] {
+        height: 48px !important;
+        padding: 0px 10px !important;
+        border-radius: 5px !important;
+        line-height: 46px !important;
+    }
+
+    input[type=submit] {
+        background-color: #56a3d9 !important;
+        border-radius: 5px !important;
+        border-width: 0 !important;
+        box-shadow: 0 -3px 0 0 rgba(0,0,0,.15) inset;
+        font-family: Montserrat,sans-serif !important;
+        font-size: 14px !important;
+        font-weight: bold !important;
+        height: 48px !important;
+        line-height: 46px !important;
+        margin-left: 0px !important;
+        margin-top: 10px !important;
+        moz-box-shadow: 0 -3px 0 0 rgba(0,0,0,.15) inset;
+        padding: 0px 10px !important;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .5s ease;
+        width: 100% !important;
+    }
+}
+
+// Slide In
+
+.Campaign.CampaignType--slide .Slide-In---Estate-Planning button {
+    right: auto !important;
+    left: -15px !important;
+
+    &:hover {
+        svg {
+            fill: white !important;
+        }
+    }
+}
+
+.oim-kitces-slide-in {
+
+    h3 {
+        font-weight: bold !important;
+        margin-bottom: 10px !important;
+    }
+
+    p {
+        font-family: 'Lato', sans-serif !important;
+        margin-bottom: 0 !important;
+    }
+
+    .oim-slide-in-content-wrap {
+        display: flex !important;
+        flex-direction: column !important;
+
+        .oim-slide-in-top-image-wrap {
+            display: none !important;
+
+            @media( min-width: 400px ) {
+                display: block !important;
+            }
+        }
+
+
+        @media( min-width: 400px ) {
+            flex-direction: row !important;
+            align-items: center !important;
+
+            .oim-slide-in-top-image-wrap {
+                min-width: 65px !important;
+                margin-right: 10px !important;
+            }
+        }
+    }
+
+    .oim-slide-in-bottom-form {
+        margin-top: 10px !important;
+
+        input[type=text] {
+            height: 48px !important;
+            padding: 0px 10px !important;
+            border-radius: 5px !important;
+            line-height: 46px !important;
+        }
+
+        input[type=submit] {
+            background-color: $green !important;
+            border-radius: 5px !important;
+            border-width: 0 !important;
+            box-shadow: 0 -3px 0 0 rgba(0,0,0,.15) inset !important;
+            font-family: Montserrat,sans-serif !important;
+            font-size: 14px !important;
+            font-weight: bold !important;
+            height: 48px !important;
+            line-height: 46px !important;
+            margin-left: 0px !important;
+            margin-top: 10px !important;
+            moz-box-shadow: 0 -3px 0 0 rgba(0,0,0,.15) inset !important;
+            padding: 0px 10px !important;
+            text-align: center !important;
+            text-decoration: none !important;
+            text-transform: uppercase !important;
+            transition: all .5s ease !important;
+            width: 100% !important;
+        }
+
+    }
+}
+
+// Styles for Top Bar Opt In
+.Campaign.CampaignType--floating .Campaign__bravoLayer .Campaign__content {
+    max-width: 100% !important;
+    padding: 0px !important;
+}
+
+.Campaign.CampaignType--floating .tucson-CloseButton,
+.Campaign.CampaignType--floating .jupiter-CloseButton {
+    top: auto !important;
+    bottom: -15px !important;
+    right: 0px !important;
+
+    @media (min-width: 1200px ) {
+        bottom: auto !important;
+        top: 50% !important;
+        right: 15px !important;
+        transform: translateY(-50%);
+    }
+}
+
+.top-bar-opt {
+    padding: 8px 0 !important;
+    background-color: #f0f0f0 !important;
+
+    i {
+        font-style: italic !important;
+    }
+
+    .top-wrap {
+        max-width: 1024px !important;
+        width: 96%;
+        margin: 0 auto !important;
+        display: flex;
+        align-items: center !important;
+
+        .left-side-text {
+            font-size: 13px !important;
+            line-height: 1.2 !important;
+        }
+
+        .top-bar-input.email {
+            height: 26px !important;
+            font-size: 16px !important;
+            border-radius: 3px !important;
+            padding-bottom: 8px !important;
+            padding: 8px !important;
+            letter-spacing: -1px !important;
+            border: 1px #ccc solid !important;
+        }
+
+        input[type=submit].top-bar-input.submit {
+            display: inline-block !important;
+            background: $medium-blue !important;
+            border-radius: 3px !important;
+            border: none !important;
+            color: #ffffff !important;
+            cursor: pointer !important;
+            font-family: sans-serif !important;
+            font-size: 14px !important;
+            height: 26px !important;
+            letter-spacing: -1px !important;
+            line-height: 1 !important;
+            margin: 0 !important;
+            margin-left: 5px !important;
+            max-width: 150px !important;
+            padding: 0 !important;
+            text-align: center !important;
+            text-decoration: none !important;
+            text-transform: capitalize !important;
+            transition: background 250ms ease-in-out, transform 150ms ease !important;
+            width: 100% !important;
+        }
+
+        .right-side-form form {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            min-width: 350px !important;
+            margin-left: 10px !important;
+        }
+    }
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .top-bar-opt .top-wrap {
+        flex-direction: column;
+        width: unset;
+
+        .left-side-text {
+            margin-bottom: 8px !important;
+        }
+        .right-side-form form {
+            margin-left: 0px !important;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .top-bar-opt .top-wrap {
+        margin-left: 35px !important;
+        margin-right: 35px !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .top-bar-opt .top-wrap .right-side-form form {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        min-width: 100% !important;
+    }
+
+    .top-bar-opt .top-wrap  input[type=submit].top-bar-input.submit {
+        display: inline-block !important;
+        margin-left: 0px !important;
+        margin-top: 5px !important;
+        width: 100% !important;
+    }
+    .top-bar-opt .top-wrap  .top-bar-input.email {
+        display: inline-block !important;
+        width: 100% !important;
+    }
+}

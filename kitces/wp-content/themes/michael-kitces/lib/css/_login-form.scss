@@ -1,0 +1,38 @@
+#loginform {
+	max-width: 600px;
+	padding: 1em;
+	margin: 0 auto;
+
+	label {
+		display: block;
+		font-size: 16px;
+		margin-bottom: 5px;
+		margin-top: 10px;
+	}
+
+	input[type='text'],
+	input[type='password'] {
+		width: 100%;
+		font-size: 16px;
+		padding: 8px 10px;
+		border-radius: 5px;
+		border-width: 1px;
+		border-style: solid;
+		outline: 0;
+		border-color: #d9d9d9;
+	}
+
+	.login-remember {
+		display: none;
+	}
+
+	input#wp-submit {
+		font-weight: normal;
+		font-size: 0.8em;
+		border-radius: 50px;
+		max-width: 100%;
+		width: 100%;
+		margin: 1em auto 0;
+		display: block;
+	}
+}

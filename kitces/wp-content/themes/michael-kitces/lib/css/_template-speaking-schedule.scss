@@ -1,0 +1,274 @@
+.remaining-events__inner {
+	padding: $base-spacing * 3 0;
+
+	@media (min-width: 801px) {
+		padding: $base-spacing * 3;
+	}
+}
+
+.remaining-events__content-wrap {
+	padding: $base-spacing * 2;
+}
+
+// People Remaining Events Grid
+.people-remaining-events-grid {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: $base-spacing * 2 0;
+
+	@media (min-width: 801px) {
+		flex-direction: row;
+	}
+}
+
+.people-remaining-events-block {
+	background-color: $blue;
+	color: white;
+	margin-bottom: rem(20);
+	min-width: 200px;
+	max-width: 200px;
+	padding: rem(20);
+	text-align: center;
+
+	@media (min-width: 375px) {
+		max-width: 300px;
+		min-width: 300px;
+	}
+
+	@media (min-width: 801px) {
+		margin-bottom: 0;
+		margin-right: rem(20);
+		min-width: 156px;
+		max-width: 156px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	&.blue {
+		background-color: $shirt-blue;
+	}
+
+	&.purple {
+		background-color: $purple;
+	}
+
+	&.orange {
+		background-color: $orange;
+	}
+}
+
+// Event Filters
+.events-years__intro-text {
+	font-size: rem(20);
+	font-weight: bold;
+	margin-bottom: rem(24);
+	text-align: center;
+}
+
+.events-year__filter,
+.speaking-topics__filter {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	line-height: rem(32);
+	margin: rem(24) 0 rem(48);
+
+	.select-wrap {
+		margin: 0 rem(10);
+
+		select {
+			font-size: rem(18);
+		}
+	}
+
+	.filter-reset {
+		color: #00c;
+		cursor: pointer;
+		text-decoration: underline;
+
+		&:hover {
+			color: $light-blue;
+		}
+	}
+}
+
+.speaking-topics__filter {
+	margin-top: rem(32);
+}
+
+// Years Output Styles
+.event-years__inner-wrap {
+	@media (min-width: 801px) {
+		padding: 0 $base-spacing * 3;
+	}
+}
+
+.events-years__year {
+	padding-bottom: $base-spacing * 3;
+}
+
+.events-year__break-title {
+	margin-bottom: $base-spacing;
+}
+
+// Month Details
+.events-month {
+	background: $light-gray;
+	margin-bottom: rem(48);
+	padding: rem(48);
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.event-month__header {
+	align-items: center;
+	display: flex;
+	margin-bottom: rem(10);
+
+	.event-month__header-date,
+	.event-month__header-speaker,
+	.event-month__header-location,
+	.event-month__header-details,
+	.event-month__header-topics {
+		@media (max-width: 800px) {
+			display: none;
+		}
+	}
+}
+
+.event-month__header-date,
+.event-list__event-date {
+	margin-bottom: 0;
+	min-width: 9%;
+	max-width: 9%;
+	padding-right: rem(8);
+}
+
+.event-month__header-date,
+.event-list__event-date {
+	@media (max-width: 800px) {
+		text-align: center;
+		width: 100%;
+		min-width: unset;
+		max-width: unset;
+	}
+}
+
+.event-list__event-date {
+	padding-left: rem(16);
+
+	@media (max-width: 800px) {
+		padding: 0 rem(8);
+	}
+}
+
+.event-month__header-speaker,
+.event-list__event-speaker {
+	min-width: 14.666%;
+	max-width: 14.666%;
+	padding: 0 rem(8);
+}
+
+.event-month__header-location,
+.event-list__event-location {
+	min-width: 18.666%;
+	max-width: 18.666%;
+	padding: 0 rem(8);
+}
+
+.event-list__event-location {
+	display: flex;
+	align-items: center;
+
+	&:before {
+		content: '';
+		width: 20px;
+		height: 20px;
+		background-image: '';
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-right: rem(8);
+		display: block;
+
+		.type-live & {
+			background-image: url('./../images/event/pin.png');
+		}
+
+		.type-web & {
+			background-image: url('./../images/event/screen.png');
+		}
+	}
+}
+
+.event-month__header-details,
+.event-list__event-details {
+	min-width: 16.666%;
+	max-width: 16.666%;
+	padding: 0 rem(8);
+}
+
+.event-month__header-topics,
+.event-list__event-topics {
+	min-width: 33.332%;
+	max-width: 33.332%;
+	padding: 0 rem(8);
+}
+
+.event-list__event-topics {
+	padding-right: rem(16);
+
+	@media (max-width: 800px) {
+		padding: 0 rem(8);
+	}
+}
+
+.event-list__event_wrapper {
+	margin-bottom: rem(3);
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+// Event List Event
+.event-list__event {
+	align-items: center;
+	color: white;
+	display: flex;
+	margin-bottom: rem(2);
+	padding: rem(24) 0;
+
+	a {
+		color: white;
+	}
+
+	&.speaker-mk {
+		background-color: $shirt-blue;
+	}
+
+	&.speaker-jeff {
+		background-color: $orange;
+	}
+
+	&.speaker-dt {
+		background-color: $purple;
+	}
+
+	&.speaker-ml {
+		background-color: $speak-meghan-l;
+	}
+
+	@media (max-width: 800px) {
+		flex-direction: column;
+		font-size: rem(16);
+		text-align: center;
+	}
+}

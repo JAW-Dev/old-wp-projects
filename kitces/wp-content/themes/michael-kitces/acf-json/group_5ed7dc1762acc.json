@@ -1,0 +1,264 @@
+{
+    "key": "group_5ed7dc1762acc",
+    "title": "Star Ratings",
+    "fields": [
+        {
+            "key": "field_5ed7dc236b871",
+            "label": "Star Ratings",
+            "name": "kitces_star_ratings",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Test Version",
+            "sub_fields": [
+                {
+                    "key": "field_5ed7dc546b872",
+                    "label": "Version Name",
+                    "name": "version_name",
+                    "type": "text",
+                    "instructions": "The name of the test e.g Version 1",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ef24ee828508",
+                    "label": "Star Type",
+                    "name": "star_type",
+                    "type": "select",
+                    "instructions": "Select the star type",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "star": "Star",
+                        "nerd": "Nerd"
+                    },
+                    "default_value": "star",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5ed7dc7a6b873",
+                    "label": "Ratings Question",
+                    "name": "ratings_question",
+                    "type": "textarea",
+                    "instructions": "The question used on the star ratings for this test",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_5eda03ad35a58",
+                    "label": "Thank You Message",
+                    "name": "thank_you_message",
+                    "type": "textarea",
+                    "instructions": "The message users see after submitting a rating",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5ef25c7a7f80c",
+            "label": "Star Ratings Header",
+            "name": "kitces_star_ratings_header",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5ef25c981cb9b",
+                    "label": "Version Name",
+                    "name": "version_name",
+                    "type": "text",
+                    "instructions": "The name of the test e.g Version 1",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ef25cba1cb9c",
+                    "label": "Star Type",
+                    "name": "star_type",
+                    "type": "select",
+                    "instructions": "Select the star type",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "star": "Star",
+                        "nerd": "Nerd"
+                    },
+                    "default_value": "star",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5ef25cc71cb9d",
+                    "label": "Ratings Question",
+                    "name": "ratings_question",
+                    "type": "textarea",
+                    "instructions": "The question used on the star ratings for this test",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_5ef25ce41cb9e",
+                    "label": "Thank You Message",
+                    "name": "thank_you_message",
+                    "type": "textarea",
+                    "instructions": "The message users see after submitting a rating",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5eda14831fe95",
+            "label": "Ratings Data",
+            "name": "kitces_ratings_data",
+            "type": "true_false",
+            "instructions": "Check this if you want to delete the ratings data upon plugin deactivation",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5f2da93a79534",
+            "label": "Enable for All Posts",
+            "name": "kitces_enable_for_all_posts",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1596828052
+}

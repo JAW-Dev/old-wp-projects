@@ -1,0 +1,52 @@
+{
+	"name": "objectiv/fp-account-settings",
+	"description": "Member Account Settings",
+	"version": "1.0.0",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "objectiv"
+		}
+	],
+	"config": {
+		"optimize-autoloader": true,
+		"classmap-authoritative": true
+	},
+	"autoload": {
+		"psr-4": {
+			"Fp_Account_Settings\\": "includes/Classes"
+		},
+		"classmap": [
+			"includes/Classes"
+		],
+		"files": [
+			"includes/Functions/ACF/fp_get_acf_field_default_value.php",
+			"includes/Functions/Group/fp_get_group_id.php",
+			"includes/Functions/Media/fp_get_svg.php",
+			"includes/Functions/Media/fp_list_svgs.php",
+			"includes/Functions/Media/fp_svg_kses.php",
+			"includes/Functions/Member/fp_get_member_access.php",
+			"includes/Functions/Member/fp_get_member_name.php",
+			"includes/Functions/RCP/fp_rcp_display_messages.php",
+			"includes/Functions/Settings/fp_do_generate_back_page.php",
+			"includes/Functions/Settings/fp_get_advisor_name.php",
+			"includes/Functions/Settings/fp_get_business_display_name.php",
+			"includes/Functions/Settings/fp_get_group_permissions.php",
+			"includes/Functions/Settings/fp_get_group_settings.php",
+			"includes/Functions/Settings/fp_get_group_share_link_settings.php",
+			"includes/Functions/Settings/fp_get_group_whitelabel_settings.php",
+			"includes/Functions/Settings/fp_get_pdf_settings.php",
+			"includes/Functions/Settings/fp_get_preview_settings.php",
+			"includes/Functions/Settings/fp_get_share_link_settings.php",
+			"includes/Functions/Settings/fp_get_user_settings.php",
+			"includes/Functions/Settings/fp_get_whitelabel_settings.php",
+			"includes/Functions/Settings/fp_has_logo_image_saved.php",
+			"includes/Functions/Settings/fp_use_advisor_name.php",
+			"includes/Functions/membership.php",
+			"includes/Functions/transients.php"
+		]
+	},
+	"require-dev": {
+		"paulthewalton/acf-stubs": "^5.8"
+	}
+}

@@ -1,0 +1,39 @@
+.set-colors {
+	display: flex;
+	align-items: center;
+	padding: rem(4);
+	margin: rem(10);
+	cursor: pointer;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: #7a2a2b;
+	}
+
+	.selector {
+		display: none;
+	}
+
+	.colors {
+		display: flex;
+		flex-wrap: wrap;
+		width: rem(120);
+		height: rem(120);
+		overflow: hidden;
+
+		> div {
+			width: rem(60);
+			height: rem(60);
+		}
+	}
+
+	&.selected {
+		background-color: #7a2a2b;
+	}
+}
+
+.color-set {
+	.sp-replacer {
+		display: flex;
+	}
+}

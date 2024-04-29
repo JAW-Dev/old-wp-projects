@@ -1,0 +1,100 @@
+/*!
+	Theme Name: Michael Kitces
+	Description: Child theme.
+	Author: Zach Swinehart
+	Author URI: http://zachswinehart.com
+	Template: genesis
+*/
+
+// Dependencies.
+@import 'functions';
+@import 'variables';
+
+// Pull in SCSS.
+@import 'buttons';
+@import 'content-sidebar-wrap';
+@import 'core';
+@import 'careers';
+@import 'sidebar-widgets';
+@import 'entry-header';
+@import 'header-image';
+@import 'header';
+@import 'mobile-menu';
+@import 'newsletter-archives';
+@import 'oim';
+@import 'share';
+@import 'page-section';
+@import 'page-templates';
+
+@import 'search-wp-related';
+@import 'template-members-2';
+@import 'template-consulting-2.0';
+@import 'template-speaking-2';
+@import 'template-product-landing';
+@import 'template-speaking-schedule';
+@import 'icon-content-row';
+@import 'testimonial-block';
+@import 'visual-composer';
+@import 'page-img-set-shortcode';
+@import 'page-quiz';
+@import 'gforms';
+@import 'edd';
+@import 'icon-grid';
+@import 'speaking-availability';
+@import 'videos-grid';
+@import 'out-and-about-widget';
+@import 'author-block';
+@import 'template-podcast';
+@import 'podcast-image-links';
+@import 'podcast-episodes-by-topic';
+@import 'nav';
+@import 'password-reset';
+@import 'conferences';
+@import 'template-graphics-library';
+@import 'page-quiz-list';
+@import 'modal';
+@import 'value-block';
+@import 'team-member-block';
+@import 'members-dashboard';
+@import 'printerfriendly';
+@import 'convert-pro';
+@import 'speaking-alert';
+@import 'nerd-note';
+@import 'course-catalog-filter';
+@import 'advisor-news';
+@import 'email-submit-check';
+@import 'template-kitces-events';
+@import 'in-page-nav';
+@import 'lists';
+@import 'group-signup';
+@import 'in-post-header-nav';
+@import 'template-blank';
+@import 'template-member-page';
+@import 'quiz-timer';
+@import 'login-form';
+@import 'plugins';
+@import 'tooltip';
+
+// Pull in all gutenberg block styles - if this ever gets pulled out into
+// its own plugin we need to bring utilities as well
+@import './gutenberg-blocks/index.scss';
+
+// Third Party.
+$slick-font-path: '../slick/fonts/' !default;
+$slick-loader-path: '../slick/' !default;
+@import '../slick/slick.scss';
+@import '../slick/slick-theme.scss';
+@import '../Easy-Responsive-Tabs-to-Accordion/css/easy-responsive-tabs';
+// @import '../fancybox/source/jquery.fancybox.css';
+@import '../modaal/css/modaal';
+
+// Font Awesome.
+$fa-font-path: './../../node_modules/@fortawesome/fontawesome-free/webfonts';
+$fa-font-display: swap !default;
+
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+
+@import './../../node_modules/slim-select/dist/slimselect.min.css';

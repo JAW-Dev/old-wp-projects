@@ -1,0 +1,257 @@
+fieldset {
+	background-color: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+legend {
+	font-weight: 600;
+	margin-bottom: $small-spacing / 2;
+	padding: 0;
+}
+
+label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: $small-spacing / 2;
+}
+
+input,
+select {
+	display: block;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+}
+
+#{$all-text-inputs},
+select[multiple] {
+	background-color: $base-background-color;
+	border: $base-border;
+	border-radius: $base-border-radius;
+	box-shadow: $form-box-shadow;
+	box-sizing: border-box;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	margin-bottom: $small-spacing;
+	padding: $base-spacing / 2 $base-spacing / 2 $base-spacing / 3;
+	transition: border-color $base-duration $base-timing;
+	width: 100%;
+
+	&:hover {
+		border-color: shade($base-border-color, 20%);
+	}
+
+	&:focus {
+		border-color: $action-color;
+		box-shadow: $form-box-shadow-focus;
+		outline: none;
+	}
+
+	&:disabled {
+		background-color: shade($base-background-color, 5%);
+		cursor: not-allowed;
+
+		&:hover {
+			border: $base-border;
+		}
+	}
+}
+
+textarea {
+	resize: vertical;
+}
+
+[type='search'] {
+	appearance: none;
+}
+
+[type='checkbox'],
+[type='radio'] {
+	display: inline;
+	margin-right: $small-spacing / 2;
+}
+
+[type='file'] {
+	margin-bottom: $small-spacing;
+	width: 100%;
+}
+
+select {
+	cursor: pointer;
+	margin-bottom: $base-spacing;
+	max-width: 100%;
+	width: auto;
+}
+
+.select-wrap {
+	position: relative;
+
+	select {
+		width: 100%;
+		padding: rem(14) rem(20);
+		border-radius: rem(6);
+		border: solid 1px $blue-400;
+		appearance: none;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		width: rem(16);
+		height: rem(12);
+		background-color: $blue-400;
+		clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: rem(20);
+	}
+
+	select::placeholder {
+		color: $light-gray;
+	}
+}
+
+.gform_wrapper {
+	ul {
+		margin-left: 0px !important;
+
+		li {
+			list-style-type: none !important;
+		}
+	}
+}
+
+li.rcp_subscription_level.rcp_subscription_level_3 {
+	display: none;
+}
+
+body .gform_wrapper .top_label div.ginput_container {
+	display: flex;
+	align-items: center;
+
+	label {
+		margin-bottom: 0;
+	}
+}
+
+.styled-switches {
+	display: flex;
+	width: 100%;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border: none;
+	border-bottom: none;
+
+	label {
+		display: flex;
+		min-width: 0;
+		max-width: none;
+		margin-right: 0;
+	}
+
+	.label-text {
+		font-size: rem(18);
+		font-weight: normal;
+		line-height: 28px;
+		letter-spacing: 1px;
+
+		h4 {
+			font-size: rem(18);
+			font-weight: 600;
+		}
+	}
+
+	input[type='checkbox'] {
+		display: none;
+	}
+
+	.switch {
+		position: relative;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: inline-block;
+		width: rem(47);
+		min-width: rem(47);
+		height: rem(24);
+		margin-right: rem(32);
+		cursor: pointer;
+		background-color: #e3e3e3;
+		border-radius: rem(34);
+		transition: 0.4s;
+
+		&::before {
+			position: absolute;
+			bottom: rem(2);
+			left: rem(3);
+			width: rem(20);
+			height: rem(20);
+			content: '';
+			background-color: white;
+			border-radius: 50%;
+			transition: 0.4s;
+		}
+	}
+
+	input:checked + .switch {
+		background-color: #6a7a34;
+	}
+
+	input:checked + .switch::before {
+		transform: translateX(22px);
+	}
+}
+
+.styled-checkbox {
+	position: relative;
+	user-select: none;
+
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+
+	.checkmark {
+		position: relative;
+		top: 0;
+		left: 0;
+		height: 1.5rem;
+		width: 1.5rem;
+		background-color: white;
+		border: 1px solid black;
+		border-radius: 3px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			display: none;
+			left: 7px;
+			top: 3px;
+			width: 9px;
+			height: 14px;
+			border: solid black;
+			border-width: 0 3px 3px 0;
+			transform: rotate(45deg);
+		}
+	}
+
+	input:checked ~ .checkmark:after {
+		display: block;
+	}
+
+	.checkmark:after {
+		left: 7px;
+		top: 3px;
+		width: 9px;
+		height: 14px;
+		border: solid black;
+		border-width: 0 3px 3px 0;
+		transform: rotate(45deg);
+	}
+}

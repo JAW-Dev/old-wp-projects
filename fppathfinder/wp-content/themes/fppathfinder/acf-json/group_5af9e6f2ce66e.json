@@ -1,0 +1,75 @@
+{
+    "key": "group_5af9e6f2ce66e",
+    "title": "Component - MC Form Select",
+    "fields": [
+        {
+            "key": "field_5af9e6f2d644d",
+            "label": "Form Source",
+            "name": "form_source",
+            "type": "radio",
+            "instructions": "Chose the source of the form you would like to display. Either use the default form set in theme options or a custom one for just this location.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "custom": "Custom"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "default",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5af9e6f2d6455",
+            "label": "Custom Form",
+            "name": "custom_mailchimp_form",
+            "type": "textarea",
+            "instructions": "Paste in an active campaign shortcode to display here.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5af9e6f2d644d",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1526327054
+}

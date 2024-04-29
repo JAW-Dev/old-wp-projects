@@ -1,0 +1,30 @@
+.pdf-preview-flow-chart-btn-wrapper {
+	position: relative;
+}
+
+#pdf-preview-flow-chart-btn,
+.pdf-preview-flow-chart-btn-wrapper a {
+	white-space: nowrap;
+	position: relative;
+	padding-left: 4.5rem;
+}
+.pdf-preview-flow-chart-btn {
+	content: '';
+	background-image: url("assets/icons/src/download-icon.png");
+	padding-left: 1.3rem;
+	background-size: 1.5rem 1.8rem;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 2.25rem;
+	top: 8px;
+	width: 2rem;
+	height: 2rem;
+	z-index: 100;
+	display: block;
+}
+
+img.download-button-icon {
+	height: 1.8rem;
+	width: auto;
+	margin-right: 15px;
+}

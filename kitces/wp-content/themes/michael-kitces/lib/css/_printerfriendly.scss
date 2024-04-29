@@ -1,0 +1,9 @@
+#printfriendly .smart-podcast-player,
+#printfriendly .author-block,
+#printfriendly .oim-inline-sub-pod-link-wrap {
+	display: none !important;
+}
+
+.printfriendly {
+	z-index: 1 !important;
+}

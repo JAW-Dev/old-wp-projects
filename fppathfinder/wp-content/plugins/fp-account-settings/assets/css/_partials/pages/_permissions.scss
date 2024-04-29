@@ -1,0 +1,30 @@
+.account-settings__body {
+	.body-section__permissions {
+		.tabs__body-section {
+			display: flex;
+			flex-direction: column;
+
+			@include media('tablet-lg') {
+				flex-direction: row;
+			}
+		}
+
+		.fields-wrap {
+			.tabs__body-section {
+				border: none;
+			}
+			.form-control {
+				padding: 0;
+				border: none;
+			}
+		}
+
+		.form-label {
+			margin-bottom: 2rem;
+
+			@include media('tablet-lg') {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

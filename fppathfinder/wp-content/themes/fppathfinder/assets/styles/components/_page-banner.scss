@@ -1,0 +1,58 @@
+.page-banner {
+	background-color: $blue;
+	position: relative;
+	overflow: hidden;
+
+	&.dark-gray {
+		background-color: $dark-gray;
+	}
+
+	.page-banner__content {
+		color: white;
+		padding: $section-margin 0;
+		position: relative;
+	}
+
+	.page-banner__subtitle,
+	.page-banner__title {
+		line-height: 1;
+		margin-bottom: 0;
+		text-align: center;
+	}
+
+	.page-banner__subtitle {
+		font-size: rem(24);
+		letter-spacing: 1px;
+		line-height: rem(28);
+		margin: $base-spacing/2 auto 0;
+		max-width: 500px;
+
+		a {
+			color: white;
+			font-size: rem(22);
+		}
+	}
+
+	.page-banner__image {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		bottom: 0;
+		left: 0;
+		opacity: 0.4;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.banner-buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1rem;
+
+		*:nth-child(2) {
+			margin-left: 3rem;
+		}
+	}
+}

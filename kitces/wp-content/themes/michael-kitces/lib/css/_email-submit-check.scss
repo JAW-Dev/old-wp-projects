@@ -1,0 +1,40 @@
+.signup-email-submit {
+	&__form {
+		margin: 1rem 0;
+	}
+
+	&__body {
+		display: block;
+
+		.hide {
+			display: none;
+		}
+	}
+
+	&__existing-message {
+		display: none;
+
+		.show {
+			display: block;
+		}
+	}
+
+	&__email-input {
+		margin-bottom: 1rem;
+	}
+
+	&__existing-message-links {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.modaal-content-container {
+	.show {
+		display: block;
+	}
+
+	.hide {
+		display: none;
+	}
+}

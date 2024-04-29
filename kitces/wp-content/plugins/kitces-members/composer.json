@@ -1,0 +1,37 @@
+{
+	"name": "objectiv/kitces-members",
+	"description": "Augments Members plugin to add Kitces.com membership functionality",
+	"version": "1.0.0",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "objectiv"
+		}
+	],
+	"config": {
+		"optimize-autoloader": true,
+		"classmap-authoritative": true
+	},
+	"autoload": {
+		"psr-4": {
+			"Kitces_Members\\": "includes/classes"
+		},
+		"classmap": [
+			"includes/classes"
+		],
+		"files": [
+			"includes/functions/kitces_members_get_meta.php",
+			"includes/functions/kitces_get_ce_credit.php",
+			"includes/functions/kitces_is_valid_student_member.php",
+			"includes/functions/kitces_is_valid_reader_member.php",
+			"includes/functions/kitces_is_valid_basic_member.php",
+			"includes/functions/kitces_is_valid_premier_member.php",
+			"includes/functions/kitces_is_valid_trial_member.php",
+			"includes/functions/kitces_member_access.php",
+			"includes/functions/kitces_survey_url.php"
+		]
+	},
+	"require": {
+		"vlucas/phpdotenv": "^2.2"
+	}
+}

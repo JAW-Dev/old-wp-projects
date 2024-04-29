@@ -1,0 +1,319 @@
+.interactive-resource__client-wrap,
+.resource-share-link__modal-wrap,
+.interactive-resource__client-name-field {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	&.no-flex {
+		display: block;
+	}
+
+	.error {
+		color: red;
+	}
+}
+
+.interactive-resource__client-wrap {
+	align-items: flex-start;
+
+	.error {
+		color: red;
+	}
+}
+
+.interactive-resource__client-name-field {
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+
+	@media (min-width: 955px) {
+		flex-wrap: nowrap;
+		width: 40%;
+	}
+}
+
+.interactive-resource__client-form-controls {
+	width: 100%;
+	margin-right: 1rem;
+	margin-bottom: 2rem;
+
+	@media (min-width: 500px) {
+		width: 100%;
+	}
+
+	input {
+		max-width: rem(400);
+	}
+
+	.error {
+		display: none;
+
+		&.show {
+			display: block;
+		}
+	}
+}
+
+.resource-share-link__modal-wrap {
+	align-items: center;
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.interactive-resource__client-links {
+	padding: 27px 0 2rem;
+}
+
+.resource-share-link__modal-copy-successful {
+	display: none;
+
+	&.success {
+		display: block;
+	}
+}
+
+.resource-share-link__button {
+	padding: 0.8125rem 2.25rem;
+	font-family: museo-sans-rounded, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+	font-size: 1.125rem;
+	font-weight: 300;
+	line-height: 1.375rem;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	background: linear-gradient(135deg, #293d52 0%, lighten(#293d52, 10%) 100%);
+	background-color: #293d52;
+	border: none;
+	border-radius: 4px;
+	transition: all 300ms ease;
+
+	&.first {
+		margin-right: 0;
+		margin-bottom: 1rem;
+
+		@media (min-width: 580px) {
+			margin-bottom: 0;
+			margin-right: 1rem;
+		}
+	}
+
+	&:hover {
+		color: white;
+		background: linear-gradient(135deg, lighten(#293d52, 10%) 0%, lighten(#293d52, 15%) 100%);
+		background-color: lighten(#293d52, 10%);
+	}
+
+	&.icon {
+		width: rem(48);
+		height: rem(48);
+		padding: 0;
+		color: #3f3f3f;
+		background: none;
+		border-radius: 0px;
+
+		svg {
+			fill: #3f3f3f;
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.modaal-wrapper {
+	.modaal-close {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		width: 22px;
+		height: 22px;
+
+		&::before,
+		&::after {
+			top: 0;
+			left: 9px;
+			background: #000000;
+		}
+	}
+}
+
+.resource-share-link-modal-demo {
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+
+		@media screen and (min-width: 700px) {
+			flex-direction: row;
+		}
+	}
+
+	&__icon {
+		display: none;
+		max-width: 29%;
+		text-align: center;
+
+		@media screen and (min-width: 700px) {
+			display: block;
+		}
+
+		img {
+			margin-left: -3rem;
+		}
+	}
+
+	&__body {
+		min-width: 100%;
+
+		@media screen and (min-width: 700px) {
+			min-width: 60%;
+		}
+
+		ul {
+			margin-left: 2.25em;
+		}
+	}
+
+	&__button {
+		a {
+			position: relative;
+			line-height: 2;
+		}
+	}
+}
+
+.interactive-resource-buttons {
+	&.share-link-active {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.share-link-active__elements {
+			margin: 0 rem(20);
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		.send-to-crm {
+			display: none;
+		}
+	}
+}
+
+.checklist-control-modal {
+	.checklist-control-advisor-path {
+		display: flex;
+		justify-content: space-between;
+
+		button {
+			min-width: rem(250);
+			margin-right: 1rem;
+		}
+	}
+}
+
+.interactive-resource__client-wrap {
+	.advisor-path-buttons {
+		margin-bottom: 1rem;
+		display: flex;
+
+		button {
+			position: relative;
+			margin-right: 0.5rem;
+			overflow: visible;
+			opacity: 0.5;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&.active {
+				opacity: 1;
+			}
+		}
+	}
+
+	svg {
+		fill: white;
+		width: 1.2rem;
+		height: 1.2rem;
+		top: rem(3);
+    margin-left: rem(5);
+    position: relative;
+		opacity: 1;
+		transition: opacity 300ms ease;
+
+		&:hover {
+			cursor: pointer;
+			opacity: 0.8;
+		}
+	}
+
+	.checklist-control-description {
+	}
+}
+
+
+.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}
+.tippy-box{
+	position:relative;
+	background-color:#294252;
+	color:#fff;
+	border-radius:4px;white-space:normal;outline:0;transition-property:transform,visibility,opacity}
+.tippy-box[data-placement^=top]>
+.tippy-arrow{bottom:0}
+.tippy-box[data-placement^=top]>
+.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}
+.tippy-box[data-placement^=bottom]>
+.tippy-arrow{top:0}
+.tippy-box[data-placement^=bottom]>
+.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}
+.tippy-box[data-placement^=left]>
+.tippy-arrow{right:0}
+.tippy-box[data-placement^=left]>
+.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}
+.tippy-box[data-placement^=right]>
+.tippy-arrow{left:0}
+.tippy-box[data-placement^=right]>
+.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}
+.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}
+.tippy-arrow{width:16px;height:16px;color:#333}
+.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}
+.tippy-content{position:relative;padding:5px 9px;z-index:1}
+
+
+.tippy-box[data-theme~=light]{
+	color:#3f3f3f;
+	box-shadow: 6px 4px 7px 0px rgba(0,0,0,0.3);
+	background-color:#fff;
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.tippy-box[data-theme~=light][data-placement^=top]>
+.tippy-arrow:before{border-top-color:#fff}
+.tippy-box[data-theme~=light][data-placement^=bottom]>
+.tippy-arrow:before{border-bottom-color:#fff}
+.tippy-box[data-theme~=light][data-placement^=left]>
+.tippy-arrow:before{border-left-color:#fff}
+.tippy-box[data-theme~=light][data-placement^=right]>
+.tippy-arrow:before{border-right-color:#fff}
+.tippy-box[data-theme~=light]>
+.tippy-backdrop{background-color:#fff}
+.tippy-box[data-theme~=light]>
+.tippy-svg-arrow{fill:#fff}

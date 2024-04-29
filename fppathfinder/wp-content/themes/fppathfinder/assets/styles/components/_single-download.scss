@@ -1,0 +1,120 @@
+.single-download-top__inner {
+  display: grid;
+  grid-gap: $base-spacing * 2;
+  grid-template-columns: 1fr;
+
+  @include media($large-screen-up) {
+    grid-gap: $base-spacing * 4;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fifty-image-content__image-wrap {
+    margin-bottom: $base-spacing * 2;
+  }
+}
+
+.download-buttons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: rem(-6);
+
+  @include media($large-screen-up) {
+    justify-content: space-between;
+  }
+
+  > span,
+  > div {
+    margin: rem(6);
+    width: 100%;
+
+    @media (min-width: 1440px) {
+      max-width: calc(50% - 12px);
+    }
+
+    a,
+    button {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.checklist-buttons {
+  margin-top: 1rem;
+
+  .green-button {
+    a {
+      background-image: linear-gradient(135deg, #a1b762, #687934);
+    }
+
+    &.disabled-checklist-button {
+      opacity: 0.5;
+
+      &:hover {
+        cursor: not-allowed;
+      }
+
+      a {
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.single-download__description {
+  font-size: rem(20);
+
+  li {
+    margin-bottom: rem(4);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.additional-resources-title {
+  color: $blue;
+  font-size: rem(24);
+  margin-bottom: $base-spacing;
+  margin-top: $base-spacing * 2;
+}
+
+.additional-resource-link-wrap {
+  margin-bottom: rem(10);
+
+  a {
+    color: $dark-gray;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.single-download__share-wrap {
+  align-items: center;
+  display: flex;
+  margin-top: $base-spacing * 2;
+}
+
+.single-download__share-title {
+  font-size: rem(18);
+  margin-right: $base-spacing * 1.5;
+}
+
+.single-download__share-wrap .share-after-entry {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: 430px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

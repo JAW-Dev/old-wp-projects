@@ -1,0 +1,171 @@
+section.mk-agenda {
+	.mk-agenda-inner {
+		.agenda-list {
+			display: flex;
+			flex-direction: column;
+			gap: rem(48);
+			margin-left: auto;
+			margin-right: auto;
+			max-width: rem(1024);
+		}
+
+		.agenda-item {
+			align-items: center;
+			border-bottom: $base-border;
+			border-color: $gray-300;
+			display: flex;
+			flex-direction: column;
+			gap: rem(24);
+			padding-bottom: rem(32);
+			text-align: center;
+
+			@media ($large-screen-up) {
+				align-items: flex-start;
+				flex-direction: row;
+				text-align: unset;
+			}
+
+			@media ($grande-screen-up) {
+				gap: rem(32);
+			}
+
+			&:last-of-type {
+				border-bottom: none;
+				padding-bottom: 0;
+			}
+
+			&.is-open {
+				.agenda-details .button-wrap .small-button {
+					&:after {
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+
+		.time {
+			line-height: 100%;
+			max-width: rem(180);
+			min-width: rem(180);
+		}
+
+		.agenda-details {
+			width: 100%;
+
+			.description {
+				display: none;
+			}
+
+			.details-lower {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				gap: rem(16);
+				margin-top: rem(20);
+
+				@media ($large-screen-up) {
+					align-items: flex-start;
+				}
+
+				@media ($grande-screen-up) {
+					align-items: flex-end;
+					flex-direction: row;
+					gap: rem(32);
+					justify-content: space-between;
+				}
+			}
+
+			.speakers-wrap {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				gap: rem(16);
+
+				@media ($large-screen-up) {
+					align-items: flex-start;
+				}
+			}
+
+			.people-grid-item {
+				align-items: center;
+				display: flex;
+				gap: rem(10);
+
+				.image-wrap {
+					display: none;
+					max-width: rem(85);
+
+					img {
+						border-radius: 100%;
+						display: block;
+					}
+				}
+
+				.details {
+					display: flex;
+					flex-direction: column;
+
+					@media ($large-screen-up) {
+						flex-direction: row;
+
+						> div.f16,
+						> a.f16 {
+							line-height: 110%;
+							margin-left: rem(6);
+							padding-left: rem(12);
+							position: relative;
+
+							&::before {
+								content: '-';
+								display: block;
+								left: 0;
+								position: absolute;
+							}
+						}
+					}
+
+					h3 {
+						color: $text-gray;
+					}
+
+					.inline-modal {
+						display: none;
+					}
+				}
+			}
+
+			.button-wrap {
+				.small-button {
+					align-items: center;
+					display: flex;
+					gap: rem(6);
+
+					&::after {
+						background-image: url('./../../images/mobile-menu-chevron.svg');
+						background-position: center right;
+						background-repeat: no-repeat;
+						background-size: contain;
+						content: '';
+						display: block;
+						height: rem(20);
+						width: rem(20);
+					}
+				}
+			}
+		}
+	}
+}
+
+.acf-block-preview section.mk-agenda .mk-agenda-inner .agenda-details > h5 {
+	margin-top: 0;
+}
+
+.acf-block-preview section.mk-agenda .mk-agenda-inner .agenda-details .people-grid-item .details h3 {
+	line-height: 66%;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.acf-block-preview section.mk-agenda .mk-agenda-inner .agenda-details .button-wrap .small-button::after {
+	display: none;
+}

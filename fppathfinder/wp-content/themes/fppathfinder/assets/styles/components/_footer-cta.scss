@@ -1,0 +1,46 @@
+.footer-cta {
+  background-color: $blue;
+  position: relative;
+
+  .bg-overlay {
+    background: black;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.footer-cta__inner {
+  position: relative;
+}
+
+.footer-cta__title {
+  color: white;
+  font-size: rem(40);
+  margin: 0 auto $base-spacing * 2;
+  max-width: rem(800);
+}
+
+.footer-cta__blurb {
+  color: white;
+  font-size: rem(22);
+  line-height: rem(32);
+  margin: $base-spacing * 2 auto;
+  max-width: rem(800);
+  text-align: center;
+}
+
+.footer-cta__button-wrap {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: rem(-8);
+
+  > span a {
+    margin: rem(8);
+  }
+}

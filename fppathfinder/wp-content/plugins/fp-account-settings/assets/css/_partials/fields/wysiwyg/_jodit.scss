@@ -1,0 +1,58 @@
+body .input-info-box-wrap {
+	width: 100%;
+
+	.form-control .jodit_container {
+		width: 100%;
+		border: rem(1) solid #293d52;
+		border-radius: rem(4);
+	}
+}
+
+.form-control {
+	.jodit-container:not(.jodit_inline) {
+		border-color: #384a5d;
+		border-radius: 0.375rem;
+	}
+
+	.jodit-toolbar__box:not(:empty) {
+		background-color: white;
+		border-color: #384a5d;
+		border-radius: 0.375rem 0.375rem 0 0;
+	}
+
+	.jodit_toolbar,
+	.jodit_statusbar {
+		background: #f9fbfc;
+	}
+
+	.jodit-status-bar {
+		background-color: white;
+		border-radius: 0 0 0.375rem 0.375rem;
+	}
+
+	.jodit_toolbar {
+		border-bottom: rem(1) solid #293d52;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		box-shadow: none;
+	}
+
+	.jodit_statusbar {
+		border-top: rem(1) solid #293d52;
+	}
+
+	.jodit_container:not(.jodit_inline) .jodit_workplace {
+		min-height: rem(256) !important;
+		font-size: rem(18);
+	}
+
+	.jodit_wysiwyg {
+		li {
+			list-style-position: inside;
+		}
+	}
+}
+
+button .jodit-toolbar-button__text {
+	color: #4c4c4c !important;
+}

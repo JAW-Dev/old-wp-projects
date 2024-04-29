@@ -1,0 +1,13 @@
+{
+    "name": "brandontassone/fppathfinder",
+    "authors": [
+        {
+            "name": "Brandon Tassone",
+            "email": "brandontassone@gmail.com"
+        }
+    ],
+    "require": {
+        "objectivco/booster-seat": "^1.0",
+        "kint-php/kint": "^2.2"
+    }
+}

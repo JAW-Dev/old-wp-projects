@@ -1,0 +1,268 @@
+{
+    "key": "group_5b51e03a9a3ff",
+    "title": "New Event Details",
+    "fields": [
+        {
+            "key": "field_5bc4eebd4099e",
+            "label": "This is a Private Event",
+            "name": "event_private_event",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5b51e0475debd",
+            "label": "Speaker",
+            "name": "speaker",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "mk": "Michael Kitces",
+                "dt": "Derek Tharp",
+                "jeff": "Jeffrey Levine",
+                "ml": "Meghaan Lurtz"
+            },
+            "allow_null": 0,
+            "default_value": "mk",
+            "layout": "horizontal",
+            "return_format": "array"
+        },
+        {
+            "key": "field_5b51e40f8a378",
+            "label": "Type",
+            "name": "type",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "live": "Live",
+                "web": "Webinar"
+            },
+            "allow_null": 0,
+            "default_value": "live",
+            "layout": "horizontal",
+            "return_format": "array"
+        },
+        {
+            "key": "field_5b51e5964405f",
+            "label": "Event Start Date",
+            "name": "obj_event_start_date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 0
+        },
+        {
+            "key": "field_5b51e5a544060",
+            "label": "Event End Date",
+            "name": "obj_event_send_date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 0
+        },
+        {
+            "key": "field_5b52039efe783",
+            "label": "Event Location",
+            "name": "event_location",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b51e40f8a378",
+                        "operator": "==",
+                        "value": "live"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b52050793ba3",
+            "label": "Event Link",
+            "name": "event_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5b52079bf0c69",
+            "label": "Event Topics Summary",
+            "name": "event_topics_summary",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d9cdcc302860",
+            "label": "Speaking Time",
+            "name": "speaking_time",
+            "type": "text",
+            "instructions": "Freeform speaking time. For example \"Sep 12 @ 2:30pm\" - Note, this only shows up when this event is connected to a conference.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61e75311f2149",
+            "label": "Additional Speakers",
+            "name": "additional_speakers",
+            "type": "repeater",
+            "instructions": "If you need to add more speakers than the one above, add them and the topics they'll be tackling here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Speaker",
+            "sub_fields": [
+                {
+                    "key": "field_61e7533cf214a",
+                    "label": "Speaker",
+                    "name": "speaker",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "mk": "Michael Kitces",
+                        "dt": "Derek Tharp",
+                        "jeff": "Jeffrey Levine",
+                        "ml": "Meghaan Lurtz"
+                    },
+                    "allow_null": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_61e7535df214b",
+                    "label": "Topics Summary",
+                    "name": "topics_summary",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643744446
+}

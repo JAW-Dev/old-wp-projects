@@ -1,0 +1,52 @@
+.account-settings__body {
+	.body-section__profile {
+		.rcp_form {
+			max-width: 100%;
+			margin: 0;
+
+			fieldset {
+				&:first-child {
+					legend {
+						padding-top: 0;
+					}
+				}
+			}
+
+			legend {
+				@extend .sub-heading;
+
+				width: 100%;
+				height: rem(44);
+				padding: rem(40) 0 rem(20);
+				margin-bottom: 0;
+			}
+
+			p {
+				@extend .form-control;
+			}
+
+			label {
+				@extend .form-label;
+			}
+
+			input[type='text'],
+			input[type='email'],
+			input[type='password'] {
+				@extend .form-input;
+			}
+
+			select {
+				@extend .form-select;
+
+				margin-bottom: 0;
+			}
+		}
+
+		#rcp_profile_submit_wrap {
+			float: right;
+			padding: rem(40) 0 0;
+			margin-bottom: 0;
+			border-bottom: none;
+		}
+	}
+}

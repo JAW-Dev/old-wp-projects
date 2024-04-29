@@ -1,0 +1,33 @@
+.account-settings__body {
+	.body-section__support {
+		.faqs {
+			&__header {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 100%;
+			}
+
+			&__body {
+				display: none;
+				padding-top: rem(20);
+				font-size: rem(18);
+				line-height: 22px;
+
+				p {
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			&__header {
+				cursor: pointer;
+			}
+
+			.body-section__box {
+				margin-top: 0;
+			}
+		}
+	}
+}

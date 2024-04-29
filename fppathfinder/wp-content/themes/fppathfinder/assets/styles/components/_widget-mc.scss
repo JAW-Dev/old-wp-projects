@@ -1,0 +1,62 @@
+.widget_objectiv_mailchimp_widget {
+  text-align: center;
+
+  .widget-title {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 260px;
+  }
+
+  label {
+    display: none !important;
+  }
+
+  input {
+    text-align: center;
+    width: 100%;
+  }
+
+  .mc-widget-blurb {
+    margin: $base-spacing 0;
+  }
+
+  .sidebar & {
+    text-align: left;
+
+    .widget-title {
+      max-width: 100%;
+    }
+  }
+
+  li.gfield {
+    padding-right: 0 !important;
+  }
+
+  input {
+    min-height: 48px;
+  }
+
+  .gform_wrapper {
+    margin-bottom: 0px !important;
+  }
+
+  .gform_footer.top_label {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .gform_wrapper .field_description_below .gfield_description {
+    padding-top: rem(8);
+    padding-right: 0 !important;
+  }
+
+  .gform_wrapper .gform_footer input[type="submit"] {
+    margin-right: 0px !important;
+    width: 100%;
+  }
+
+  .gform_confirmation_wrapper {
+    font-weight: bold;
+    color: $green;
+  }
+}

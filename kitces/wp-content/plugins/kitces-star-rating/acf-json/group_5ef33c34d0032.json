@@ -1,0 +1,62 @@
+{
+    "key": "group_5ef33c34d0032",
+    "title": "Star Ratings Toggle",
+    "fields": [
+        {
+            "key": "field_5ef33c6d5b6c0",
+            "label": "Star Ratings Header",
+            "name": "kitces_star_ratings_header",
+            "type": "true_false",
+            "instructions": "Enable Star Ratings in the article header",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide"
+        },
+        {
+            "key": "field_5ef33c3e5b6bf",
+            "label": "Star Ratings Body",
+            "name": "kictes_star_ratings_body",
+            "type": "true_false",
+            "instructions": "Enable Star Ratings in the body of the article",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1592999140
+}

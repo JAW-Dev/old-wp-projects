@@ -1,0 +1,24 @@
+{
+	"name": "objectiv/kitces-quizzes",
+	"description": "Custom Quiz functionality",
+	"version": "1.0.0",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "objectiv"
+		}
+	],
+	"config": {
+		"optimize-autoloader": true,
+		"classmap-authoritative": true
+	},
+	"autoload": {
+		"psr-4": {
+			"Kitces_Quizzes\\": "includes/classes"
+		},
+		"classmap": [
+			"includes/classes"
+		],
+		"files": []
+	}
+}

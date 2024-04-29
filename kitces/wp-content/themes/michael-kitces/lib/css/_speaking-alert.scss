@@ -1,0 +1,24 @@
+.alert-bar {
+	&__speaking {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #FCF7DF;
+	}
+
+	&__content {
+		max-width: rem(760);
+		padding: rem(28);
+		color: #B88D49;
+		text-align: center;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+
+		a{
+			color:#B88D49;
+			text-decoration: underline;
+		}
+	}
+}

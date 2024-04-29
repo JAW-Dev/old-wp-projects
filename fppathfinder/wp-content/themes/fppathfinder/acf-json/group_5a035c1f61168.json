@@ -1,0 +1,210 @@
+{
+    "key": "group_5a035c1f61168",
+    "title": "Footer CTAs",
+    "fields": [
+        {
+            "key": "field_5a035c2c0715b",
+            "label": "Footer CTA",
+            "name": "footer_cta",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add CTA",
+            "sub_fields": [
+                {
+                    "key": "field_5bd74b5723181",
+                    "label": "Display Settings",
+                    "name": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_5a035c8749191",
+                    "label": "Display Settings",
+                    "name": "display_settings",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "disable": "Disable",
+                        "all": "Everywhere",
+                        "specific": "Specific Pages",
+                        "all-but": "All Except Specific Pages",
+                        "single-download": "Single Download Page",
+                        "single-checklist": "Single Checklist Page"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "disable",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5b05cb9d15523",
+                    "label": "Logged Out Only",
+                    "name": "non_logged_in_users_only",
+                    "type": "true_false",
+                    "instructions": "Display this CTA only to Logged Out users",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_5b05d5f2a1965",
+                    "label": "Remove on Download Single",
+                    "name": "remove_on_download_single",
+                    "type": "true_false",
+                    "instructions": "Affects Download & Resource single pages.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5a035c8749191",
+                                "operator": "==",
+                                "value": "all"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_5a035c8749191",
+                                "operator": "==",
+                                "value": "specific"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_5a035c8749191",
+                                "operator": "==",
+                                "value": "all-but"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_5a035ce649192",
+                    "label": "Specific Pages",
+                    "name": "specific_pages",
+                    "type": "relationship",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5a035c8749191",
+                                "operator": "==",
+                                "value": "specific"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_5a035c8749191",
+                                "operator": "==",
+                                "value": "all-but"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": "",
+                    "taxonomy": "",
+                    "filters": [
+                        "search",
+                        "post_type",
+                        "taxonomy"
+                    ],
+                    "elements": "",
+                    "min": "",
+                    "max": "",
+                    "return_format": "id"
+                },
+                {
+                    "key": "field_5b05b9c163116",
+                    "label": "CTA Details",
+                    "name": "cta_details",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_5b05b97bb6457"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "footer-cta-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1604007332
+}

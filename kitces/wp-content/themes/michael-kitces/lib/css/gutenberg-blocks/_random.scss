@@ -1,0 +1,43 @@
+.wp-admin .wp-block {
+	max-width: 750px;
+}
+
+.interface-complementary-area {
+	width: rem(350);
+}
+
+.wp-admin.post-type-page .wp-block {
+	max-width: 1440px;
+}
+
+.acf-block-preview {
+	> section {
+		padding-left: rem(32);
+		padding-right: rem(32);
+
+		> .wrap {
+			margin: 0;
+		}
+	}
+
+	.button {
+		background-color: $green;
+		border-color: $green;
+		color: white;
+
+		&.light-blue {
+			background-color: $light-blue;
+			border-color: $light-blue;
+		}
+
+		&.medium-blue {
+			background-color: $medium-blue;
+			border-color: $medium-blue;
+		}
+
+		&.dark-blue {
+			background-color: $dark-blue;
+			border-color: $dark-blue;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.footer-cta__outer-testimonial-slider .slick-track {
+  align-items: center;
+  display: flex;
+}
+
+.testimonial-slider-block {
+  margin: 0 rem(24);
+  padding: rem(24);
+  position: relative;
+
+  @include media($medium-screen-up) {
+    padding: rem(48);
+  }
+}
+
+.testimonial-block__bg-icon {
+  left: rem(24);
+  opacity: 0.5;
+  position: absolute;
+  top: rem(24);
+}
+
+.testimonial-block__quote {
+  font-weight: 300;
+  margin-bottom: rem(20);
+}

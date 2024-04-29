@@ -1,0 +1,38 @@
+.checklist-client-lookup-results {
+	.crm-heading {
+		font-weight: bold;
+	}
+
+	ul {
+		margin: 0;
+		border: 1px solid $footer-bg-gray;
+	}
+}
+
+.crm-contact-lookup-results {
+	margin-bottom: 1rem;
+	max-width: 400px;
+}
+
+.crm-contact-lookup-result {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.8rem;
+	margin: 0;
+
+	&:nth-of-type(2n) {
+		background-color: $footer-bg-gray;
+	}
+}
+
+input[type='submit'].crm-contact-lookup-result-button {
+	padding: 0;
+	margin-left: 2rem;
+	background: none;
+	color: black;
+	text-decoration: underline;
+	text-transform: none;
+	font-size: 1.2rem;
+}

@@ -1,0 +1,53 @@
+{
+    "key": "group_5afd88ce45ad5",
+    "title": "Component - Icon Select",
+    "fields": [
+        {
+            "key": "field_5afd88dd3cc3f",
+            "label": "Icon",
+            "name": "icon",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "attention": "Attention",
+                "check-x-book": "Check X Book",
+                "human-box-light": "Human Box Light",
+                "mag-glass": "Magnify Glass",
+                "play-book": "Play Book",
+                "wrench-book": "Wrench Book"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1526565225
+}

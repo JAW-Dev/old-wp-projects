@@ -1,0 +1,50 @@
+.tabs {
+	&__list {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin: 0 0 rem(20);
+		list-style-type: none;
+		border-bottom: 2px solid #ecf1f6;
+
+		@include media('tablet-lg') {
+			flex-direction: row;
+		}
+	}
+
+	&__list-item {
+		display: block;
+		padding: rem(3) rem(3) rem(14);
+		margin: 0 0 1rem;
+		font-size: rem(16);
+		font-weight: 600;
+		line-height: 19px;
+		list-style: none;
+		border-bottom: 2px solid #3f3f3f;
+		transition: color 0.3s ease;
+
+		@include media('tablet-lg') {
+			margin: 0 rem(48) 0 0;
+			border-bottom: none;
+		}
+
+		&.selected {
+			color: #3b82f6;
+			border-bottom: 2px solid #3b82f6;
+
+			&:focus {
+				outline: 0;
+			}
+		}
+
+		&:hover {
+			color: #3b82f6;
+			cursor: pointer;
+			border-color: #3b82f6;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

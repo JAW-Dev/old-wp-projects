@@ -1,0 +1,43 @@
+ol,
+ul {
+    margin-left: em(20);
+    list-style-type: none;
+    padding: 0;
+}
+
+dl {
+    margin-bottom: $base-spacing;
+
+    dt {
+        font-weight: 600;
+        margin-top: $small-spacing;
+    }
+
+    dd {
+        margin: 0;
+    }
+}
+
+> dl,
+> ol,
+> ul,
+p {
+    margin-bottom: $base-spacing;
+}
+
+li {
+    margin-bottom: $base-spacing;
+}
+
+ol > li {
+    list-style-type: decimal;
+}
+
+ul > li {
+    list-style-type: disc;
+}
+
+li ol,
+li ul {
+    margin-top: 1%;
+}

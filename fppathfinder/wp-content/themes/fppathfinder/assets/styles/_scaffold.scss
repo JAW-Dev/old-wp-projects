@@ -1,0 +1,90 @@
+/* ## Site Containers
+--------------------------------------------- */
+
+.site-container {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: $base-box-shadow;
+}
+
+.wrap {
+  @include outer-container(1200px);
+  width: 90%;
+}
+
+.site-inner {
+  .wrap {
+    @include media($large-screen-up) {
+      @include outer-container(1200px);
+    }
+  }
+}
+
+.single-post .site-inner,
+.single-staff .site-inner,
+.single-tribe_events .site-inner,
+.blog .site-inner,
+.archive .site-inner,
+.search .site-inner,
+.page-template-default .site-inner,
+.login-template .site-inner,
+.template-about .site-inner,
+.template-become-member .site-inner {
+  margin-top: $section-margin/2;
+  margin-bottom: $section-margin/2;
+
+  @include media($large-screen-up) {
+    margin-top: $section-margin;
+    margin-bottom: $section-margin;
+  }
+}
+
+/* ## Column Widths and Positions
+--------------------------------------------- */
+/* ## Column Widths and Positions
+--------------------------------------------- */
+.content,
+.sidebar-primary,
+.full-width .content {
+  @include span-columns(12);
+  @include omega();
+}
+
+.page-template-default.page .content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include media($large-screen-up) {
+  .content-sidebar-wrap {
+    @include outer-container(1200px);
+    display: flex;
+
+    .content {
+      width: 70%;
+      margin-right: 5%;
+
+      .full-width-content & {
+        width: 100%;
+      }
+    }
+
+    .sidebar-primary {
+      width: 384px;
+    }
+
+    .sidebar-content & {
+      .content {
+        order: 2;
+        margin-right: 0;
+        margin-left: rem(64);
+      }
+
+      .sidebar-primary {
+        order: 1;
+      }
+    }
+  }
+}

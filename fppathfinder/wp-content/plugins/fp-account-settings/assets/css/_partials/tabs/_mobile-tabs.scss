@@ -1,0 +1,14 @@
+.account-settings__body {
+	.tabs__body {
+		.white-content-box {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: rem(24);
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+$answers-2: 364px;
+$answers-3: 656px;
+
+.answers {
+	&__wrap {
+		position: relative;
+	}
+
+	&__item {
+		box-sizing: content-box;
+		display: flex;
+		justify-content: center;
+		width: 300px;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}

@@ -1,0 +1,57 @@
+.app-itegration {
+	&__wrap {
+		padding: 2rem;
+		margin-bottom: 2rem;
+		border: 1px solid #c9c9c9;
+		border-top: 6px solid #647335;
+		border-radius: 5px;
+		box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+	}
+
+	&__heading {
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem 1.5rem;
+
+		&:nth-of-type(2n-1) {
+			background-color: #f7f7f7;
+		}
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		padding: 2rem;
+		margin-top: 2rem;
+		background-color: #efefef;
+		border-radius: 5px;
+	}
+
+	&__card-heading {
+		margin-bottom: 0.5rem;
+		font-size: 1.5em;
+	}
+
+	&__card-status {
+		margin-top: 1rem;
+	}
+
+	&__card-body {
+		align-self: flex-end;
+		margin-top: 1rem;
+
+		input {
+			margin-right: 0.5rem;
+		}
+	}
+
+	&__crm-authorize,
+	&__crm-deactivate {
+		display: none;
+	}
+}

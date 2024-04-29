@@ -1,0 +1,43 @@
+{
+    "key": "group_5b9142b43babb",
+    "title": "Topic Tags",
+    "fields": [
+        {
+            "key": "field_5b9142bcf0b77",
+            "label": "Topic Tags",
+            "name": "topic_tags",
+            "type": "textarea",
+            "instructions": "Note: put one tag on each line. These are used elsewhere as options.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "kitces-topic-tags"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1536246518
+}

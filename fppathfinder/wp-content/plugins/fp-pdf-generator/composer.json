@@ -1,0 +1,25 @@
+{
+  "name": "objectivco/fp-pdf-generator",
+  "type": "wordpress-plugin",
+  "config": {
+    "optimize-autoloader": true,
+    "classmap-authoritative": true
+  },
+  "authors": [
+    {
+      "name": "John Geesey",
+      "email": "john@objectiv.co"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "FP_PDF_Generator\\": "includes/"
+    }
+  },
+  "require": {
+    "objectivco/wordpress-simple-settings": "^0.7.3",
+    "mpdf/mpdf": "^8.0",
+    "symfony/finder": "^5.0",
+    "symfony/filesystem": "^5.0"
+  }
+}

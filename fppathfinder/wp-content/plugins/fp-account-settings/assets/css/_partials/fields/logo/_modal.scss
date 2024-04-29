@@ -1,0 +1,52 @@
+.pdf-generator-logo-modal-dialog,
+.group-settings-pdf-logo-modal-dialog {
+	outline: none;
+
+	.pdf-generator-logo-modal-body,
+	.group-settings-pdf-logo-modal-body {
+		margin: 2rem 0 0;
+	}
+
+	.pdf-generator-logo-modal-header,
+	.group-settings-pdf-logo-modal-header {
+		text-align: center;
+	}
+
+	.pdf-generator-logo-modal-controls,
+	.group-settings-pdf-logo-modal-controls {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+
+		button {
+			padding: 0.8125rem 0.05rem;
+			margin: 0.25rem;
+			background: transparent;
+			.svg {
+				position: relative;
+				top: 3px;
+			}
+			.pdf-generator-logo-vert,
+			.group-settings-pdf-logo-vert {
+				transform: rotate(90deg);
+			}
+		}
+		.form-button {
+			color: #3f3f3f;
+			&:hover,
+			&:active {
+				font-weight: 500;
+				text-decoration: underline;
+				transition: none;
+			}
+		}
+		.pdf-generator-logo-crop-button,
+		.group-settings-pdf-logo-crop-button {
+			margin-left: auto;
+		}
+		.pdf-generator-logo-cancel-button,
+		.group-settings-pdf-logo-cancel-button {
+			margin-right: auto;
+		}
+	}
+}

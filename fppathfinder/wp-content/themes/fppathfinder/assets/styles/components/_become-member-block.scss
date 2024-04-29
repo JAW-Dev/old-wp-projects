@@ -1,0 +1,41 @@
+.become-member-price-blocks-grid > .price-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin-bottom: 2rem;
+
+    @media ( min-width: 900px ) {
+        margin-top: 0;
+    }
+}
+
+.price-block__header {
+    @extend .has-border-notch-b;
+    padding: $base-spacing*1.5;
+    text-align: center;
+    margin-bottom: $base-spacing;
+}
+
+.price-block__title,
+.price-block__price {
+    color: $blue;
+    font-size: rem(36);
+}
+
+.price-block__price {
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.price-block__body {
+    @extend .has-border-notch-b;
+    @extend .has-border-notch-t;
+
+    padding: $base-spacing*1.5;
+    margin-bottom: rem(40);
+}
+
+.price-block__footer {
+    text-align: center;
+}

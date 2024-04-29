@@ -1,0 +1,58 @@
+.events-widget__event {
+  display: flex;
+  margin-top: rem(16);
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.events-widget__left-side {
+  width: 50px;
+  margin-right: rem(16);
+}
+
+.events-widget__event-date {
+  align-items: center;
+  background: $speak-mk-blue;
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: $head-ff;
+  font-size: rem(14);
+  font-weight: bold;
+  height: 50px;
+  justify-content: center;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 50px;
+
+  .speaker-mk & {
+    background: $speak-mk-blue;
+  }
+
+  .speaker-jeff & {
+    background: $speak-jeff-orange;
+  }
+
+  .speaker-dt & {
+    background: $speak-derek-purple;
+  }
+}
+
+.events-widget__event-title {
+  color: $blue-600;
+  font-family: $head-ff;
+  font-size: rem(16);
+  font-weight: bold;
+}
+
+.events-widget__event-date-inner {
+  margin-left: 2px;
+  margin-top: 2px;
+}

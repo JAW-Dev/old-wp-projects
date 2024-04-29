@@ -1,0 +1,48 @@
+.outline-button {
+	border: 1px solid white;
+	border-radius: $base-border-radius;
+	color: white;
+	padding: 10px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: white;
+		color: $text-gray;
+	}
+}
+
+.green-button.user-quiz-page-link,
+.green-button.retake-quiz-link {
+	background: #82a502;
+	box-sizing: border-box;
+	color: #fff;
+	display: inline-block;
+	font-size: 0.875rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 1;
+	margin: 0 0 28px;
+	padding: 0.5rem 0.9375rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.1s ease-in-out;
+
+	&.user-quiz-page-link-wrapper {
+		margin: 28px 0 0;
+	}
+}
+
+.button.button-gray {
+	background-color: $border-gray;
+	color: $text-gray;
+
+	&:hover {
+		background-color: $border-gray;
+		color: $text-gray;
+	}
+}
+
+.button.medium-button {
+	padding: rem(8) rem(16);
+}

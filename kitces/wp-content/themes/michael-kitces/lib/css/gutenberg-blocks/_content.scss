@@ -1,0 +1,41 @@
+section.mk-content {
+	.mk-content-inner {
+		.content-three > div,
+		.content-two > div,
+		.content-one > div {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: rem(800);
+		}
+
+		.content-three,
+		.content-two {
+			display: flex;
+			flex-direction: column;
+			gap: rem(28);
+		}
+
+		@media ($grande-screen-up) {
+			.content-three,
+			.content-two {
+				flex-direction: row;
+			}
+
+			.content-three > div,
+			.content-two > div,
+			.content-one > div {
+				margin-left: unset;
+				margin-right: unset;
+				max-width: unset;
+			}
+
+			.content-three {
+				gap: rem(40);
+			}
+
+			.content-two {
+				gap: rem(48);
+			}
+		}
+	}
+}

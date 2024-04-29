@@ -1,0 +1,16 @@
+body {
+	.modaal-wrapper {
+		overflow: hidden;
+	}
+
+	.modaal-inner-wrapper {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.modaal-container {
+		max-width: px-to-rem( 850 );
+		padding: 0;
+		box-shadow: none;
+	}
+}

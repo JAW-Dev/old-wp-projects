@@ -1,0 +1,135 @@
+
+.nav-secondary {
+	background-color: #2f4f6b;
+	background-color: rgba(42,79,107,0.97);
+	z-index: 30;
+   	position: relative;
+}
+
+.nav-secondary a {
+	text-decoration: none;
+	/*text-transform: uppercase;*/
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.nav-secondary .genesis-nav-menu a:hover,
+.nav-secondary .genesis-nav-menu .current-menu-item > a,
+.nav-secondary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: #fff;
+	background-color: #000;
+	background-color: rgba(0,0,0,1);
+}
+.nav-secondary .genesis-nav-menu .sub-menu a:hover,
+.nav-secondary .genesis-nav-menu .sub-menu .current-menu-item > a,
+.nav-secondary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: #fff;
+	background-color: #67a63f !important;
+}
+.nav-secondary .genesis-nav-menu li.logo:before,
+.nav-secondary .genesis-nav-menu li.logo:hover:before,
+.nav-secondary .genesis-nav-menu li.logo:before a:hover,
+.nav-secondary .genesis-nav-menu .logo a:hover {
+	background: transparent;
+	background-image: none;
+}
+
+.nav-secondary .genesis-nav-menu li,
+.nav-secondary .genesis-nav-menu a,
+.nav-secondary .genesis-nav-menu a:hover {
+	line-height: 1;
+	transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	-webkit-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+}
+
+/* Makes nav drop from top after scrolled */
+@media only all and (max-width: 960px) {
+	.nav-secondary .wrap {
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+	.nav-secondary .logo a {
+		padding: 0 !important;
+	}
+	.nav-secondary a {
+		padding: 20px 10px !important;
+	}
+	.nav-secondary .logo a img {
+		padding: 5px 0;
+		/*width: 180px;*/
+	}
+}
+@media only all and (min-width: 768px) {
+	.site-container {
+		position: relative;
+	}
+
+	.nav-secondary {
+		opacity: 0;
+		//height: 43px;
+  		z-index: 10;
+  		position: fixed;
+		top: -50px;
+		left: 0;
+		right: 0;
+  		transition: all .25s ease-in-out;
+  		-moz-transition: all .25s ease-in-out;
+  		-webkit-transition: all .25s ease-in-out;
+  		-o-transition: all .25s ease-in-out;
+	}
+	.nav-secondary a {
+		font-size: 12px;
+		line-height: 2.7 !important;
+	}
+	.nav-secondary.scrolled {
+		top: 0;
+		opacity: 1;
+	}
+	/* only when logged in */
+	.logged-in .nav-secondary.scrolled {
+		margin-top: 32px;
+	}
+}
+
+
+/* Scrolled navigation */
+.nav-secondary ul {
+	text-align: right;
+}
+.nav-secondary .logo {
+	float: left;
+	margin: 0 !important;
+}
+.nav-secondary .logo a{
+	/*line-height: 1px;*/
+	/*padding: 5px 15px 3px 15px;*/
+	/*padding: 3px 15px 1px 15px;*/
+	padding: 0;
+	font-size: 0; /* fixes lineheight */
+}
+.nav-secondary .logo a img {
+	/*max-width: 200px;*/
+	padding: 5px 0 0 0;
+}
+.nav-primary .logo{
+	display: none;
+}
+
+/* replace with retina image */
+@media all and (-webkit-min-device-pixel-ratio: 2), all and (max--moz-device-pixel-ratio: 2) {
+	.nav-secondary .logo a img {
+		content: url('./../images/logo-secondary-nav@2x.png');
+		/*width: 50%;*/ /* Test this, maybe it works? */
+		width: 175.5px; /* set a width to constrain */
+	}
+}
+
+// Scrolled Nav for Thrive Leads
+.nav-secondary.scrolled.tve-form-is-visible {
+	top: 99px !important;
+}
+
+/* sub menu items */

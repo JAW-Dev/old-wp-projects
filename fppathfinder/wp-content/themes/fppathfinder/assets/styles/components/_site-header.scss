@@ -1,0 +1,210 @@
+$icon-color: white;
+$icon-color-scrolled: $dark-gray;
+
+.site-header {
+  background-color: $light-gray;
+  transition: background-color $base-duration $base-timing,
+    border $base-duration $base-timing;
+
+  > .wrap {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $grande-screen) {
+      position: relative;
+    }
+  }
+
+  .admin-bar & {
+    top: 46px;
+
+    @media (min-width: 783px) {
+      top: 32px;
+    }
+  }
+}
+
+/**
+ * Title Area
+ */
+.title-area {
+  width: 100%;
+  max-width: 175px;
+  min-width: 175px;
+  padding: $small-spacing/2 0;
+
+  @include media($large-screen-up) {
+    max-width: 200px;
+    min-width: 200px;
+    padding: $small-spacing 0;
+  }
+
+  .header-full-width & {
+    width: 100%;
+  }
+}
+
+.site-description,
+.site-title {
+  margin-bottom: 0;
+}
+
+.site-title {
+  font-size: em(40);
+  font-weight: 500;
+
+  a:focus,
+  a:hover {
+    color: $action-color;
+  }
+}
+
+.site-description {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 500;
+}
+
+.header-image {
+  .site-description,
+  .site-title {
+    display: block;
+    text-indent: -9999px;
+  }
+
+  .site-title > a {
+    background-color: transparent;
+    background-image: url("assets/images/logo.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    min-height: 69px;
+    width: 100%;
+    max-width: 312px;
+    transition: opacity $base-duration $base-timing;
+
+    @include media($large-screen-up) {
+      width: 100%;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+/**
+ * Header Right
+ */
+.site-header .widget-area {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  @include media($large-screen-up) {
+    padding-left: $base-spacing;
+    text-align: right;
+    width: calc(100% - 185px);
+  }
+
+  .header-full-width & {
+    width: 100%;
+  }
+
+  .genesis-nav-menu {
+    display: none;
+    @include media($large-screen-up) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .widget {
+    margin: 0;
+
+    li li {
+      margin-left: 0;
+    }
+  }
+
+  // .home & {
+  //     .top-icon-section {
+  //         display: none;
+  //     }
+  // }
+}
+
+.top-icon-section {
+  margin-left: $base-spacing;
+
+  .searchPhoneWrap {
+    align-items: center;
+    border-left: $base-border;
+    display: flex;
+    justify-content: flex-end;
+    padding: 14px 0 14px $base-spacing;
+
+    @media (max-width: $large-screen) {
+      border-left: none;
+      margin-right: 4rem;
+    }
+  }
+
+  .searchIcon,
+  .phoneIcon {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 22px;
+    opacity: 0.7;
+    transition: all $base-duration $base-timing;
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+
+  .searchIcon {
+    svg {
+      fill: transparent;
+      stroke: $icon-color;
+
+      .scrolled & {
+        fill: transparent;
+        stroke: $icon-color-scrolled;
+      }
+    }
+  }
+
+  .phoneIcon {
+    margin-right: $base-spacing;
+
+    svg {
+      fill: $icon-color;
+      stroke: transparent;
+
+      .scrolled & {
+        fill: $icon-color-scrolled;
+        stroke: transparent;
+      }
+    }
+  }
+
+  .phoneDesk {
+    display: none;
+    @include media($large-screen-up) {
+      display: block;
+    }
+  }
+
+  .phonePhone {
+    @include media($large-screen-up) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+    "key": "group_5e70f10cb5998",
+    "title": "Component - Paragraph Icon CTA",
+    "fields": [
+        {
+            "key": "field_5e710b0e9c40a",
+            "label": "Section Title",
+            "name": "pic_section_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e7107328083b",
+            "label": "Paragraph Icon Blocks",
+            "name": "pic_blocks",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5e70f12c56a97",
+                    "label": "Icon",
+                    "name": "pic_icon",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "application": "Application",
+                        "devices": "Devices",
+                        "document-checkmark": "Document Checkmark",
+                        "gavel-checkmark": "Gavel Checkmark",
+                        "gear-checkmark": "Gear Checkmark",
+                        "letter-clipboard": "Letter Clipboard",
+                        "orginization": "Orginization",
+                        "person-add": "Person Add",
+                        "person-present": "Person Present",
+                        "person-question": "Person Question",
+                        "person-send": "Person Send",
+                        "search-tree": "Search Tree"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5e70f15d56a98",
+                    "label": "Blurb",
+                    "name": "pic_blurb",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1584468360
+}

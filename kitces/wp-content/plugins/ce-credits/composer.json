@@ -1,0 +1,5 @@
+{
+    "require": {
+        "objectivco/wordpress-simple-settings": "^0.3.0"
+    }
+}

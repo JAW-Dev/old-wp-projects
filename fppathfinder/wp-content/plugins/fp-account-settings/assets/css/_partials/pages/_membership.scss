@@ -1,0 +1,152 @@
+.account-settings__body {
+	.membership-line-layout {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		font-size: rem(16);
+		font-weight: bold;
+		line-height: 19px;
+		color: #384a5d;
+	}
+
+	.membership-line-margin {
+		flex-grow: 0;
+		margin-right: rem(24);
+	}
+
+	.membership-main-item {
+		font-size: rem(18);
+		line-height: rem(22);
+	}
+
+	.body-section {
+		&__rcp_membership,
+		&__rcp_invoice {
+			h2 {
+				margin-bottom: rem(40);
+			}
+		}
+
+		.rcp_membership {
+			&__stats,
+			&__actions {
+				@extend .membership-line-layout;
+			}
+
+			&__type,
+			&__status,
+			&__expiration,
+			&__renew {
+				@extend .membership-line-margin;
+
+				margin-top: 1rem;
+
+				@include media('box') {
+					margin-top: 0;
+				}
+			}
+
+			&__type {
+				@extend .membership-main-item;
+			}
+
+			&__actions {
+				display: flex;
+				justify-content: flex-start;
+				margin-left: initial;
+				font-weight: 600;
+
+				@include media('box') {
+					justify-content: space-between;
+					margin-left: auto;
+				}
+
+				a {
+					display: block;
+					margin-top: 2rem;
+					margin-right: rem(24);
+					text-decoration: underline;
+					transition: color 300ms ease, border-color 300ms ease;
+
+					@include media('box') {
+						margin-top: 0;
+					}
+
+					&:last-child {
+						margin-right: 0;
+					}
+
+					&:hover {
+						color: #3b82f6;
+					}
+				}
+			}
+		}
+
+		.rcp_invoice {
+			&__stats,
+			&__actions {
+				@extend .membership-line-layout;
+			}
+
+			&__date,
+			&__id,
+			&__status,
+			&__type,
+			&__amount {
+				@extend .membership-line-margin;
+
+				margin-top: 1rem;
+
+				@include media('box') {
+					margin-top: 0;
+				}
+			}
+
+			&__id {
+				@extend .membership-main-item;
+			}
+
+			&__actions {
+				display: flex;
+				justify-content: flex-start;
+				margin-left: initial;
+				font-weight: 600;
+
+				@include media('box') {
+					justify-content: space-between;
+					margin-left: auto;
+				}
+
+				a {
+					display: block;
+					margin-top: 2rem;
+					border-bottom: 1px solid #384a5d;
+					transition: color 300ms ease;
+					transition: border-color 300ms ease;
+
+					@include media('box') {
+						margin-top: 0;
+					}
+				}
+
+				&:hover {
+					a {
+						color: rgba(41, 61, 82, 0.8);
+						border-color: rgba(41, 61, 82, 0.8);
+					}
+				}
+			}
+		}
+
+		&__invoices {
+			.body-section__box:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+#rcp_profile_editor_form fieldset label {
+	min-width: rem(250);
+}

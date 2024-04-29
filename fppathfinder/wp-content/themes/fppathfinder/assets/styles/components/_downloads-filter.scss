@@ -1,0 +1,54 @@
+.downloads-filter-bar {
+    display: flex;
+    margin-bottom: $base-spacing*1.5;
+
+    .filter-link {
+        align-items: center;
+        border-right: 1px solid $dark-gray;
+        cursor: pointer;
+        display: flex;
+        padding: 0 $base-spacing;
+
+        &:before {
+            background: $dark-gray;
+            content: "";
+            display: block;
+            height: 10px;
+            margin-right: 12px;
+            width: $base-spacing*3;
+
+        }
+
+        &.level_1:before {
+            background: $level_1_color;
+        }
+
+        &.level_2:before {
+            background: $level_2_color;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &.all,
+        &.free {
+            &:before {
+                display: none;
+            }
+        }
+
+        &:last-of-type {
+            border-right: none;
+            padding-right: 0;
+        }
+
+        &.current {
+            text-decoration: underline;
+        }
+    }
+}
+
+.download-cat-button {
+    margin-bottom: $base-spacing*1.5;
+}

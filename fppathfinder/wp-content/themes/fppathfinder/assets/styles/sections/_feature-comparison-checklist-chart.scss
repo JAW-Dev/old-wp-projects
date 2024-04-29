@@ -1,0 +1,141 @@
+.feature-comparison-checklist-chart {
+
+	.text svg.tooltip-button {
+		width: 0.9rem;
+		margin-left: 1rem;
+		fill: $blue;
+	}
+
+	.text {
+
+		p {
+			margin: 0;
+
+			&.tooltip-content {
+				margin: 0.5rem 0.5rem 0 0.5rem;
+			}
+		}
+	}
+
+	.box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.75rem 0;
+
+		svg {
+			width: 1rem;
+		}
+
+		@media ( max-width: 699px ) {
+			flex-wrap: wrap;
+			width: 33%;
+
+			&:before {
+				content: attr(data-tier);
+				width: 100%;
+				font-size: 1rem;
+			}
+		}
+	}
+
+	.section-header {
+		text-align: center;
+		margin-top: 4rem;
+	}
+
+	.feature-comparison-checklist-inner {
+		max-width: 900px;
+		margin: 2rem auto 0 auto;
+	}
+
+	.feature {
+
+		&:nth-last-of-type(2n-1) {
+			background-color: $light-gray;
+		}
+
+		@media ( max-width: 699px ) {
+			padding: 0.75rem 0;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			// &:nth-last-of-type(2n-1) {
+			// 	background-color: unset;
+			// }
+		}
+	}
+
+	.feature,
+	.tier-labels,
+	.tier-column-end-caps {
+		display: flex;
+		align-items: stretch;
+	}
+
+	.tier-label {
+		font-size: 0.9rem;
+		border-top: 1px solid black;
+		padding: 0.5rem 0.5rem 0 0.5rem;
+
+		@media ( max-width: 699px ) {
+			display: none;
+		}
+	}
+
+	.text {
+		display: flex;
+		flex-shrink: 1;
+		flex-grow: 1;
+		padding: 0.75rem;
+		flex-direction: column;
+
+		@media ( max-width: 699px ) {
+			font-size: 1.25rem;
+			padding-top: 0;
+			padding-bottom: 0;
+			width: 100%;
+		}
+	}
+
+	.tier-end-cap {
+		height: 0.5rem;
+		border-bottom: 1px solid black;
+		
+		@media ( max-width: 699px ) {
+			display: none;
+		}
+	}
+	
+	.box,
+	.tier-label,
+	.tier-end-cap {
+		flex-shrink: 0;
+		text-align: center;
+		border-right: 1px solid black;
+	}
+
+	.box,
+	.tier-label,
+	.tier-end-cap {
+		min-width: 100px;
+		border-left: 1px solid black;
+		margin-left: 1rem;
+
+		@media ( max-width: 799px ) {
+			min-width: 80px;
+		}
+
+		@media ( max-width: 699px ) {
+			min-width: 70px;
+			border: 0;
+			margin: 0;
+		}
+	}
+
+	.essentials-label,
+	.essentials-end-cap {
+		margin-left: auto;
+	}
+
+}
